@@ -1,0 +1,51 @@
+{
+  "meetTheTeam": {
+    "title": "Our Experienced & Professional Team",
+    "subtitle": "Meet The Team",
+    "icon": "/assets/icons/award.svg",
+    "awards": [
+      {
+        "id": 1,
+        "title": "Mark Miller",
+        "image": "assets/images/user/andrew.jpeg",
+        "description": "eBook Marketing Head & Co-Founder",
+        "desc2": "Mark spearheads innovative eBook marketing strategies, ensuring maximum reach and engagement. With a keen eye for market trends, he drives our digital marketing success."
+      },
+      {
+        "id": 2,
+        "title": "Hasnain Shaikh",
+        "image": "assets/images/user/hasnain.jpeg",
+        "description": "eBook Publishing Head & Co-Founder",
+        "desc2": "Hasnain oversees all aspects of eBook publishing, from manuscript development to final production. His expertise ensures the highest quality and efficiency in our publishing process."
+      },
+      {
+        "id": 3,
+        "title": "Andrew Smith",
+        "image": "assets/images/user/murghi.jpeg",
+        "description": "eBook Publishing Consultant",
+        "desc2": "Andrew brings years of experience in eBook publishing, offering invaluable insights and guidance. His consultancy ensures our projects meet the highest industry standards."
+      },
+      {
+        "id": 4,
+        "title": "Jay Perkins",
+        "image": "assets/images/user/jay.jpeg",
+        "description": "Client Acquisition Specialist",
+        "desc2": "Jay excels at identifying and securing new clients for Mobius Technology Solutions. His expertise in client acquisition drives our growth and expands our reach."
+      },
+      {
+        "id": 5,
+        "title": "David Anderson",
+        "image": "assets/images/user/bhau.jpeg",
+        "description": "eBook Publishing Consultant",
+        "desc2": "David provides expert advice on all facets of eBook publishing. His strategic insights help us navigate the complexities of the digital publishing landscape."
+      },
+      {
+        "id": 6,
+        "title": "John Doe",
+        "image": "assets/images/user/andrew.jpeg",
+        "description": "Content Strategist & Production Coordinator",
+        "desc2": "Bilal excels in content creation and management, coordinating the entire publishing process. His strategic vision and organizational skills bring compelling stories to life."
+      }
+    ]
+  }
+}

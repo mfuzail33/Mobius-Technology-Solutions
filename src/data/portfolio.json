@@ -1,0 +1,48 @@
+{
+  "portfolio": {
+    "title": "Unveiling Excellence: Our Diverse Portfolio in Publishing",
+    "subtitle": "PORTFOLIO",
+    "portfolioItem": [
+      {
+        "id": 1,
+        "image": "./assets/images/services/articleWriting/16.png"
+      },
+      {
+        "id": 2,
+        "image": "./assets/images/services/authorWebsite/18.png"
+      },
+      {
+        "id": 3,
+        "image": "./assets/images/services/autobiography/20.png"
+      },
+      {
+        "id": 4,
+        "image": "./assets/images/services/coverDesign/10.png"
+      },
+      {
+        "id": 5,
+        "image": "./assets/images/services/customBookIllustrations/5.png"
+      },
+      {
+        "id": 6,
+        "image": "./assets/images/services/ebook/30.png"
+      },
+      {
+        "id": 7,
+        "image": "./assets/images/services/ghost/21.png"
+      },
+      {
+        "id": 8,
+        "image": "./assets/images/services/marketing/26.png"
+      },
+      {
+        "id": 9,
+        "image": "./assets/images/services/publishing/4.png"
+      },
+      {
+        "id": 10,
+        "image": "./assets/images/services/bookEditing/24.png"
+      }
+    ]
+  }
+}

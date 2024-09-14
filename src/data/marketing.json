@@ -1,0 +1,43 @@
+{
+    "marketing": {
+        "title": "What people said about our Book Marketing Services",
+        "subtitle": "TESTIMONIALS",
+        "testimonialItem": [
+            {
+                "id": 1,
+                "name": "Emma Brown",
+                "title": "Book Marketing",
+                "image": "./assets/images/user-1.png",
+                "description": "Mobius Technology Solutions's book marketing services helped me build buzz around my book and reach a wider audience. Their strategic approach and attention to detail were instrumental in its success."
+            },
+            {
+                "id": 2,
+                "name": "Alexander Johnson",
+                "title": "Book Marketing",
+                "image": "./assets/images/user-2.png",
+                "description": "I'm thrilled with the exceptional book marketing services provided by Mobius Technology Solutions. Their expertise helped create a buzz around my book and attract readers from various platforms."
+            },
+            {
+                "id": 3,
+                "name": "Sophia Martinez",
+                "title": "Book Marketing",
+                "image": "./assets/images/user-1.png",
+                "description": "Mobius Technology Solutions's book marketing strategies have been invaluable to me. They helped me increase visibility and drive sales for my book through targeted campaigns."
+            },
+            {
+                "id": 4,
+                "name": "Lucas Thompson",
+                "title": "Book Marketing",
+                "image": "./assets/images/user-2.png",
+                "description": "The book marketing services provided by Mobius Technology Solutions exceeded my expectations. They helped me effectively promote my book and connect with my target audience."
+            },
+            {
+                "id": 5,
+                "name": "Isabella Wilson",
+                "title": "Book Marketing",
+                "image": "./assets/images/user-1.png",
+                "description": "I couldn't be happier with the book marketing services provided by Mobius Technology Solutions. They helped me generate excitement around my book launch and achieve greater visibility."
+            }
+        ]
+    }
+}

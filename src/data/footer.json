@@ -1,0 +1,92 @@
+{
+  "footer": {
+    "copyright": "2024 All right reserved ",
+    "name": "Mobius Technology Solutions",
+    "icon": "assets/icons/heart.svg",
+    "menu": [
+      {
+        "link": "/",
+        "title": "Home",
+        "isDropdown": false
+      },
+      {
+        "link": "/about",
+        "title": "About Us",
+        "isDropdown": false
+      },
+      {
+        "link": "/services",
+        "title": "Services",
+        "isDropdown": false
+      },
+      {
+        "link": "/contact",
+        "title": "Contact Us",
+        "isDropdown": false
+      },
+      {
+        "link": "/career",
+        "title": "Career",
+        "isDropdown": false
+      },
+      {
+        "link": "/privacy-policy",
+        "title": "Privacy Policy",
+        "isDropdown": false
+      },
+      {
+        "link": "/terms",
+        "title": "Terms & Conditions",
+        "isDropdown": false
+      }
+    ],
+    "menuv2": [
+      {
+        "link": "hero",
+        "title": "Home"
+      },
+      {
+        "link": "about",
+        "title": "About"
+      },
+      {
+        "link": "books",
+        "title": "Books"
+      },
+      {
+        "link": "achievements",
+        "title": "Achievement"
+      },
+      {
+        "link": "events",
+        "title": "Events"
+      },
+      {
+        "link": "reviews",
+        "title": "Testimonial"
+      },
+      {
+        "link": "blog",
+        "title": "Blog"
+      },
+      {
+        "link": "contact",
+        "title": "Contact"
+      }
+    ],
+    "menuv3": [
+      {
+        "link": "hero",
+        "title": "Home"
+      },
+      {
+        "link": "events",
+        "title": "Events"
+      },
+      {
+        "link": "blog",
+        "title": "Blog"
+      }
+    ]
+  }
+}

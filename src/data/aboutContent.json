@@ -1,0 +1,35 @@
+{
+    "aboutContent": {
+        "title": "Crafting your stories, one page at a time: Mobius Technology Solutions.",
+        "description": "Every Story Matters.",
+        "achieveItem": [
+            {
+                "id": 1,
+                "icon": "assets/icons/ebook.svg",
+                "title": "Mission",
+                "description": "Mobius Technology Solutions empowers authors with comprehensive publishing services, fostering diverse voices and making a lasting impact in the literary world.",
+                "linkBtn": "Read more",
+                "btnIcon": "assets/icons/right-arrow.svg",
+                "hashtags": "#NobleBooks #AmplifyingVoices #TopTierPublishing #AuthenticNarratives"
+            },
+            {
+                "id": 1,
+                "icon": "assets/icons/dice-multiple.svg",
+                "title": "Vision",
+                "description": "At Mobius Technology Solutions, we envision a world where every voice resonates deeply through storytelling, transcending boundaries and inspiring positive change. ",
+                "linkBtn": "Read more",
+                "btnIcon": "assets/icons/right-arrow.svg",
+                "hashtags": "#NobleBooks #GlobalVoices #DiverseStories #StorytellingWithoutBoundaries"
+            },
+            {
+                "id": 1,
+                "icon": "assets/icons/goal.svg",
+                "title": "Goals",
+                "description": "Mobius Technology Solutions strives for excellence, innovation, and service, empowering storytellers and shaping the future of literature.",
+                "linkBtn": "Read more",
+                "btnIcon": "assets/icons/right-arrow.svg",
+                "hashtags": "#EmpowerStorytellers #ExcellenceInPublishing #InnovateLiterature"
+            }
+        ]
+    }
+}

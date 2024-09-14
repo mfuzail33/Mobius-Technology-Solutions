@@ -1,0 +1,43 @@
+{
+  "ghostBookTestimonials": {
+    "title": "What people said about our Ghost Writers",
+    "subtitle": "TESTIMONIALS",
+    "testimonialItem": [
+      {
+        "id": 1,
+        "name": "David Roberts",
+        "title": "Ghost Book Writing",
+        "image": "./assets/images/user-2.png",
+        "description": "Mobius Technology Solutions's ghostwriting team brought my story to life beyond my imagination, with unmatched attention to detail and understanding of my vision."
+      },
+      {
+        "id": 2,
+        "name": "Laura Smith",
+        "title": "Ghost Book Writing",
+        "image": "./assets/images/user-1.png",
+        "description": "Mobius Technology Solutions's ghostwriting team exceeded my expectations. They captured my voice perfectly and brought my story to life in ways I never thought possible."
+      },
+      {
+        "id": 3,
+        "name": "Jane Smith",
+        "title": "Ghost Book Writing",
+        "image": "./assets/images/user-2.png",
+        "description": "Mobius Technology Solutions's ghostwriting services exceeded my expectations. They brilliantly crafted my story, making it engaging and captivating for readers."
+      },
+      {
+        "id": 4,
+        "name": "Emily Nguyen",
+        "title": "Ghost Book Writing",
+        "image": "./assets/images/user-1.png",
+        "description": "I'm impressed with Mobius Technology Solutions's ghostwriting. They understood my vision and brought it to life with creativity and professionalism."
+      },
+      {
+        "id": 5,
+        "name": "Michael Garcia",
+        "title": "Ghost Book Writing",
+        "image": "./assets/images/user-2.png",
+        "description": "Working with Mobius Technology Solutions was amazing. Their ghostwriting team skillfully crafted my story, resonating deeply with readers."
+      }
+    ]
+  }
+}

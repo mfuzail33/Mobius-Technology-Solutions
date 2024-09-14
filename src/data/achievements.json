@@ -1,0 +1,51 @@
+{
+  "achievements": {
+    "title": "Services",
+    "subtitle": "Our Services",
+    "icon": "/assets/icons/award.svg",
+    "awards": [
+      {
+        "id": 1,
+        "title": "Ghost Book Writing",
+        "image": "/assets/images/moreServices/1.jpg",
+        "description": "Our professional ghostwriters transform your ideas into compelling narratives, capturing your unique voice with authenticity and creativity.",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "title": "eBook Writing",
+        "image": "/assets/images/moreServices/2.jpg",
+        "description": "We help you craft engaging and informative eBooks, guiding you through every step from concept development to the final draft.",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "title": "Book Editing & Proofreading",
+        "image": "/assets/images/moreServices/3.jpg",
+        "description": "Our meticulous editors refine your manuscript, ensuring clarity, coherence, and grammatical accuracy for a polished final product.",
+        "link": "/"
+      },
+      {
+        "id": 4,
+        "title": "Book Publishing",
+        "image": "/assets/images/moreServices/6.jpg",
+        "description": "We handle formatting, cover design, and distribution on major platforms like Amazon Kindle, making your book accessible globally.",
+        "link": "/"
+      },
+      {
+        "id": 5,
+        "title": "Book Marketing",
+        "image": "/assets/images/moreServices/4.jpg",
+        "description": "Our strategic book marketing services boost your book's visibility and sales through customized plans, including social media and SEO.",
+        "link": "#"
+      },
+      {
+        "id": 6,
+        "title": "Explore More",
+        "image": "/assets/images/moreServices/8.jpg",
+        "description": "Discover expert services to elevate your book journey and reach a wider audience effortlessly.",
+        "link": "/services"
+      }
+    ]
+  }
+}

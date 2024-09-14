@@ -1,0 +1,59 @@
+.containerTeam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.cardTeam {
+    width: 200px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.cardTeam:hover {
+    transform: scale(5.05);
+}
+
+.imgTeam {
+    width: 100%;
+    height: auto;
+}
+
+.infoTeam {
+    padding: 10px;
+    background-color: #E9DDF5;
+}
+
+.nameTeam {
+    margin: 0;
+    font-size: 18px;
+}
+
+.quoteTeam {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+
+    /* Tablet screens */
+    .containerTeam {
+        justify-content: center;
+    }
+
+    .cardTeam {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Desktop screens */
+    .cardTeam {
+        width: calc(25% - 40px);
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "writing": {
+    "title": "What people said about our eBook Writing",
+    "subtitle": "TESTIMONIALS",
+    "testimonialItem": [
+      {
+        "id": 1,
+        "name": "Emily Nguyen",
+        "title": "eBook Writing",
+        "image": "./assets/images/user-1.png",
+        "description": "I'm incredibly impressed with the ebook produced by Mobius Technology Solutions. It's well-researched, engaging, and has helped establish me as an authority in my field."
+      },
+      {
+        "id": 2,
+        "name": "Steven Johnson",
+        "title": "eBook Writing",
+        "image": "./assets/images/user-2.png",
+        "description": "I'm thrilled with the ebook produced by Mobius Technology Solutions. It's well-researched, engaging, and has helped me establish credibility in my field."
+      },
+      {
+        "id": 3,
+        "name": "Emily Hall",
+        "title": "eBook Writing",
+        "image": "./assets/images/user-1.png",
+        "description": "The ebook created by Mobius Technology Solutions exceeded my expectations. It's informative, well-written, and has received positive feedback from readers."
+      },
+      {
+        "id": 4,
+        "name": "Diana Martinez",
+        "title": "eBook Writing",
+        "image": "./assets/images/user-2.png",
+        "description": "Working with NBP on my ebook was a fantastic experience. They delivered a high-quality product that has been instrumental in my online marketing efforts."
+      },
+      {
+        "id": 5,
+        "name": "Matthew Brown",
+        "title": "eBook Writing",
+        "image": "./assets/images/user-1.png",
+        "description": "The ebook crafted by Mobius Technology Solutions surpassed my expectations. It's well-structured, engaging, and has helped me attract a wider audience."
+      }
+    ]
+  }
+}

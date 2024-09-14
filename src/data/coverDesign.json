@@ -1,0 +1,43 @@
+{
+    "coverDesign": {
+        "title": "What people said about our Book Cover Design Services",
+        "subtitle": "TESTIMONIALS",
+        "testimonialItem": [
+            {
+                "id": 1,
+                "name": "Sophie Johnson",
+                "title": "Book Cover Design",
+                "image": "./assets/images/user-2.png",
+                "description": "The book cover designed by Mobius Technology Solutions exceeded my expectations. It perfectly captures the essence of my book and draws readers in at first glance."
+            },
+            {
+                "id": 2,
+                "name": "Ethan Brown",
+                "title": "Book Cover Design",
+                "image": "./assets/images/user-1.png",
+                "description": "I'm thrilled with the custom book cover designed by Mobius Technology Solutions. It's visually striking and has helped attract readers to my work."
+            },
+            {
+                "id": 3,
+                "name": "Olivia Martinez",
+                "title": "Book Cover Design",
+                "image": "./assets/images/user-2.png",
+                "description": "Mobius Technology Solutions's book cover design perfectly captures the essence of my book. It's professional, eye-catching, and reflects the content accurately."
+            },
+            {
+                "id": 4,
+                "name": "Lucas Thompson",
+                "title": "Book Cover Design",
+                "image": "./assets/images/user-1.png",
+                "description": "The custom book cover designed by Mobius Technology Solutions is exceptional. It's beautifully crafted and has received praise from readers and reviewers alike."
+            },
+            {
+                "id": 5,
+                "name": "Ella Wilson",
+                "title": "Book Cover Design",
+                "image": "./assets/images/user-2.png",
+                "description": "I couldn't be happier with the book cover designed by Mobius Technology Solutions. It's elegant, professional, and has elevated the overall presentation of my book."
+            }
+        ]
+    }
+}

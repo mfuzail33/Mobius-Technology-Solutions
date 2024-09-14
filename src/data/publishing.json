@@ -1,0 +1,43 @@
+{
+    "publishingTestimonials": {
+        "title": "What people said about our Book Publishing Services",
+        "subtitle": "TESTIMONIALS",
+        "testimonialItem": [
+            {
+                "id": 1,
+                "name": "Sophia Clark",
+                "title": "Book Publishing",
+                "image": "./assets/images/user-1.png",
+                "description": "Mobius Technology Solutions made the entire process smooth and hassle-free. Their guidance and expertise ensured my book reached its full potential."
+              },
+              {
+                "id": 2,
+                "name": "Nathan Johnson",
+                "title": "Book Publishing",
+                "image": "./assets/images/user-2.png",
+                "description": "Working with Mobius Technology Solutions on my book was a rewarding experience. They provided valuable insights and support throughout the publishing journey."
+              },
+              {
+                "id": 3,
+                "name": "Ella Martinez",
+                "title": "Book Publishing",
+                "image": "./assets/images/user-1.png",
+                "description": "Mobius Technology Solutions guided me through every step with professionalism and expertise, helping me navigate the industry's complexities."
+              },
+              {
+                "id": 4,
+                "name": "Liam Thompson",
+                "title": "Book Publishing",
+                "image": "./assets/images/user-2.png",
+                "description": "I'm extremely pleased with the book publishing services provided by Mobius Technology Solutions. They helped me bring my book to market successfully and efficiently."
+              },
+              {
+                "id": 5,
+                "name": "Ava Wilson",
+                "title": "Book Publishing",
+                "image": "./assets/images/user-1.png",
+                "description": "The services provided by Mobius Technology Solutions exceeded my expectations. They provided valuable insights and support throughout the entire process."
+              }
+        ]
+    }
+}

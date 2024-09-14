@@ -1,0 +1,110 @@
+{
+  "chapter": {
+    "title": "Chapters we've covered",
+    "subtitle": "CHAPTERS",
+    "chapterItem": [
+      {
+        "id": 1,
+        "title": "The Mind Labyrinth",
+        "image": "assets/images/home/TheMindLabyrinth.png",
+        "description": "The Mind's Labyrinth, delves into the depths of human existence, offering readers a thought-provoking journey through the complexities of the mind. With its introspective prose and profound reflections, this narrative challenges readers to explore the intricate pathways of their own consciousness with courage and curiosity. Crafted with a unique perspective on life, love, and the search for meaning, The Mind's Labyrinth resonates with readers from all walks of life, offering valuable insights and perspectives that enrich the human experience."
+      },
+      {
+        "id": 2,
+        "title": "Whispers Unveiled",
+        "image": "assets/images/home/WhispersUnveiled.png",
+        "description": "Whispers Unveiled, delves deep into the recesses of the human mind, exploring the darkest corners of consciousness where secrets lie buried and fears take shape. From the eerie whispers that echo through empty hallways to the unsettling visions that haunt restless dreams, this narrative invites readers to confront their deepest anxieties and delve into the depths of their own psyches."
+      },
+      {
+        "id": 3,
+        "title": "In The Shadows Of Creativity",
+        "image": "assets/images/home/IntheShadowsofCreativity.png",
+        "description": "In the Shadows of Creativity, beckons readers into the enigmatic realm of the creative psyche, where shadows dance and dreams take flight. With each page, the boundaries of reality dissolve, allowing readers to traverse the ethereal landscapes of imagination with abandon. From the depths of despair to the heights of euphoria, this narrative plunges into the depths of human emotion, daring readers to confront the shadows that lurk within."
+      },
+      {
+        "id": 4,
+        "title": "Echoes Beyond Dreamscapes",
+        "image": "assets/images/home/EchoesBeyondDreamscapes.png",
+        "description": "Echoes Beyond Dreamscapes, invites readers to embark on an enchanting journey where love knows no bounds and dreams take flight. Within the pages of this captivating narrative, romance blossoms amidst the ethereal landscapes of the imagination, weaving a tapestry of passion and longing that transcends the constraints of time and space."
+      },
+      {
+        "id": 5,
+        "title": "Venturing Through Veils",
+        "image": "assets/images/home/book2.png",
+        "description": "Venturing Through Veils, beckons readers to embark on a spellbinding odyssey where love and self-discovery intertwine amidst uncharted realms of possibility. With each page turn, readers are transported to exotic landscapes where passion, courage, and redemption await at every turn."
+      },
+      {
+        "id": 6,
+        "title": "Unraveling the Unseen",
+        "image": "assets/images/home/UnravelingTheUnseen.png",
+        "description": "Unraveling the Unseen, opens a window into the murky depths of society, presenting a compelling documentary-style narrative that follows the relentless pursuit of truth by a determined detective. With each revelation, readers are drawn deeper into the labyrinth of intrigue and deception that shrouds the story's central mystery."
+      },
+      {
+        "id": 7,
+        "title": "Unknown Horizons",
+        "image": "assets/images/home/UnknownHorizons.png",
+        "description": "Unknown Horizons, stands as a poignant memoir, offering a glimpse into a life lived on the fringes of possibility. From humble origins to remarkable triumphs, this narrative serves as a testament to the resilience of the human spirit and the limitless potential inherent within each of us. Through candid reflections and profound insights, readers are invited to embark on a deeply personal journey of self-discovery, exploring the trials and triumphs that shape us into who we are."
+      }
+    ]
+  },
+  "chapterv2": {
+    "title": "Chapters we've covered",
+    "subtitle": "CHAPTERS",
+    "chapterItem": [
+      {
+        "id": 1,
+        "chapter": "Chapter 01",
+        "title": "Getting started",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 2,
+        "chapter": "Chapter 02",
+        "title": "The language of gossip box",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 3,
+        "chapter": "Chapter 03",
+        "title": "The rise of trend Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 4,
+        "chapter": "Chapter 04",
+        "title": "The rise of trend Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 5,
+        "chapter": "Chapter 05",
+        "title": "The rise of trend Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 6,
+        "chapter": "Chapter 06",
+        "title": "The rise of trend Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 7,
+        "chapter": "Chapter 07",
+        "title": "Literary Jatra",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 8,
+        "chapter": "Chapter 08",
+        "title": "Non-technical literature",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      },
+      {
+        "id": 9,
+        "chapter": "Chapter 09",
+        "title": "Where is the author?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quod sit amet aspernatur minima deleniti."
+      }
+    ]
+  }
+}

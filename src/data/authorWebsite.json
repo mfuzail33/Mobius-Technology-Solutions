@@ -1,0 +1,43 @@
+{
+    "authorWebsite": {
+        "title": "What people said about our Author Website Services",
+        "subtitle": "TESTIMONIALS",
+        "testimonialItem": [
+            {
+                "id": 1,
+                "name": "Nathan Garcia",
+                "title": "Author Website",
+                "image": "./assets/images/user-1.png",
+                "description": "My author website designed by Mobius Technology Solutions is professional, user-friendly, and visually stunning. It's been instrumental in building my online presence and connecting with readers."
+            },
+            {
+                "id": 2,
+                "name": "Olivia Johnson",
+                "title": "Author Website",
+                "image": "./assets/images/user-2.png",
+                "description": "I'm extremely pleased with the author website designed by Mobius Technology Solutions. It perfectly reflects my brand and has helped me establish credibility as an author."
+            },
+            {
+                "id": 3,
+                "name": "Ethan Brown",
+                "title": "Author Website",
+                "image": "./assets/images/user-1.png",
+                "description": "Mobius Technology Solutions's author website design exceeded my expectations. It's visually appealing, easy to navigate, and has enhanced my online presence significantly."
+            },
+            {
+                "id": 4,
+                "name": "Sophia Thompson",
+                "title": "Author Website",
+                "image": "./assets/images/user-2.png",
+                "description": "The author website designed by Mobius Technology Solutions has been a valuable asset for me. It's helped me showcase my work, connect with readers, and promote my brand effectively."
+            },
+            {
+                "id": 5,
+                "name": "Lucas Wilson",
+                "title": "Author Website",
+                "image": "./assets/images/user-1.png",
+                "description": "I couldn't be happier with my author website designed by Mobius Technology Solutions. It's professional, functional, and has played a key role in expanding my audience reach."
+            }
+        ]
+    }
+}

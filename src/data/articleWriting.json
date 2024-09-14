@@ -1,0 +1,44 @@
+{
+    "articleWriting": {
+      "title": "What people said about our Article Writing & Publication Services",
+      "subtitle": "TESTIMONIALS",
+      "testimonialItem": [
+        {
+          "id": 1,
+          "name": "Ethan Garcia",
+          "title": "Article Writing & Publication",
+          "image": "./assets/images/user-1.png",
+          "description": "Mobius Technology Solutions consistently delivers high-quality articles that resonate with my audience. Their expertise and professionalism have made them my go-to for content creation."
+        },
+        {
+          "id": 2,
+          "name": "Sophie Johnson",
+          "title": "Article Writing & Publication",
+          "image": "./assets/images/user-2.png",
+          "description": "I'm incredibly impressed with the articles produced by Mobius Technology Solutions. They're well-researched, engaging, and have helped me establish credibility in my field."
+        },
+        {
+          "id": 3,
+          "name": "Oliver Brown",
+          "title": "Article Writing & Publication",
+          "image": "./assets/images/user-1.png",
+          "description": "Mobius Technology Solutions's article writing and publication services have been invaluable to me. They consistently deliver high-quality content that resonates with my target audience."
+        },
+        {
+          "id": 4,
+          "name": "Lucas Thompson",
+          "title": "Article Writing & Publication",
+          "image": "./assets/images/user-2.png",
+          "description": "The articles written and published by Mobius Technology Solutions have helped me establish thought leadership in my industry. They're well-written, informative, and relevant to my audience."
+        },
+        {
+          "id": 5,
+          "name": "Isabella Wilson",
+          "title": "Article Writing & Publication",
+          "image": "./assets/images/user-1.png",
+          "description": "I couldn't be happier with the articles produced by Mobius Technology Solutions. They're well-crafted, insightful, and have helped me attract more readers and followers to my platform."
+        }
+      ]
+    }
+  }
+  

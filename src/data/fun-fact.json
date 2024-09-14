@@ -1,0 +1,34 @@
+{
+    "funFacts": {
+        "title": "ALL MILESTONES ACHIEVED",
+        "subtitle": "AWESOME STATS",
+        "bgColor": "#f5ebe6",
+        "funFactsItem": [
+            {
+                "countNumber": 35,
+                "title": "Achievements",
+                "icon": "assets/icons/page.svg"
+            },
+            {
+                "countNumber": 87593,
+                "title": "Active Readers",
+                "icon": "assets/icons/hour-glass.svg"
+            },
+            {
+                "countNumber": 708,
+                "title": "Books Published",
+                "icon": "assets/icons/read-book.svg"
+            },
+            {
+                "countNumber": 1024,
+                "title": "Total Sells",
+                "icon": "assets/icons/cart-alt.svg"
+            },
+            {
+                "countNumber": 65,
+                "title": "Awards",
+                "icon": "assets/icons/award.svg"
+            }
+        ]
+    }
+}

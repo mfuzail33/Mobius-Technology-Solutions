@@ -1,0 +1,43 @@
+{
+    "editingTestimonials": {
+        "title": "What people said about our Book Editing & Proofreading Services",
+        "subtitle": "TESTIMONIALS",
+        "testimonialItem": [
+            {
+                "id": 1,
+                "name": "Jessica Lee",
+                "title": "Book Editing & Proofreading",
+                "image": "./assets/images/user-1.png",
+                "description": "The book editing and proofreading services provided by Mobius Technology Solutions polished my manuscript to perfection. They helped me refine my ideas and present them clearly."
+            },
+            {
+                "id": 2,
+                "name": "Samuel Brown",
+                "title": "Book Editing & Proofreading",
+                "image": "./assets/images/user-2.png",
+                "description": "Mobius Technology Solutions's editing and proofreading services transformed my manuscript. They provided invaluable feedback and ensured that my book met professional standards."
+            },
+            {
+                "id": 3,
+                "name": "Sophia Rodriguez",
+                "title": "Book Editing & Proofreading",
+                "image": "./assets/images/user-1.png",
+                "description": "I'm extremely pleased with the editing and proofreading services provided by Mobius Technology Solutions. They helped me improve the clarity and coherence of my manuscript."
+            },
+            {
+                "id": 4,
+                "name": "Ethan Martinez",
+                "title": "Book Editing & Proofreading",
+                "image": "./assets/images/user-2.png",
+                "description": "Mobius Technology Solutions's editing and proofreading team provided thorough and insightful feedback on my manuscript. Their attention to detail significantly enhanced the quality of my book."
+            },
+            {
+                "id": 5,
+                "name": "Olivia Thompson",
+                "title": "Book Editing & Proofreading",
+                "image": "./assets/images/user-1.png",
+                "description": "The editing and proofreading services provided by Mobius Technology Solutions exceeded my expectations. They helped me refine my writing style and ensure consistency throughout my book."
+            }
+        ]
+    }
+}

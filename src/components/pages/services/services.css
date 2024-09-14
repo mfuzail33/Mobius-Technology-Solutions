@@ -1,0 +1,122 @@
+.horizontal-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-list {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  border-bottom: 2px solid blue;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.tab-list {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  margin-left: 10px;
+  /* Adjust as needed */
+  position: relative;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 120%;
+  z-index: 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional: Adds shadow for better visibility */
+}
+
+/* services.css */
+.mobile-tabs {
+  margin-top: 10px;
+}
+
+.mobile-tabs select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  /* Remove default arrow */
+  max-height: 200px;
+  /* Limit the height of the dropdown */
+  overflow-y: auto;
+  /* Enable vertical scrolling if options exceed max-height */
+  max-width: 100%;
+  /* Limit the width of the dropdown */
+}
+
+.mobile-tabs select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.mobile-tabs select option {
+  font-size: 12px;
+  background-color: #fff;
+  color: #333;
+}
+
+.mobile-tabs select option:hover {
+  background-color: #f4f4f4;
+}
+
+.mobile-tabs select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Ensure dropdown options stay within screen bounds */
+.mobile-tabs select::-ms-expand {
+  display: none;
+  /* Remove arrow in IE */
+}
+
+@media screen and (max-height: 400px) {
+  .mobile-tabs select {
+    max-height: calc(100vh - 100px);
+    /* Adjust height dynamically */
+  }
+}
+
+.dropdown-tab {
+  background-color: #fff;
+  border: 2px solid #8d81e0;
+  color: #8d81e0;
+  font-size: 16px;
+  border-radius: 6px;
+}
