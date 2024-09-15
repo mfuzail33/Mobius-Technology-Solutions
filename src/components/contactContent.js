@@ -60,7 +60,7 @@ const ContactContent = ({ isBg }) => {
     // <!-- ========== Contact section start ========== -->
     <section
       id="contact"
-      className={`section-padding services bg-one`}
+      className={`section-padding services site_bg`}
     >
       <AnimatedBackground />
       <div className="container" style={{ marginTop: '50px' }}>
@@ -215,9 +215,9 @@ const ContactContent = ({ isBg }) => {
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="200"
-            style={{ zIndex: '1' }}
+            style={{ zIndex: 1 }}
           >
-            <div className="contact__address p-30px">
+            <div className="contact-form-box p-30px">
               <ul className="contact__address__content">
                 <li style={{ color: '#ebeaea' }}>
                   <span style={{ color: '#fff' }}>{t('Address')}</span>
@@ -235,9 +235,9 @@ const ContactContent = ({ isBg }) => {
                 </li>
               </ul>
               <h4 style={{ color: '#fff' }}>{t('OurSocialHandles')}</h4>
-              <ul className="social-icon mt-3">
+              <ul className="social-icon mt-3 ">
                 <li>
-                  <a href={'/'}>
+                  <a href={'/'} className="card_icon_bg">
                     <img
                       className="img-fluid"
                       src="assets/icons/facebook.svg"
@@ -248,7 +248,7 @@ const ContactContent = ({ isBg }) => {
                   </a>
                 </li>
                 <li>
-                  <a href={'/'}>
+                  <a href={'/'} className="card_icon_bg">
                     <img
                       className="img-fluid"
                       src="assets/icons/twitter.svg"
@@ -259,7 +259,7 @@ const ContactContent = ({ isBg }) => {
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank">
+                  <a href="/" target="_blank" className="card_icon_bg">
                     <img
                       className="img-fluid"
                       src="assets/icons/linkedin.svg"

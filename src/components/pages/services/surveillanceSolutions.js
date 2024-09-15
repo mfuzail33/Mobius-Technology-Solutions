@@ -1,6 +1,5 @@
 import React from "react";
-import coverImg from "../../../assets/images/books2.png"
-import book from "../../../assets/images/services/ghost/9.jpg"
+import img from "../../../assets/images/moreServices/11.jpg"
 import { useTranslation } from 'react-i18next';
 
 const SurveillanceSolutions = ({ isBg }) => {
@@ -10,8 +9,8 @@ const SurveillanceSolutions = ({ isBg }) => {
         <>
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
-                    <h2 className="display-6">{t('SurveillanceSolutions')}</h2>
-                    <div className="section-divider divider-traingle" style={{ display: 'flex', margin: '50px auto 50px auto' }}></div>
+                    <h2 className="display-6 heading">{t('SurveillanceSolutions')}</h2>
+                    <div className="section-divider divider-traingle_color" style={{ display: 'flex', margin: '50px auto 50px auto' }}></div>
                 </div>
             </section>
 
@@ -30,15 +29,15 @@ const SurveillanceSolutions = ({ isBg }) => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 mb-4 mb-lg-0">
                             <div className="hero__content position-relative">
-                                <h3 className="display-5 m-30px-b">
+                                <h3 className="display-5 m-30px-b heading">
                                     {t('ComprehensiveSecuritySystems')}
                                 </h3>
                                 <p className="mb-5 fs-5">
                                     <ul>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
+                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
                                             <b>{t('CCTVIntrusionDetectionAccessControl')}:</b> {t('CCTVIntrusionDetectionAccessControlDetails')}
                                         </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
+                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
                                             <b>{t('RemoteMonitoring')}:</b> {t('RemoteMonitoringDetails')}
                                         </li>
                                     </ul>
@@ -52,7 +51,7 @@ const SurveillanceSolutions = ({ isBg }) => {
                                         <img
                                             width="500"
                                             className="img-fluid"
-                                            src={book}
+                                            src={img}
                                             alt="Mobius Technology Solutions"
                                         />
                                     </div>

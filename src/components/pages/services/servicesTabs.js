@@ -28,7 +28,7 @@ const truncateLabel = (label, maxLength = 25) => {
 };
 
 const Tab = ({ label, isActive, path }) => (
-    <Link to={path} className={`tab ${isActive ? 'active' : ''}`} title={label}>
+    <Link to={path} className={`tab ${isActive ? 'active' : 'nonActiveTabs'}`} title={label}>
         {truncateLabel(label)}
     </Link>
 );
@@ -89,12 +89,12 @@ const ServicesTabs = ({ isBg }) => {
         { id: 4, label: 'Industrial Machines', path: '/industrialMachines', content: <IndustrialMachines /> },
         { id: 5, label: 'Industrial Safety', path: '/industrialSafety', content: <IndustrialSafety /> },
         { id: 6, label: 'Industrial Solutions', path: '/industrialSolutions', content: <IndustrialSolutions /> },
-        { id: 7, label: 'Oil And Gas Fields', path: '/infrastructural', content: <OilAndGasFields /> },
-        { id: 8, label: 'Surveillance Solutions', path: '/oilAndGasFields', content: <SurveillanceSolutions /> },
-        { id: 9, label: 'Trade Solutions', path: '/rawMaterials', content: <TradeSolutions /> },
-        { id: 10, label: 'Raw Materials', path: '/smartLogistics', content: <RawMaterials /> },
-        { id: 11, label: 'Smart Logistics', path: '/surveillanceSolutions', content: <SmartLogistics /> },
-        { id: 12, label: 'Energy and Power Solutions', path: '/tradeSolutions', content: <EnergyAndPowerSolutions /> },
+        { id: 7, label: 'Oil And Gas Fields', path: '/oilAndGasFields', content: <OilAndGasFields /> },
+        { id: 8, label: 'Surveillance Solutions', path: '/surveillanceSolutions', content: <SurveillanceSolutions /> },
+        { id: 9, label: 'Trade Solutions', path: '/tradeSolutions', content: <TradeSolutions /> },
+        { id: 10, label: 'Raw Materials', path: '/rawMaterials', content: <RawMaterials /> },
+        { id: 11, label: 'Smart Logistics', path: '/smartLogistics', content: <SmartLogistics /> },
+        { id: 12, label: 'Energy and Power Solutions', path: '/energyAndPowerSolutions', content: <EnergyAndPowerSolutions /> },
     ];
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -126,8 +126,8 @@ const ServicesTabs = ({ isBg }) => {
     return (
         <section
             id="services"
-            className={`section-padding services ${isBg === "yes" ? "bg-one" : ""}`}
-            style={{ marginTop: '50px' }}
+            className={`section-padding services site_bg ${isBg === "yes" ? "bg-one" : ""}`}
+            style={{ paddingTop: '150px' }}
         >
             <div className="container">
                 {isMobile ? (

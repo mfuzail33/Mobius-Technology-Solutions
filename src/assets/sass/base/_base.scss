@@ -80,12 +80,334 @@ body.light-mode {
     background-color: $color-primary;
   }
 
+  // Triangle divider
+  .divider-traingle {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color-primary;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: $color-primary;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: $color-primary;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle-white {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle-white:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle-white:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  // Triangle divider on color bg
+  .divider-traingle_color {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle_color:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle_color:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle_color-white {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle_color-white:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle_color-white:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  .author {
+    &__image {
+      position: relative;
+      width: 100%;
+      padding-left: 20px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 20px;
+        z-index: 1;
+        background: $color-primary;
+        border-radius: inherit;
+        height: 100%;
+        width: 90%;
+        border-radius: 5px;
+      }
+
+      .img {
+        position: relative;
+        width: 95%;
+        z-index: 2;
+        border-radius: 5px;
+
+        @include respond(laptop) {
+          width: 100%;
+        }
+      }
+    }
+
+    &__content {
+      @include respond(laptop) {
+        margin-top: 40px;
+      }
+
+      &__desc {
+        padding-left: 0;
+
+        li {
+          list-style: none;
+          margin-bottom: 8px;
+
+          svg {
+            color: $color-primary;
+            font-size: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .card_text {
+    color: #212529
+  }
+
+  .contact {
+    &-form-box {
+      padding: 40px;
+      background-image: $site-bg-light;
+      border: 2px solid $bg-one;
+      border-radius: 8px;
+
+      @include respond(laptop) {
+        padding: 20px;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        margin-bottom: 15px;
+        background-image: linear-gradient(45deg, #fff, #d7d5e2);
+        border-radius: 8px;
+        border: 1px solid #111;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-primary;
+      }
+
+      textarea {
+        min-height: 120px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &__address {
+      height: 100%;
+      background-color: $bg-one;
+
+      iframe {
+        width: 100%;
+        height: 250px;
+        padding-bottom: 20px;
+      }
+
+      &__content {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin-bottom: 30px;
+
+          a {
+            display: block;
+            color: $color-secondary;
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+
+          span {
+            font-weight: 700;
+            font-family: $font-heading;
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .main_heading {
+    color: $color-primary-light
+  }
+
+  .sub_heading {
+    color: $color-primary-dark
+  }
+
+  .dropdown-tab {
+    background-color: transparent;
+    border: 2px solid $color-nonActiveTabs-light;
+    color: $color-nonActiveTabs-light;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+  .tab.active {
+    border-top: .5px solid $color-light;
+    color: $color-light;
+  }
+
+  .nonActiveTabs {
+    color: $color-nonActiveTabs-light
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $site-bg-light;
+    border: 1px solid $color-light;
+    border-radius: 8px;
+    width: 120%;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds shadow for better visibility */
+  }
 }
+
+//Light mode end
+
 
 // Dark Mode
 body.dark-mode {
   background-color: $color-dark-dark-bg;
   color: $color-gray-dark;
+
+  .main_heading {
+    color: $color-light-bg
+  }
+
+  .sub_heading {
+    color: $color-white-light
+  }
 
   a {
     color: $color-primary-dark;
@@ -93,7 +415,7 @@ body.dark-mode {
 
   .button {
     background-color: $color-primary-dark;
-    color: $color-light-dark-bg;
+    color: $color-light-bg;
   }
 
   .navbar-nav li a {
@@ -101,11 +423,13 @@ body.dark-mode {
   }
 
   .site_bg {
-    background: $site-bg-dark;
+    // background: $site-bg-dark;
+    background-color: #000;
   }
 
   .site_bg_none {
-    background: $site-bg-dark;
+    // background: $site-bg-dark;
+    background-color: #000;
   }
 
   .heading_bg_none {
@@ -128,7 +452,331 @@ body.dark-mode {
   .card_icon_bg {
     background-color: $color-primary-dark;
   }
+
+  // Triangle divider
+  .divider-traingle {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color-light-bg;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: $color-light-bg;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: $color-light-bg;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle-white {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle-white:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle-white:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  // Triangle divider on color bg
+  .divider-traingle_color {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color-light-bg;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle_color:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: $color-light-bg;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle_color:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: $color-light-bg;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle_color-white {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+  }
+
+  .divider-traingle_color-white:before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    top: -9px;
+    opacity: 0.4;
+    right: 50%;
+    transform: rotate(45deg);
+  }
+
+  .divider-traingle_color-white:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    top: -9px;
+    left: 45%;
+    opacity: 0.4;
+    transform: rotate(45deg);
+  }
+
+  .author {
+    &__image {
+      position: relative;
+      width: 100%;
+      padding-left: 20px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 20px;
+        z-index: 1;
+        background: $video-shadow-dark;
+        border-radius: inherit;
+        height: 100%;
+        width: 90%;
+        border-radius: 5px;
+      }
+
+      .img {
+        position: relative;
+        width: 95%;
+        z-index: 2;
+        border-radius: 5px;
+
+        @include respond(laptop) {
+          width: 100%;
+        }
+      }
+    }
+
+    &__content {
+      @include respond(laptop) {
+        margin-top: 40px;
+      }
+
+      &__desc {
+        padding-left: 0;
+
+        li {
+          list-style: none;
+          margin-bottom: 8px;
+
+          svg {
+            color: $color-primary;
+            font-size: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .card_text {
+    color: $color-gray-dark
+  }
+
+  .contact {
+    &-form-box {
+      padding: 40px;
+      background-image: $site-bg-dark;
+      border: 2px solid $bg-one;
+      border-radius: 8px;
+
+      @include respond(laptop) {
+        padding: 20px;
+      }
+
+      form {
+        text-align: center;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        margin-bottom: 15px;
+        background: transparent;
+        border-radius: 8px;
+        border: 1px solid $bg-one;
+        color: #fff;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $color-primary;
+      }
+
+      textarea {
+        min-height: 120px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #eeeeeebe;
+        opacity: 1;
+      }
+
+      input:-ms-input-placeholder,
+      textarea:-ms-input-placeholder {
+        color: #eeeeeebe;
+      }
+
+      input::-ms-input-placeholder,
+      textarea::-ms-input-placeholder {
+        color: #eeeeeebe;
+      }
+    }
+
+    &__address {
+      height: 100%;
+      background-color: $bg-one;
+
+      iframe {
+        width: 100%;
+        height: 250px;
+        padding-bottom: 20px;
+      }
+
+      &__content {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin-bottom: 30px;
+
+          a {
+            display: block;
+            color: $color-secondary;
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+
+          span {
+            font-weight: 700;
+            font-family: $font-heading;
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-tab {
+    background-color: transparent;
+    border: 2px solid $color-nonActiveTabs-dark;
+    color: $color-nonActiveTabs-dark;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+  .tab.active {
+    // border-top: .5px solid $color-light;
+    color: $color-light-bg;
+  }
+
+  .nonActiveTabs {
+    color: $color-nonActiveTabs-dark
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $site-bg-dark;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 120%;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds shadow for better visibility */
+  }
 }
+
+//Dark Mode End
+
 
 // Section wrapper
 .section-wrapper {
@@ -197,75 +845,6 @@ body.dark-mode {
 
 .section-divider {
   margin-top: 20px;
-}
-
-// Triangle divider
-.divider-traingle {
-  width: 200px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: $color-primary;
-  opacity: 0.4;
-  position: relative;
-  display: inline-block;
-}
-
-.divider-traingle:before {
-  position: absolute;
-  content: '';
-  width: 18px;
-  height: 18px;
-  background-color: $color-primary;
-  top: -9px;
-  opacity: 0.4;
-  right: 50%;
-  transform: rotate(45deg);
-}
-
-.divider-traingle:after {
-  position: absolute;
-  content: '';
-  width: 18px;
-  height: 18px;
-  background: $color-primary;
-  top: -9px;
-  left: 45%;
-  opacity: 0.4;
-  transform: rotate(45deg);
-}
-
-.divider-traingle-white {
-  width: 200px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #fff;
-  opacity: 0.4;
-  position: relative;
-  display: inline-block;
-}
-
-.divider-traingle-white:before {
-  position: absolute;
-  content: '';
-  width: 18px;
-  height: 18px;
-  background-color: #fff;
-  top: -9px;
-  opacity: 0.4;
-  right: 50%;
-  transform: rotate(45deg);
-}
-
-.divider-traingle-white:after {
-  position: absolute;
-  content: '';
-  width: 18px;
-  height: 18px;
-  background: #fff;
-  top: -9px;
-  left: 45%;
-  opacity: 0.4;
-  transform: rotate(45deg);
 }
 
 // Buttons

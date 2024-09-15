@@ -9,8 +9,8 @@ const AboutUs = ({ isBg }) => {
     return (
         <section
             id="author"
-            className={`section-padding authorv3 ${isBg === "yes" ? "bg-one" : ""}`}
-            style={{ marginTop: '50px' }}
+            className={`section-padding authorv3 site_bg ${isBg === "yes" ? "bg-one" : ""}`}
+            style={{ paddingTop: '150px' }}
         >
             <div className="container">
                 <div className="row">
@@ -30,8 +30,8 @@ const AboutUs = ({ isBg }) => {
                         data-aos-duration="1000"
                         data-aos-delay="200"
                     >
-                        <div className="authorv3__content">
-                            <h3 className="display-5 mb-0">{t('AboutUs')}</h3>
+                        <div className="authorv3__content card_style">
+                            <h3 className="display-5 mb-0 main_heading">{t('AboutUs')}</h3>
                             <p className="m-30px-b text-muted fs-5"></p>
                             <p>{t('AboutUsDesc')}</p>
                         </div>

@@ -13,6 +13,7 @@ import image10 from '../assets/images/moreServices/12.jpg';
 import image11 from '../assets/images/moreServices/13.jpg';
 import image12 from '../assets/images/moreServices/14.jpg';
 import image13 from '../assets/images/moreServices/15.jpg';
+import AnimatedBackground from "./animatedBackground";
 
 const services = [
     { image: image1, title: 'HealthSafetyAndRescue', details: 'HealthSafetyAndRescueDetails', path: '/health' },
@@ -35,14 +36,15 @@ const AllServices = ({ isBg }) => {
     return (
         <section
             id="achievements"
-            className={`section-padding achievement ${isBg === "yes" ? "bg-one" : ""}`}
-            style={{ marginTop: '50px' }}
+            className={`section-padding achievement site_bg`}
+            style={{ paddingTop: '150px' }}
         >
+            <AnimatedBackground />
             <div className="container">
                 <div className="section-title-center text-center">
-                    <h2 className="display-6">{t('ourServices')}</h2>
-                    <span>{t('ourServicesDetails')}</span>
-                    <div className="section-divider divider-traingle"></div>
+                    <h2 className="display-6 heading">{t('ourServices')}</h2>
+                    <span style={{ color: "#f3f3f3" }}>{t('ourServicesDetails')}</span>
+                    <div className="section-divider divider-traingle_color"></div>
                 </div>
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                     {services.map((service, index) => (
@@ -51,15 +53,20 @@ const AllServices = ({ isBg }) => {
                             className="col m-15px-tb"
                             data-aos="fade-up"
                             data-aos-duration="1000"
-                            data-aos-delay={index * 100 + 100}
+                            data-aos-delay={index * 50 + 50}
                         >
                             <PageLink to={service.path}>
-                                <div className="card h-100 translateEffectServices">
+                                <div className="card h-100 translateEffectServices card_style">
                                     <img src={service.image} className="card-img-top" alt="Service" />
                                     <div className="card-body">
                                         <div className="achievement__content">
-                                            <p style={{ fontFamily: 'Philosopher, sans-serif', fontSize: '1.75rem', fontWeight: 700, marginBottom: '15px', lineHeight: 1 }}>{t(service.title)}</p>
-                                            <p>{t(service.details)}</p>
+                                            <p
+                                                style={{ fontFamily: 'Philosopher, sans-serif', fontSize: '1.5rem', fontWeight: 700, marginBottom: '15px', lineHeight: 1 }}
+                                                className="heading_bg_none"
+                                            >
+                                                {t(service.title)}
+                                            </p>
+                                            <p className="card_text" style={{ fontSize: '14px', lineHeight: 'normal' }}>{t(service.details)}</p>
                                         </div>
                                     </div>
                                 </div>

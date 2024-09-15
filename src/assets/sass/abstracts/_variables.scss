@@ -4,9 +4,11 @@
 * Colors
 */
 $color-primary: #0F1020;
-$color-secondary: #6556c4;
 $color-tertiary: #0F1020;
 
+$color-secondary: #3953c5;
+$bg-one: #8d81e0;
+$site-bg-light: linear-gradient(45deg, #000, #3953c5);
 
 // $color-light: #e0cff0;
 $color-light: #fff;
@@ -21,7 +23,7 @@ $color-shadow: rgba(1, 6, 33, 0.06);
 // $bg-one: #130f30;
 // $bg-one: #574da0;
 // billu
-$bg-one: #8d81e0;
+
 // $bg-one: #230920;
 
 // Light Mode Colors
@@ -32,13 +34,16 @@ $color-light-bg: #fff;
 $color-dark-bg: #17142b;
 $color-gray-light: #676768;
 $color-heading-light: #fff;
-$site-bg-light: linear-gradient(45deg, #aea2ff, #472e7b);
 
 // Dark Mode Colors
 $color-primary-dark: #333;
-$color-secondary-dark: #8c7ae6;
+$color-secondary-dark: #3953c5;
 $color-tertiary-dark: #222831;
 $color-light-dark-bg: #2f3640;
 $color-dark-dark-bg: #222831;
 $color-gray-dark: #bdbdbd;
+$video-shadow-dark: #272626;
 $site-bg-dark: linear-gradient(45deg, #000000, #333333);
+$color-white-light: #f3f3f3;
+$color-nonActiveTabs-dark: #928f8f;
+$color-nonActiveTabs-light: #d9d5d5;

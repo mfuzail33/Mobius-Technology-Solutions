@@ -1,6 +1,5 @@
 import React from "react";
-import coverImg from "../../../assets/images/books2.png"
-import book from "../../../assets/images/services/ghost/9.jpg"
+import img from "../../../assets/images/moreServices/1.jpg"
 import { useTranslation } from 'react-i18next';
 
 const Health = ({ isBg }) => {
@@ -10,8 +9,8 @@ const Health = ({ isBg }) => {
         <>
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
-                    <h2 className="display-6">{t('HealthSafetyAndRescue')}</h2>
-                    <div className="section-divider divider-traingle" style={{ display: 'flex', margin: '50px auto 50px auto' }}></div>
+                    <h2 className="display-6 heading">{t('HealthSafetyAndRescue')}</h2>
+                    <div className="section-divider divider-traingle_color" style={{ display: 'flex', margin: '50px auto 50px auto' }}></div>
                 </div>
             </section>
 
@@ -27,18 +26,18 @@ const Health = ({ isBg }) => {
                 <div className="circle x4"></div>
                 <div className="circle x5"></div>
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row">
                         <div className="col-lg-6 mb-4 mb-lg-0">
                             <div className="hero__content position-relative">
                                 <p className="mb-5 fs-5">
                                     <ul>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
+                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
                                             <b>{t('Healthcare Services')}:</b> {t('HealthcareServicesDetails')}
                                         </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
+                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
                                             <b>{t('Emergency Services')}:</b> {t('EmergencyServicesDetails')}
                                         </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
+                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
                                             <b>{t('PublicCommercialSafety')}:</b> {t('PublicCommercialSafetyDetails')}
                                         </li>
                                     </ul>
@@ -52,7 +51,7 @@ const Health = ({ isBg }) => {
                                         <img
                                             width="500"
                                             className="img-fluid"
-                                            src={book}
+                                            src={img}
                                             alt="Mobius Technology Solutions"
                                         />
                                     </div>

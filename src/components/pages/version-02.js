@@ -45,7 +45,7 @@ const Version02 = ({ header, footer }) => {
       {/* Herov2 start */}
       <section
         id="hero"
-        className={`hero hero__padding overflow-hidden position-relative bg-one site_bg`}
+        className={`hero hero__padding overflow-hidden position-relative site_bg`}
       >
         <AnimatedBackground />
         <div className="circle x1"></div>
@@ -75,7 +75,7 @@ const Version02 = ({ header, footer }) => {
             <div className="col-md-7 col-lg-11 m-0px-b md-m-40px-b">
               <div className="hero__content position-relative" >
                 <h1
-                  className="display-4 mb-4 text-capitalize main_heading"
+                  className="display-4 mb-4 text-capitalize heading"
                   style={{
                     textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)",
                     fontSize: '60px',

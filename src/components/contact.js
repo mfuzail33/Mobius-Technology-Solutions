@@ -58,7 +58,7 @@ const Contact = ({ isBg }) => {
     // <!-- ========== Contact section start ========== -->
     <section
       id="contact"
-      className={`p-80px-tb bg-one`}
+      className={`p-80px-tb site_bg`}
     >
       <div className="container">
         <div className="row">
@@ -221,7 +221,7 @@ const Contact = ({ isBg }) => {
             data-aos-delay="200"
             style={{ zIndex: 1 }}
           >
-            <div className="contact__address p-30px">
+            <div className="contact-form-box p-30px">
               <ul className="contact__address__content">
                 <li style={{ color: '#ebeaea' }}>
                   <span style={{ color: '#fff' }}>{t('Address')}</span>
@@ -239,9 +239,9 @@ const Contact = ({ isBg }) => {
                 </li>
               </ul>
               <h4 style={{ color: '#fff' }}>{t('OurSocialHandles')}</h4>
-              <ul className="social-icon mt-3">
+              <ul className="social-icon mt-3 ">
                 <li>
-                  <a href={'/'}>
+                  <a href={'/'} className="card_icon_bg">
                     <img
                       className="img-fluid"
                       src="assets/icons/facebook.svg"
@@ -252,7 +252,7 @@ const Contact = ({ isBg }) => {
                   </a>
                 </li>
                 <li>
-                  <a href={'/'}>
+                  <a href={'/'} className="card_icon_bg">
                     <img
                       className="img-fluid"
                       src="assets/icons/twitter.svg"
@@ -263,7 +263,7 @@ const Contact = ({ isBg }) => {
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank">
+                  <a href="/" target="_blank" className="card_icon_bg">
                     <img
                       className="img-fluid"
                       src="assets/icons/linkedin.svg"

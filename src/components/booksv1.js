@@ -13,14 +13,14 @@ const Booksv1 = ({ isBg }) => {
     // <!-- ========== Books section start ========== -->
     <section
       id="books"
-      className={`booksv1 section-padding  ${isBg === "yes" ? "bg-one" : ""}`}
+      className={`booksv1 section-padding site_bg_none ${isBg === "yes" ? "bg-one" : ""}`}
     >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span>{t('IndustrialSolutions')}</span>
-              <h2 className="display-6">{t('IndustrialSolutionsHeading')}</h2>
+              <span className="subheading_bg_none">{t('IndustrialSolutions')}</span>
+              <h2 className="display-6 heading_bg_none">{t('IndustrialSolutionsHeading')}</h2>
               <div className="section-divider divider-traingle"></div>
             </div>
           </div>
@@ -78,10 +78,10 @@ const Booksv1 = ({ isBg }) => {
             data-aos-delay="200"
           >
             <div className="booksv1__contnet">
-              <h3 className="display-6 m-30px-b">{t('IndustrialSolutionsHeading2')}</h3>
+              <h3 className="display-6 m-30px-b heading_bg_none">{t('IndustrialSolutionsHeading2')}</h3>
               <div className="booksv1__item--wrap">
                 <div className="booksv1__item">
-                  <div className="booksv1__item--icon">
+                  <div className="booksv1__item--icon card_icon_bg">
                     <img
                       className="img-fluid"
                       src={touchSvg}
@@ -91,12 +91,12 @@ const Booksv1 = ({ isBg }) => {
                     />
                   </div>
                   <div className="booksv1__item--text">
-                    <h3>{t('AutomotiveIndustrialSolutions')}</h3>
+                    <h3 className="heading_bg_none">{t('AutomotiveIndustrialSolutions')}</h3>
                     <p>{t('AutomotiveIndustrialSolutionsDetails')}</p>
                   </div>
                 </div>
                 <div className="booksv1__item">
-                  <div className="booksv1__item--icon">
+                  <div className="booksv1__item--icon card_icon_bg">
                     <img
                       className="img-fluid"
                       src={touchSvg}
@@ -106,12 +106,12 @@ const Booksv1 = ({ isBg }) => {
                     />
                   </div>
                   <div className="booksv1__item--text">
-                    <h3>{t('PetrochemicalIndustrialSolutions')}</h3>
+                    <h3 className="heading_bg_none">{t('PetrochemicalIndustrialSolutions')}</h3>
                     <p>{t('PetrochemicalIndustrialSolutionsDetails')}</p>
                   </div>
                 </div>
                 <div className="booksv1__item">
-                  <div className="booksv1__item--icon">
+                  <div className="booksv1__item--icon card_icon_bg">
                     <img
                       className="img-fluid"
                       src={touchSvg}
@@ -121,12 +121,12 @@ const Booksv1 = ({ isBg }) => {
                     />
                   </div>
                   <div className="booksv1__item--text">
-                    <h3>{t('ManufacturingPlantSolutions')}</h3>
+                    <h3 className="heading_bg_none">{t('ManufacturingPlantSolutions')}</h3>
                     <p>{t('ManufacturingPlantSolutionsDetails')}</p>
                   </div>
                 </div>
                 <div className="booksv1__item">
-                  <div className="booksv1__item--icon">
+                  <div className="booksv1__item--icon card_icon_bg">
                     <img
                       className="img-fluid"
                       src={touchSvg}
@@ -136,12 +136,12 @@ const Booksv1 = ({ isBg }) => {
                     />
                   </div>
                   <div className="booksv1__item--text">
-                    <h3>{t('VigilanceMonitoringForFactories')}</h3>
+                    <h3 className="heading_bg_none">{t('VigilanceMonitoringForFactories')}</h3>
                     <p>{t('VigilanceMonitoringForFactoriesDetails')}</p>
                   </div>
                 </div>
                 <div className="booksv1__item">
-                  <div className="booksv1__item--icon">
+                  <div className="booksv1__item--icon card_icon_bg">
                     <img
                       className="img-fluid"
                       src={touchSvg}
@@ -151,7 +151,7 @@ const Booksv1 = ({ isBg }) => {
                     />
                   </div>
                   <div className="booksv1__item--text">
-                    <h3>{t('AdditiveManufacturing')}</h3>
+                    <h3 className="heading_bg_none">{t('AdditiveManufacturing')}</h3>
                     <p>{t('AdditiveManufacturingDetails')}</p>
                   </div>
                 </div>

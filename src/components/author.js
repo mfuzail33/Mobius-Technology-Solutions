@@ -1,8 +1,8 @@
 import GLightbox from "glightbox";
 import React, { useEffect } from "react";
 import { useTranslation } from 'react-i18next';
-import checkIcon from '../assets/icons/check.svg';
 import video from '../assets/images/serviceVideo2.mp4'
+import { FaCheck } from "react-icons/fa";
 
 const Author = ({ isBg }) => {
   const { t } = useTranslation();
@@ -17,19 +17,19 @@ const Author = ({ isBg }) => {
     // <!-- ========== Author section start ========== -->
     <section
       id="author"
-      className={`section-padding author ${isBg === "yes" ? "bg-one" : ""}`}
+      className={`section-padding author site_bg`}
     >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
-            <div className="section-title-center text-center">
-              <span>{t('whoWeAreHeading')}</span>
-              <h2 className="display-6">{t('whoWeAre')}</h2>
-              <div className="section-divider divider-traingle"></div>
+            <div className="heading text-center">
+              <span className="heading">{t('whoWeAreHeading')}</span>
+              <h2 className="display-6 heading">{t('whoWeAre')}</h2>
+              <div className="section-divider divider-traingle_color"></div>
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row" style={{paddingTop:'70px'}}>
           {/* <!-- author image --> */}
           <div
             className="col-lg-6"
@@ -53,49 +53,25 @@ const Author = ({ isBg }) => {
             data-aos-delay="200"
           >
             <div className="author__content">
-              <h2 className="m-20px-b">{t('whoWeAreSubHeading')}</h2>
-              <p>
+              <h2 className="m-20px-b heading">{t('whoWeAreSubHeading')}</h2>
+              <p style={{ color: "#f3f3f3" }}>
                 {t('whoWeAreDetails')}
               </p>
               <ul className="author__content__desc m-30px-b">
-                <li>
-                  <img
-                    className="img-fluid"
-                    src={checkIcon}
-                    alt="icon"
-                    width="25"
-                    height="25"
-                  />
+                <li style={{ color: "#f3f3f3" }}>
+                  <FaCheck size={15} style={{ color: "#f3f3f3", marginRight: '10px' }} />
                   {t('InnovativeSolutionProviders')}
                 </li>
-                <li>
-                  <img
-                    className="img-fluid"
-                    src={checkIcon}
-                    alt="icon"
-                    width="25"
-                    height="25"
-                  />
+                <li style={{ color: "#f3f3f3" }}>
+                  <FaCheck size={15} style={{ color: "#f3f3f3", marginRight: '10px' }} />
                   {t('IndustryInsightExperts')}
                 </li>
-                <li>
-                  <img
-                    className="img-fluid"
-                    src={checkIcon}
-                    alt="icon"
-                    width="25"
-                    height="25"
-                  />
+                <li style={{ color: "#f3f3f3" }}>
+                  <FaCheck size={15} style={{ color: "#f3f3f3", marginRight: '10px' }} />
                   {t('EfficiencyEnhancementFocus')}
                 </li>
-                <li>
-                  <img
-                    className="img-fluid"
-                    src={checkIcon}
-                    alt="icon"
-                    width="25"
-                    height="25"
-                  />
+                <li style={{ color: "#f3f3f3" }}>
+                  <FaCheck size={15} style={{ color: "#f3f3f3", marginRight: '10px' }} />
                   {t('LongTermSuccess')}
                 </li>
               </ul>

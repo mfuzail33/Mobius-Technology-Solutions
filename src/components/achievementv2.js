@@ -23,14 +23,14 @@ const Achievementv2 = ({ isBg }) => {
   return (
     <section
       id="achievements"
-      className={`section-padding achievement ${isBg === "yes" ? "bg-one" : ""}`}
+      className={`section-padding achievement site_bg_none ${isBg === "yes" ? "bg-one" : ""}`}
     >
       <div className="container">
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span>{t('services')}</span>
-              <h2 className="display-6">{t('ourServices')}</h2>
+              <span className="subheading_bg_none">{t('services')}</span>
+              <h2 className="display-6 heading_bg_none">{t('ourServices')}</h2>
               <div className="section-divider divider-traingle"></div>
             </div>
           </div>
@@ -42,15 +42,20 @@ const Achievementv2 = ({ isBg }) => {
               className="col m-15px-tb"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay={index * 100 + 100} 
+              data-aos-delay={index * 100 + 100}
             >
               <PageLink to={'/services'}>
-                <div className="card h-100 translateEffectServices">
+                <div className="card h-100 translateEffectServices card_style">
                   <img src={service.image} className="card-img-top" alt="Service" />
                   <div className="card-body">
                     <div className="achievement__content">
-                      <p style={{ fontFamily: 'Philosopher, sans-serif', fontSize: '1.75rem', fontWeight: 700, marginBottom: '15px' }}>{t(service.title)}</p>
-                      <p>{t(service.details)}</p>
+                      <p
+                        style={{ fontFamily: 'Philosopher, sans-serif', fontSize: '1.75rem', fontWeight: 700, marginBottom: '15px' }}
+                        className="heading_bg_none"
+                      >
+                        {t(service.title)}
+                      </p>
+                      <p className="card_text">{t(service.details)}</p>
                     </div>
                   </div>
                 </div>

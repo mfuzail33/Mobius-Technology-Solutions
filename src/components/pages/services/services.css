@@ -14,10 +14,6 @@
   border-bottom: 2px solid transparent;
 }
 
-.tab.active {
-  border-bottom: 2px solid blue;
-}
-
 .tab-content {
   margin-top: 20px;
 }
@@ -39,21 +35,6 @@
   margin-left: 10px;
   /* Adjust as needed */
   position: relative;
-}
-
-.dropdown-content {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-top: none;
-  width: 120%;
-  z-index: 1;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  /* Optional: Adds shadow for better visibility */
 }
 
 /* services.css */
@@ -113,10 +94,3 @@
   }
 }
 
-.dropdown-tab {
-  background-color: #fff;
-  border: 2px solid #8d81e0;
-  color: #8d81e0;
-  font-size: 16px;
-  border-radius: 6px;
-}

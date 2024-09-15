@@ -12,7 +12,7 @@ const Footer = ({ menu, isBg }) => {
     <>
       {/* <CtaV3 /> */}
       <footer
-        className={`footer overflow-hidden ${isBg === "yes" ? "bg-one-old" : ""}`}
+        className={`footer overflow-hidden site_bg ${isBg === "yes" ? "bg-one-old" : ""}`}
         style={{ zIndex: 1 }}
       >
         <div className="container">
@@ -20,14 +20,14 @@ const Footer = ({ menu, isBg }) => {
             <div className="row">
               <div className="col-lg-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-lg-0">
                 <a href="/" className="align-self-start">
-                  <h1 className="m-0">Mobius</h1>
+                  <h1 className="m-0 heading">Mobius</h1>
                   {/* <img src={siteLogo.logo} alt={siteLogo.alt} /> */}
                 </a>
-                <p style={{ color: '#111', marginTop: '10px' }}>
+                <p style={{ marginTop: '10px' }} className="heading">
                   Empowering Tomorrow Today with Innovation and Precision: Your Tech Evolution Starts Here
                 </p>
               </div>
-              
+
               <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
                 <ul className="footer__menu">
                   {menu?.map((data, i) => (
@@ -35,6 +35,7 @@ const Footer = ({ menu, isBg }) => {
                       <PageLink
                         activeClass="active"
                         className="benefits"
+                        style={{ color: '#fff' }}
                         to={`${data.link}`}
                         spy={true}
                         smooth={true}
@@ -56,7 +57,7 @@ const Footer = ({ menu, isBg }) => {
                     ""
                   ) : (
                     <li>
-                      <a href={socialLink.facebook}>
+                      <a href={socialLink.facebook} className="card_icon_bg">
                         <img
                           className="img-fluid"
                           src="assets/icons/facebook.svg"
@@ -71,9 +72,9 @@ const Footer = ({ menu, isBg }) => {
                     ""
                   ) : (
                     <li>
-                      <a href={socialLink.twitter}>
+                      <a href={socialLink.twitter} className="card_icon_bg">
                         <img
-                          className="img-fluid"
+                          className="img-fluid "
                           src="assets/icons/twitter.svg"
                           alt="icon"
                           width="25"
@@ -86,7 +87,7 @@ const Footer = ({ menu, isBg }) => {
                     ""
                   ) : (
                     <li>
-                      <a href={socialLink.linkedin}>
+                      <a href={socialLink.linkedin} className="card_icon_bg">
                         <img
                           className="img-fluid"
                           src="assets/icons/linkedin.svg"
@@ -102,13 +103,13 @@ const Footer = ({ menu, isBg }) => {
             </div>
           </div>
 
-          <hr />
+          <hr className="heading" />
           <div className="footer__copyright m-20px-t m-20px-b">
             <div className="row">
               <div className="col-12">
-                <p className="m-0 text-center" style={{ color: '#111' }}>
+                <p className="m-0 text-center heading" >
                   &copy; {footer.copyright}
-                  by <a href="#">{footer.name}</a>
+                  by <a href="#" style={{ color: '#fff' }}>{footer.name}</a>
                 </p>
               </div>
             </div>

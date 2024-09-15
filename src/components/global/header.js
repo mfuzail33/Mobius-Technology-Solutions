@@ -75,9 +75,10 @@ const Header = ({ header }) => {
       <div className="container">
         <div className="row">
           <Navbar bg="none" expand="lg">
-            <a className="navbar-brand" href="/">
+            {/* <a className="navbar-brand" href="/">
               <img src={siteLogo.logo} alt={siteLogo.alt} />
-            </a>
+            </a> */}
+            <h2 className="main_heading">Mobius</h2>
             <Navbar.Toggle aria-controls="navbarSupportedContent">
               <span></span>
               <span></span>
@@ -107,7 +108,7 @@ const Header = ({ header }) => {
 
                 <li className="nav-item dropdown" ref={langDropdownRef} style={{ fontWeight: 500, alignItems: 'center' }}>
                   <span
-                    className="nav-link dropdown-toggle"
+                    className="nav-link main_heading dropdown-toggle"
                     role="button"
                     onClick={toggleLangDropdown}
                     aria-expanded={isLangDropdownOpen}
@@ -117,7 +118,7 @@ const Header = ({ header }) => {
                   <ul className={isLangDropdownOpen ? "dropdown-menu show" : "dropdown-menu"} style={{ marginTop: '280px' }}>
                     {Object.entries(languageOptions).map(([key, name]) => (
                       <li key={key}>
-                        <button onClick={() => changeLanguage(key)} className="dropdown-item">
+                        <button onClick={() => changeLanguage(key)} className="dropdown-item main_heading">
                           {name}
                         </button>
                       </li>
@@ -126,8 +127,12 @@ const Header = ({ header }) => {
                 </li>
 
                 <li className="nav-item">
-                  <button onClick={toggleTheme} className="btn theme-toggle" >
-                    {theme === "light" ? <FaMoon /> : <FaSun />}
+                  <button onClick={toggleTheme} className="btn theme-toggle">
+                    {theme === "light" ? (
+                      <FaMoon className="icon-moon" />
+                    ) : (
+                      <FaSun className="icon-sun" />
+                    )}
                   </button>
                 </li>
 
