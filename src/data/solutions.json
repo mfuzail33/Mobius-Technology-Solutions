@@ -1,0 +1,22 @@
+{
+    "solutions": {
+        "item": [
+            {
+                "id": 1,
+                "image": "./assets/images/solutions/1.jpg"
+            },
+            {
+                "id": 2,
+                "image": "./assets/images/solutions/2.jpg"
+            },
+            {
+                "id": 3,
+                "image": "./assets/images/solutions/3.jpg"
+            },
+            {
+                "id": 4,
+                "image": "./assets/images/solutions/4.jpg"
+            }
+        ]
+    }
+}

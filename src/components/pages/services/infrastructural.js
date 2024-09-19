@@ -2,9 +2,12 @@ import React from "react";
 import img from "../../../assets/images/moreServices/InfrastructuralSolutions2.jpg"
 import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
+import { useMediaQuery } from 'react-responsive';
+import CustomSwiper from "../swiper";
 
 const Infrastructural = ({ isBg }) => {
     const { t } = useTranslation();
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
         <>
@@ -20,7 +23,7 @@ const Infrastructural = ({ isBg }) => {
                 id="hero"
                 className={`hero hero__padding overflow-hidden position-relative
                     }`}
-                style={{ paddingTop: '100px', zIndex: 0 }}
+                style={{ paddingTop: isMobile ? '0px' : '100px', zIndex: 0 }}
             >
                 <div className="circle x1"></div>
                 <div className="circle x2"></div>
@@ -63,8 +66,41 @@ const Infrastructural = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Engineering Services:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Engineering Services Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Core Solutions:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Core Solutions Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Infrastructure Automation:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Infrastructure Automation Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Safety Standards and Structural Integrity:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Safety Standards and Structural Integrity Desc')}
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <CustomSwiper dataType="infrastructural" />
             </section>
         </>
     );

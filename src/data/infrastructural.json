@@ -1,0 +1,30 @@
+{
+    "infrastructural": {
+        "item": [
+            {
+                "id": 1,
+                "image": "./assets/images/infrastructural/1.jpg"
+            },
+            {
+                "id": 2,
+                "image": "./assets/images/infrastructural/2.jpg"
+            },
+            {
+                "id": 3,
+                "image": "./assets/images/infrastructural/3.jpg"
+            },
+            {
+                "id": 4,
+                "image": "./assets/images/infrastructural/4.jpg"
+            },
+            {
+                "id": 5,
+                "image": "./assets/images/infrastructural/5.jpg"
+            },
+            {
+                "id": 6,
+                "image": "./assets/images/infrastructural/6.jpg"
+            }
+        ]
+    }
+}

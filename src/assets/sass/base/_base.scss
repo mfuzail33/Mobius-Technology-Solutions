@@ -409,7 +409,9 @@ body.light-mode {
     /* Optional: Adds shadow for better visibility */
   }
 
-
+  .slider_images {
+    box-shadow: $color-white-light;
+  }
 }
 
 //Light mode end
@@ -793,7 +795,6 @@ body.dark-mode {
     /* Optional: Adds shadow for better visibility */
   }
 }
-
 //Dark Mode End
 
 

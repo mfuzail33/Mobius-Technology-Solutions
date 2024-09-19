@@ -1,0 +1,22 @@
+{
+    "automation": {
+        "item": [
+            {
+                "id": 1,
+                "image": "./assets/images/automation/1.jpg"
+            },
+            {
+                "id": 2,
+                "image": "./assets/images/automation/2.jpg"
+            },
+            {
+                "id": 3,
+                "image": "./assets/images/automation/3.jpg"
+            },
+            {
+                "id": 4,
+                "image": "./assets/images/automation/4.jpg"
+            }
+        ]
+    }
+}

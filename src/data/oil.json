@@ -1,0 +1,26 @@
+{
+    "oil": {
+        "item": [
+            {
+                "id": 1,
+                "image": "./assets/images/oil/1.jpg"
+            },
+            {
+                "id": 2,
+                "image": "./assets/images/oil/2.jpg"
+            },
+            {
+                "id": 3,
+                "image": "./assets/images/oil/3.jpg"
+            },
+            {
+                "id": 4,
+                "image": "./assets/images/oil/4.jpg"
+            },
+            {
+                "id": 5,
+                "image": "./assets/images/oil/5.jpg"
+            }
+        ]
+    }
+}

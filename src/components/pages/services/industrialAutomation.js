@@ -2,8 +2,12 @@ import React from "react";
 import img from "../../../assets/images/moreServices/industrialAutomation2.jpg"
 import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
+import { useMediaQuery } from 'react-responsive';
+import CustomSwiper from "../swiper";
+
 const IndustrialAutomation = ({ isBg }) => {
     const { t } = useTranslation();
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
         <>
@@ -19,7 +23,7 @@ const IndustrialAutomation = ({ isBg }) => {
                 id="hero"
                 className={`hero hero__padding overflow-hidden position-relative
                     }`}
-                style={{ paddingTop: '100px', zIndex: 0 }}
+                style={{ paddingTop: isMobile ? '0px' : '100px', zIndex: 0 }}
             >
                 <div className="circle x1"></div>
                 <div className="circle x2"></div>
@@ -59,8 +63,33 @@ const IndustrialAutomation = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Digitalization Solutions:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Automation Technologies Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Key Automation Services:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Key Automation Services Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Digitalization Solutions:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Digitalization Solutions Desc')}
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <CustomSwiper dataType="automation" />
             </section>
         </>
     );

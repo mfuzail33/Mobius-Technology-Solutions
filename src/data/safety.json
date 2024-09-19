@@ -1,0 +1,34 @@
+{
+    "safety": {
+        "item": [
+            {
+                "id": 1,
+                "image": "./assets/images/safety/1.jpg"
+            },
+            {
+                "id": 2,
+                "image": "./assets/images/safety/2.jpg"
+            },
+            {
+                "id": 3,
+                "image": "./assets/images/safety/3.jpg"
+            },
+            {
+                "id": 4,
+                "image": "./assets/images/safety/4.jpg"
+            },
+            {
+                "id": 5,
+                "image": "./assets/images/safety/5.jpg"
+            },
+            {
+                "id": 6,
+                "image": "./assets/images/safety/6.jpg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/safety/7.jpg"
+            }
+        ]
+    }
+}

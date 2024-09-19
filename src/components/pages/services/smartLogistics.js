@@ -2,9 +2,12 @@ import React from "react";
 import img from "../../../assets/images/moreServices/smart2.png"
 import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
+import { useMediaQuery } from 'react-responsive';
+import CustomSwiper from "../swiper";
 
 const SmartLogistics = ({ isBg }) => {
     const { t } = useTranslation();
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
         <>
@@ -20,7 +23,7 @@ const SmartLogistics = ({ isBg }) => {
                 id="hero"
                 className={`hero hero__padding overflow-hidden position-relative
                     }`}
-                style={{ paddingTop: '100px', zIndex: 0 }}
+                style={{ paddingTop: isMobile ? '0px' : '100px', zIndex: 0 }}
             >
                 <div className="circle x1"></div>
                 <div className="circle x2"></div>
@@ -60,8 +63,25 @@ const SmartLogistics = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('IoT and AI-Driven Logistics:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('IoT and AI-Driven Logistics Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Key Technologies:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Key Technologies Desc')}
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <CustomSwiper dataType="smart" />
             </section>
         </>
     );

@@ -2,9 +2,12 @@ import React from "react";
 import img from "../../../assets/images/moreServices/industrialSolutions2.png"
 import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
+import { useMediaQuery } from 'react-responsive';
+import CustomSwiper from "../swiper";
 
 const IndustrialSolutions = ({ isBg }) => {
     const { t } = useTranslation();
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
         <>
@@ -20,7 +23,7 @@ const IndustrialSolutions = ({ isBg }) => {
                 id="hero"
                 className={`hero hero__padding overflow-hidden position-relative
                     }`}
-                style={{ paddingTop: '100px', zIndex: 0 }}
+                style={{ paddingTop: isMobile ? '0px' : '100px', zIndex: 0 }}
             >
                 <div className="circle x1"></div>
                 <div className="circle x2"></div>
@@ -62,7 +65,7 @@ const IndustrialSolutions = ({ isBg }) => {
 
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" style={{ paddingBottom: isMobile ? '50px' : '0px' }}>
                             <div className="hero__author text-center">
                                 <div className="hero__author--inner3">
                                     <div className="hero__author--inner3--wrapper">
@@ -121,6 +124,7 @@ const IndustrialSolutions = ({ isBg }) => {
                         </div>
                     </div>
                 </div>
+                <CustomSwiper dataType="solutions" />
             </section>
         </>
     );

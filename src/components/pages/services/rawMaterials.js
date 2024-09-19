@@ -2,9 +2,12 @@ import React from "react";
 import img from "../../../assets/images/moreServices/raw2.png"
 import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
+import { useMediaQuery } from 'react-responsive';
+import CustomSwiper from "../swiper";
 
 const RawMaterials = ({ isBg }) => {
     const { t } = useTranslation();
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
         <>
@@ -20,7 +23,7 @@ const RawMaterials = ({ isBg }) => {
                 id="hero"
                 className={`hero hero__padding overflow-hidden position-relative
                     }`}
-                style={{ paddingTop: '100px', zIndex: 0 }}
+                style={{ paddingTop: isMobile ? '0px' : '100px', zIndex: 0 }}
             >
                 <div className="circle x1"></div>
                 <div className="circle x2"></div>
@@ -60,8 +63,25 @@ const RawMaterials = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Material Sourcing and Supply:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Material Sourcing and Supply Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Key Materials:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Key Materials Desc')}
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <CustomSwiper dataType="raw" />
             </section>
         </>
     );

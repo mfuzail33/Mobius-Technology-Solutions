@@ -4,6 +4,7 @@ import './services.css';
 import { useMediaQuery } from 'react-responsive';
 import { FaAngleDown } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import Health from './health';
 import Infrastructural from './infrastructural';
 import IndustrialAutomation from './industrialAutomation';
@@ -63,25 +64,20 @@ const DesktopTabs = ({ tabs, activePath, isDropdownOpen, toggleDropdown, dropdow
     );
 };
 
-const selectElement = document.querySelector('.mobile-tabs select');
+const MobileTabs = ({ tabs }) => {
+    const navigate = useNavigate();
 
-selectElement.addEventListener('click', function () {
-  this.classList.toggle('open');
-});
+    const handleTabChange = (e) => {
+        const selectedTabId = parseInt(e.target.value, 10);
+        const selectedTab = tabs.find(tab => tab.id === selectedTabId);
+        if (selectedTab) {
+            navigate(selectedTab.path); 
+        }
+    };
 
-document.addEventListener('click', function (event) {
-  if (!selectElement.contains(event.target)) {
-    selectElement.classList.remove('open');
-  }
-});
-
-const MobileTabs = ({ tabs, activeTab, handleTabClick }) => {
     return (
         <div className="mobile-tabs">
-            <select
-                value={activeTab}
-                onChange={(e) => handleTabClick(parseInt(e.target.value))}
-            >
+            <select onChange={handleTabChange}>
                 {tabs.map((tab) => (
                     <option key={tab.id} value={tab.id}>{tab.label}</option>
                 ))}
@@ -110,10 +106,10 @@ const ServicesTabs = ({ isBg }) => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
-    const isMobile = useMediaQuery({ maxWidth: 768 }); // Adjust the breakpoint as needed
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     const handleTabClick = (tabId) => {
-        setIsDropdownOpen(false); // Close dropdown on selection
+        setIsDropdownOpen(false);
     };
 
     const toggleDropdown = () => {
@@ -125,7 +121,6 @@ const ServicesTabs = ({ isBg }) => {
             setIsDropdownOpen(false);
         }
     };
-
 
     useEffect(() => {
         document.addEventListener('click', handleClickOutside);
@@ -142,7 +137,7 @@ const ServicesTabs = ({ isBg }) => {
         >
             <div className="container">
                 {isMobile ? (
-                    <MobileTabs tabs={tabs} activeTab={location.pathname} handleTabClick={handleTabClick} />
+                    <MobileTabs tabs={tabs} />
                 ) : (
                     <DesktopTabs
                         tabs={tabs}

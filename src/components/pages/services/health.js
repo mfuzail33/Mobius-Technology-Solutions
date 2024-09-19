@@ -2,9 +2,12 @@ import React from "react";
 import img from "../../../assets/images/moreServices/health2.jpg"
 import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
+import { useMediaQuery } from 'react-responsive';
+import CustomSwiper from "../swiper";
 
 const Health = ({ isBg }) => {
     const { t } = useTranslation();
+    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
         <>
@@ -20,8 +23,7 @@ const Health = ({ isBg }) => {
                 id="hero"
                 className={`hero hero__padding overflow-hidden position-relative
                     }`}
-                style={{ paddingTop: '100px', zIndex: 0 }}
-            >
+                style={{ paddingTop: isMobile ? '0px' : '100px', paddingBottom: isMobile ? '0px' : '', zIndex: 0 }}            >
                 <div className="circle x1"></div>
                 <div className="circle x2"></div>
                 <div className="circle x3"></div>
@@ -60,8 +62,41 @@ const Health = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Healthcare Equipment and Services:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Healthcare Equipment and Services Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Key Medical Devices:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Key Medical Devices Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Emergency Medical and Public Safety Equipment:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Emergency Medical and Public Safety Equipment Desc')}
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 heading">
+                                {t('Rescue and Disaster Technologies:')}
+                            </h3>
+                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                {t('Rescue and Disaster Technologies Desc')}
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <CustomSwiper dataType="health" />
             </section>
         </>
     );

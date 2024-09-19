@@ -1,0 +1,22 @@
+{
+    "smart": {
+        "item": [
+            {
+                "id": 1,
+                "image": "./assets/images/smart/1.jpg"
+            },
+            {
+                "id": 2,
+                "image": "./assets/images/smart/2.jpg"
+            },
+            {
+                "id": 3,
+                "image": "./assets/images/smart/3.jpg"
+            },
+            {
+                "id": 4,
+                "image": "./assets/images/smart/4.jpg"
+            }
+        ]
+    }
+}
