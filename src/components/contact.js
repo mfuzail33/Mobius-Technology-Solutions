@@ -1,13 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { contactFormAction, socialLink } from "../global";
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import { postImg } from "./api";
 
 const Contact = ({ isBg }) => {
   const form = useRef();
   const { t } = useTranslation();
+  const [loading, setLoading] = useState(false);
+  const [disable, setDisable] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     middleName: "",
@@ -20,6 +22,7 @@ const Contact = ({ isBg }) => {
     email: "",
     titleOfDocument: "",
     descriptionOfDocument: "",
+    doc: null,
   });
 
   const handleChange = (e) => {
@@ -30,28 +33,96 @@ const Contact = ({ isBg }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    try {
-      emailjs.sendForm('service_l5plqr3', 'template_pkctf3l', form.current, 'jyRqGd4trY6ltxXOX')
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-    } catch (error) {
-      console.log('Error occurred:', error);
-    } finally {
-      resetForm();
-    }
+    const templateParams = {
+      firstName: formData.firstName,
+      middleName: formData.middleName,
+      lastName: formData.lastName,
+      company: formData.company,
+      role: formData.role,
+      website: formData.website,
+      companyAddress: formData.companyAddress,
+      country: formData.country,
+      email: formData.email,
+      titleOfDocument: formData.titleOfDocument,
+      descriptionOfDocument: formData.descriptionOfDocument,
+      doc: formData.doc,
+    };
+
+    const data = {
+      service_id: 'service_wuy13ur',
+      template_id: 'template_zbcnaag',
+      user_id: 'YSaRy4lUCYNjX1-KA',
+      template_params: templateParams
+    };
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('SUCCESS!');
+          alert('Contact form submitted successfully!');
+        } else {
+          response.json().then(data => {
+            console.error('Failed to send email:', data);
+            alert('Error submitting contact form, Please try again later.' + JSON.stringify(data));
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error sending email:', error);
+        alert('Oops... ' + error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+        resetForm();
+      });
   };
 
   const resetForm = () => {
     form.current.reset();
+  };
+
+  const handleFileChange = async (event) => {
+    const file = event.target.files[0];
+    if (!file) {
+      console.log('No file selected');
+      return;
+    }
+
+    setDisable(true);
+
+    const originalName = file.name;
+    const nameWithoutSpaces = originalName.replace(/\s/g, '');
+    const randomFourDigits = Math.floor(1000 + Math.random() * 9000);
+    const modifiedName = `${nameWithoutSpaces.split('.').slice(0, -1).join('.')}${randomFourDigits}.${originalName.split('.').pop()}`;
+
+    const modifiedFile = new File([file], modifiedName, { type: file.type });
+
+    try {
+      const pdfUrl = await postImg(modifiedFile);
+      if (pdfUrl) {
+        setFormData(formData => ({
+          ...formData,
+          doc: pdfUrl
+        }));
+      } else {
+        console.log('File upload failed, no URL returned');
+      }
+    } catch (error) {
+      console.error('File upload failed:', error);
+    } finally {
+      setLoading(false);
+      setDisable(false);
+    }
   };
 
   return (
@@ -198,16 +269,19 @@ const Contact = ({ isBg }) => {
 
                 <div className="mb-3">
                   <input
+                    accept=".pdf,.doc,.docx"
                     type="file"
                     className="form-control"
-                    name="document"
+                    name="doc"
+                    onChange={handleFileChange}
                   />
                 </div>
-
                 <div className="d-flex justify-content-end">
-                  <button type="submit" className="button button__primary" style={{ borderRadius: '8px' }}>
-                    <span>{t('Submit')}</span>
-                  </button>
+                  {!disable && (
+                    <button type="submit" className="button button__primary" style={{ borderRadius: '8px' }} disabled={disable}>
+                      {loading ? <span>{t('Submitting...')}</span> : <span>{t('Submit')}</span>}
+                    </button>
+                  )}
                 </div>
               </form>
             </div>
@@ -224,10 +298,9 @@ const Contact = ({ isBg }) => {
             <div className="contact-form-box p-30px">
               <ul className="contact__address__content">
                 <li style={{ color: '#ebeaea' }}>
-                  <span style={{ color: '#fff' }}>{t('Address')}</span>
-                  lorem ipsum
-                  <br />
-                  dolor salet
+                  <span style={{ color: '#fff' }}>{t('Addresses')}</span>
+                  <b>{t('Office')}: </b>03-X, Ground Floor, Block 03, Business Bay, Sector F DHA Phase 1, Islamabad.<br />
+                  <b>{t('Warehouse & Workshop')}: </b>Property Number CB 4, IJP road, Ward 2, near Friends hospital, Rawalpindi Pakistan
                 </li>
                 <li>
                   <span style={{ color: '#fff' }}>{t('Phone')}</span>
@@ -235,7 +308,7 @@ const Contact = ({ isBg }) => {
                 </li>
                 <li>
                   <span style={{ color: '#fff' }}>{t('Email')}</span>
-                  <Link to="#" style={{ color: '#ebeaea' }}>info@mobius.com</Link>
+                  <Link to="#" style={{ color: '#ebeaea' }}>contact@mobiustechnologysolutions.com</Link>
                 </li>
               </ul>
               <h4 style={{ color: '#fff' }}>{t('OurSocialHandles')}</h4>

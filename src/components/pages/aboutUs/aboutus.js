@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import image from '../../../assets/images/user/cover.jpeg'
+import image from '../../../assets/images/user/cover.jpg'
 import { useTranslation } from 'react-i18next';
 
 const AboutUs = ({ isBg }) => {

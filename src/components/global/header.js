@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Navbar } from "react-bootstrap";
 import { GoChevronDown } from "react-icons/go";
 import { Link as PageLink } from "react-router-dom";
-import { Link } from "react-scroll";
-import { siteLogo } from "../../global";
 import { FaPhoneAlt, FaSun, FaMoon } from "react-icons/fa";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
@@ -101,7 +99,7 @@ const Header = ({ header }) => {
                       duration={500}
                       offset={-60}
                     >
-                      {data.title}
+                      {t(data.title)}
                     </PageLink>
                   </li>
                 )}
@@ -129,9 +127,9 @@ const Header = ({ header }) => {
                 <li className="nav-item">
                   <button onClick={toggleTheme} className="btn theme-toggle">
                     {theme === "light" ? (
-                      <FaMoon className="icon-moon" />
-                    ) : (
                       <FaSun className="icon-sun" />
+                    ) : (
+                      <FaMoon className="icon-moon" />
                     )}
                   </button>
                 </li>

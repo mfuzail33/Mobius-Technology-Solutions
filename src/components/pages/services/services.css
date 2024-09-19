@@ -6,6 +6,8 @@
 .tab-list {
   display: flex;
   border-bottom: 1px solid #ccc;
+  z-index: 1;
+  position: relative;
 }
 
 .tab {
@@ -29,6 +31,8 @@
 .tab-list {
   display: flex;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 
 .dropdown {
@@ -93,4 +97,3 @@
     /* Adjust height dynamically */
   }
 }
-

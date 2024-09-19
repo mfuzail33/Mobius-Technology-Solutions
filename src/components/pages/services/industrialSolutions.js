@@ -1,12 +1,14 @@
 import React from "react";
-import img from "../../../assets/images/moreServices/9.jpg"
+import img from "../../../assets/images/moreServices/industrialSolutions2.png"
 import { useTranslation } from 'react-i18next';
+import AnimatedBackground from "../../animatedBackground";
 
 const IndustrialSolutions = ({ isBg }) => {
     const { t } = useTranslation();
 
     return (
         <>
+            <AnimatedBackground />
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
                     <h2 className="display-6 heading">{t('IndustrialSolutions')}</h2>

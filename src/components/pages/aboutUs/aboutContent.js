@@ -46,7 +46,6 @@ const AboutContent = ({ isBg }) => {
                 </div>
                 <h3 className="m-15px-b heading_bg_none">{[t('mission'), t('vision'), t('goals')][index]}</h3>
                 <p>{[t('missionStatement'), t('visionStatement'), t('goalsStatement')][index]}</p>
-                <p className="hashtag">#MobiusTechnology #SmartSolutions #FutureTech #IndustryInnovators</p>
               </div>
             </div>
           ))}

@@ -127,7 +127,7 @@ const ServicesTabs = ({ isBg }) => {
         <section
             id="services"
             className={`section-padding services site_bg ${isBg === "yes" ? "bg-one" : ""}`}
-            style={{ paddingTop: '150px' }}
+            style={{ paddingTop: '150px', zIndex: 1 }}
         >
             <div className="container">
                 {isMobile ? (

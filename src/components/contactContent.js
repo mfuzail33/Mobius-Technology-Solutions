@@ -1,15 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useRef, } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import data from "../data/contact.json";
-import { contactFormAction, socialLink } from "../global";
 import AnimatedBackground from "./animatedBackground";
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
+import './contact.css'
+import { postImg } from "./api";
 
 const ContactContent = ({ isBg }) => {
   const form = useRef();
   const { t } = useTranslation();
+  const [loading, setLoading] = useState(false);
+  const [disable, setDisable] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     middleName: "",
@@ -22,6 +24,7 @@ const ContactContent = ({ isBg }) => {
     email: "",
     titleOfDocument: "",
     descriptionOfDocument: "",
+    doc: null
   });
 
   const handleChange = (e) => {
@@ -32,28 +35,96 @@ const ContactContent = ({ isBg }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    try {
-      emailjs.sendForm('service_l5plqr3', 'template_pkctf3l', form.current, 'jyRqGd4trY6ltxXOX')
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
-    } catch (error) {
-      console.log('Error occurred:', error);
-    } finally {
-      resetForm();
-    }
+    const templateParams = {
+      firstName: formData.firstName,
+      middleName: formData.middleName,
+      lastName: formData.lastName,
+      company: formData.company,
+      role: formData.role,
+      website: formData.website,
+      companyAddress: formData.companyAddress,
+      country: formData.country,
+      email: formData.email,
+      titleOfDocument: formData.titleOfDocument,
+      descriptionOfDocument: formData.descriptionOfDocument,
+      doc: formData.doc,
+    };
+
+    const data = {
+      service_id: 'service_wuy13ur',
+      template_id: 'template_zbcnaag',
+      user_id: 'YSaRy4lUCYNjX1-KA',
+      template_params: templateParams
+    };
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          console.log('SUCCESS!');
+          alert('Contact form submitted successfully!');
+        } else {
+          response.json().then(data => {
+            console.error('Failed to send email:', data);
+            alert('Error submitting contact form, Please try again later.' + JSON.stringify(data));
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error sending email:', error);
+        alert('Oops... ' + error.message);
+      })
+      .finally(() => {
+        setLoading(false);
+        resetForm();
+      });
   };
 
   const resetForm = () => {
     form.current.reset();
+  };
+
+  const handleFileChange = async (event) => {
+    const file = event.target.files[0];
+    if (!file) {
+      console.log('No file selected');
+      return;
+    }
+
+    setDisable(true);
+
+    const originalName = file.name;
+    const nameWithoutSpaces = originalName.replace(/\s/g, '');
+    const randomFourDigits = Math.floor(1000 + Math.random() * 9000);
+    const modifiedName = `${nameWithoutSpaces.split('.').slice(0, -1).join('.')}${randomFourDigits}.${originalName.split('.').pop()}`;
+
+    const modifiedFile = new File([file], modifiedName, { type: file.type });
+
+    try {
+      const pdfUrl = await postImg(modifiedFile);
+      if (pdfUrl) {
+        setFormData(formData => ({
+          ...formData,
+          doc: pdfUrl
+        }));
+      } else {
+        console.log('File upload failed, no URL returned');
+      }
+    } catch (error) {
+      console.error('File upload failed:', error);
+    } finally {
+      setLoading(false);
+      setDisable(false);
+    }
   };
 
   return (
@@ -193,17 +264,23 @@ const ContactContent = ({ isBg }) => {
                 </div>
 
                 <div className="mb-3">
-                  <input
-                    type="file"
-                    className="form-control"
-                    name="document"
-                  />
+                  <div className="mb-3">
+                    <input
+                      accept=".pdf,.doc,.docx"
+                      type="file"
+                      className="form-control"
+                      name="doc"
+                      onChange={handleFileChange}
+                    />
+                  </div>
                 </div>
 
                 <div className="d-flex justify-content-end">
-                  <button type="submit" className="button button__primary" style={{ borderRadius: '8px' }}>
-                    <span>{t('Submit')}</span>
-                  </button>
+                  {!disable && (
+                    <button type="submit" className="button button__primary" style={{ borderRadius: '8px' }} disabled={disable}>
+                      {loading ? <span>{t('Submitting...')}</span> : <span>{t('Submit')}</span>}
+                    </button>
+                  )}
                 </div>
               </form>
             </div>
@@ -220,10 +297,9 @@ const ContactContent = ({ isBg }) => {
             <div className="contact-form-box p-30px">
               <ul className="contact__address__content">
                 <li style={{ color: '#ebeaea' }}>
-                  <span style={{ color: '#fff' }}>{t('Address')}</span>
-                  lorem ipsum
-                  <br />
-                  dolor salet
+                  <span style={{ color: '#fff' }}>{t('Addresses')}</span>
+                  <b>{t('Office')}: </b>03-X, Ground Floor, Block 03, Business Bay, Sector F DHA Phase 1, Islamabad.<br />
+                  <b>{t('Warehouse & Workshop')}: </b>Property Number CB 4, IJP road, Ward 2, near Friends hospital, Rawalpindi Pakistan
                 </li>
                 <li>
                   <span style={{ color: '#fff' }}>{t('Phone')}</span>
@@ -231,7 +307,7 @@ const ContactContent = ({ isBg }) => {
                 </li>
                 <li>
                   <span style={{ color: '#fff' }}>{t('Email')}</span>
-                  <Link to="#" style={{ color: '#ebeaea' }}>info@mobius.com</Link>
+                  <Link to="#" style={{ color: '#ebeaea' }}>contact@mobiustechnologysolutions.com</Link>
                 </li>
               </ul>
               <h4 style={{ color: '#fff' }}>{t('OurSocialHandles')}</h4>
@@ -273,6 +349,19 @@ const ContactContent = ({ isBg }) => {
             </div>
           </div>
           {/* <!-- contact information end --> */}
+        </div>
+      </div>
+      <div className="col-10 offset-1">
+        <div className="map-responsive">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3326.3566746848514!2d73.0867778!3d33.518111100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDMxJzA1LjIiTiA3M8KwMDUnMTIuNCJF!5e0!3m2!1sen!2s!4v1726678235741!5m2!1sen!2s"
+            width="600"
+            height="150"
+            style={{ borderRadius: '8px', border: '2px solid #8d81e0' }}
+            allowFullScreen=""
+            aria-hidden="false"
+            tabIndex="0"
+          ></iframe>
         </div>
       </div>
     </section >

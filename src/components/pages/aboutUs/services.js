@@ -1,18 +1,18 @@
 import React from "react";
 import { Link as PageLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import image1 from '../../../assets/images/moreServices/1.jpg';
-import image2 from '../../../assets/images/moreServices/2.jpg';
-import image3 from '../../../assets/images/moreServices/3.jpg';
-import image4 from '../../../assets/images/moreServices/6.jpg';
-import image5 from '../../../assets/images/moreServices/4.jpg';
-import image7 from '../../../assets/images/moreServices/9.jpg';
-import image8 from '../../../assets/images/moreServices/10.jpg';
-import image9 from '../../../assets/images/moreServices/11.jpg';
-import image10 from '../../../assets/images/moreServices/12.jpg';
-import image11 from '../../../assets/images/moreServices/13.jpg';
-import image12 from '../../../assets/images/moreServices/14.jpg';
-import image13 from '../../../assets/images/moreServices/15.jpg';
+import image1 from '../../../assets/images/moreServices/health1.png';
+import image2 from '../../../assets/images/moreServices/InfrastructuralSolutions1.png';
+import image3 from '../../../assets/images/moreServices/industrialAutomation1.png';
+import image4 from '../../../assets/images/moreServices/industrialMachines1.png';
+import image5 from '../../../assets/images/moreServices/industrialSafety.png';
+import image7 from '../../../assets/images/moreServices/industrialSolutions1.png';
+import image8 from '../../../assets/images/moreServices/oilAndGas1.png';
+import image9 from '../../../assets/images/moreServices/surveillance1.png';
+import image10 from '../../../assets/images/moreServices/trade1.png';
+import image11 from '../../../assets/images/moreServices/raw1.png';
+import image12 from '../../../assets/images/moreServices/smart1.png';
+import image13 from '../../../assets/images/moreServices/energy1.png';
 
 const services = [
     { image: image1, title: 'HealthSafetyAndRescue', details: 'HealthSafetyAndRescueDetails', path: '/health' },

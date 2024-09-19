@@ -8,6 +8,7 @@ import Contact from "../contact";
 import Footer from "../global/footer";
 import Header from "../global/header";
 import Booksv1 from "../booksv1";
+import splash from "../../assets/images/splash.png"
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import '../../i18n'
@@ -89,9 +90,13 @@ const Version02 = ({ header, footer }) => {
                   textShadow: "2px 2px 2px rgba(0, 0, 0, 0.1)",
                   textAlign: 'center'
                 }}>
-                  {t('subHeadingHome')}
+                  {t('Empowering today')}&nbsp;
+                  <b>{t('Transformative Solutions')}</b>&nbsp;
+                  {t('provider for a')}&nbsp;
+                  <b>{t('Future-Forward world')}</b>
                 </p>
-                <div className="d-flex justify-content-center">
+
+                {/* <div className="d-flex justify-content-center">
                   <PageLink
                     activeClass="active"
                     className="smooth button button__primary me-3"
@@ -120,7 +125,7 @@ const Version02 = ({ header, footer }) => {
                   >
                     <span style={{ color: '#fff' }}>{t('ourServices')}</span>
                   </PageLink>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

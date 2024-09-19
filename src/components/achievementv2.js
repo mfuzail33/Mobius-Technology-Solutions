@@ -1,11 +1,17 @@
 import React from "react";
 import { Link as PageLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-import image1 from '../assets/images/moreServices/1.jpg';
-import image2 from '../assets/images/moreServices/2.jpg';
-import image3 from '../assets/images/moreServices/3.jpg';
-import image4 from '../assets/images/moreServices/6.jpg';
-import image5 from '../assets/images/moreServices/4.jpg';
+// import image1 from '../assets/images/moreServices/1.jpg';
+// import image2 from '../assets/images/moreServices/2.jpg';
+// import image3 from '../assets/images/moreServices/3.jpg';
+// import image4 from '../assets/images/moreServices/6.jpg';
+// import image5 from '../assets/images/moreServices/4.jpg';
+// import image6 from '../assets/images/moreServices/8.jpg';
+import image1 from '../assets/images/moreServices/health1.png';
+import image2 from '../assets/images/moreServices/InfrastructuralSolutions1.png';
+import image3 from '../assets/images/moreServices/industrialAutomation1.png';
+import image4 from '../assets/images/moreServices/industrialMachines1.png';
+import image5 from '../assets/images/moreServices/industrialSafety.png';
 import image6 from '../assets/images/moreServices/8.jpg';
 
 const services = [

@@ -4,9 +4,11 @@ import data from "../../data/footer.json";
 import { siteLogo, socialLink } from "../../global";
 import { Link as PageLink } from "react-router-dom";
 import heartIcon from '../../assets/icons/heart.svg';
+import { useTranslation } from 'react-i18next';
 
 const Footer = ({ menu, isBg }) => {
   const { footer } = data;
+  const { t } = useTranslation();
 
   return (
     <>
@@ -24,7 +26,7 @@ const Footer = ({ menu, isBg }) => {
                   {/* <img src={siteLogo.logo} alt={siteLogo.alt} /> */}
                 </a>
                 <p style={{ marginTop: '10px' }} className="heading">
-                  Empowering Tomorrow Today with Innovation and Precision: Your Tech Evolution Starts Here
+                  {t('Empowering today')} {t('Transformative Solutions')} {t('provider for a')} {t('Future-Forward world')}
                 </p>
               </div>
 
@@ -45,7 +47,7 @@ const Footer = ({ menu, isBg }) => {
                         aria-expanded="false"
                         offset={-60}
                       >
-                        {data.title}
+                        {t(data.title)}
                       </PageLink>
                     </li>
                   ))}

@@ -30,12 +30,12 @@
         "isDropdown": false
       },
       {
-        "link": "/privacy-policy",
+        "link": "/",
         "title": "Privacy Policy",
         "isDropdown": false
       },
       {
-        "link": "/terms",
+        "link": "/",
         "title": "Terms & Conditions",
         "isDropdown": false
       }

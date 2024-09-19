@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector) // Detect language
   .use(initReactI18next) // Pass to react-i18next
   .init({
-    supportedLngs: ['en', 'fr', 'es'], // Supported languages
+    supportedLngs: ['en', 'fr', 'es', 'it', 'zh', 'ar', 'ru'], // Supported languages
     fallbackLng: 'en', // Default language if a user's language is not available
     detection: {
       order: ['path', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'subdomain'],
