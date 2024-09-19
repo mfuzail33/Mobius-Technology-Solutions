@@ -136,11 +136,11 @@ const Header = ({ header }) => {
                   </button>
                 </li>
 
-                <li className="nav-item d-flex">
+                {/* <li className="nav-item d-flex">
                   <a href="tel:+1(512)5184366" style={{ fontSize: '25px' }}>
                     <FaPhoneAlt />
                   </a>
-                </li>
+                </li> */}
               </ul>
 
             </Navbar.Collapse>

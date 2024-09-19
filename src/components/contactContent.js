@@ -301,10 +301,10 @@ const ContactContent = ({ isBg }) => {
                   <b>{t('Office')}: </b>03-X, Ground Floor, Block 03, Business Bay, Sector F DHA Phase 1, Islamabad.<br />
                   <b>{t('Warehouse & Workshop')}: </b>Property Number CB 4, IJP road, Ward 2, near Friends hospital, Rawalpindi Pakistan
                 </li>
-                <li>
+                {/* <li>
                   <span style={{ color: '#fff' }}>{t('Phone')}</span>
                   <a href="tel:+1(512)5184366" style={{ color: '#ebeaea', zIndex: 100 }}>+1 (512) 518 4366</a>
-                </li>
+                </li> */}
                 <li>
                   <span style={{ color: '#fff' }}>{t('Email')}</span>
                   <Link to="#" style={{ color: '#ebeaea', fontSize: '14px' }}>contact@mobiustechnologysolutions.com</Link>

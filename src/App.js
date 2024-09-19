@@ -1,4 +1,3 @@
-import axios from "axios";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./assets/css/margins-paddings.css";
 import Version01 from "./components/pages/version-01";
@@ -51,27 +50,9 @@ function ScrollToTop() {
   return null;
 }
 
-function useGeoBlock() {
-  useEffect(() => {
-    axios.get('https://ipapi.co/json/')
-      .then(response => {
-        const country = response.data.country_code;
-        if (country === 'PK' || country === 'US') {
-          alert('Access from your location is not allowed');
-          // Redirect them or disable site functionality
-          window.location.href = "https://example.com/access_denied";
-        }
-      })
-      .catch(error => {
-        console.error('Error fetching IP data', error);
-      });
-  }, []);
-}
-
 function App() {
   const { header, headerv2, headerv3 } = headerData;
   const { footer } = footerData;
-  useGeoBlock();
 
   useEffect(() => {
     AOS.init();
