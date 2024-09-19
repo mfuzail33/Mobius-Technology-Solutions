@@ -20,7 +20,7 @@ const Health = ({ isBg }) => {
                 id="hero"
                 className={`hero hero__padding overflow-hidden position-relative
                     }`}
-                style={{ paddingTop: '100px' }}
+                style={{ paddingTop: '100px', zIndex: 0 }}
             >
                 <div className="circle x1"></div>
                 <div className="circle x2"></div>

@@ -44,9 +44,17 @@
 /* services.css */
 .mobile-tabs {
   margin-top: 10px;
+  z-index: 1;
+  position: relative;
 }
 
 .mobile-tabs select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.54)" d="M7 10l5 5 5-5z"/></svg>') no-repeat;
+  background-position: right 10px center;
+  background-size: 24px;
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -55,13 +63,26 @@
   background-color: #fff;
   cursor: pointer;
   appearance: none;
-  /* Remove default arrow */
   max-height: 200px;
-  /* Limit the height of the dropdown */
   overflow-y: auto;
-  /* Enable vertical scrolling if options exceed max-height */
   max-width: 100%;
-  /* Limit the width of the dropdown */
+}
+
+.mobile-tabs select.open {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgba(0,0,0,0.54)" d="M7 14l5-5 5 5z"/></svg>') no-repeat;
+  background-position: right 10px center;
+  background-size: 24px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+  max-height: 200px;
+  overflow-y: auto;
+  max-width: 100%;
 }
 
 .mobile-tabs select:focus {
@@ -85,10 +106,8 @@
   color: #fff;
 }
 
-/* Ensure dropdown options stay within screen bounds */
 .mobile-tabs select::-ms-expand {
   display: none;
-  /* Remove arrow in IE */
 }
 
 @media screen and (max-height: 400px) {

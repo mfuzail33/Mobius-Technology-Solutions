@@ -4,7 +4,6 @@ import './services.css';
 import { useMediaQuery } from 'react-responsive';
 import { FaAngleDown } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-
 import Health from './health';
 import Infrastructural from './infrastructural';
 import IndustrialAutomation from './industrialAutomation';
@@ -63,6 +62,18 @@ const DesktopTabs = ({ tabs, activePath, isDropdownOpen, toggleDropdown, dropdow
         </div>
     );
 };
+
+const selectElement = document.querySelector('.mobile-tabs select');
+
+selectElement.addEventListener('click', function () {
+  this.classList.toggle('open');
+});
+
+document.addEventListener('click', function (event) {
+  if (!selectElement.contains(event.target)) {
+    selectElement.classList.remove('open');
+  }
+});
 
 const MobileTabs = ({ tabs, activeTab, handleTabClick }) => {
     return (
@@ -127,7 +138,7 @@ const ServicesTabs = ({ isBg }) => {
         <section
             id="services"
             className={`section-padding services site_bg ${isBg === "yes" ? "bg-one" : ""}`}
-            style={{ paddingTop: '150px', zIndex: 1 }}
+            style={{ paddingTop: isMobile ? '60px' : '150px', zIndex: 1 }}
         >
             <div className="container">
                 {isMobile ? (

@@ -308,7 +308,7 @@ const Contact = ({ isBg }) => {
                 </li>
                 <li>
                   <span style={{ color: '#fff' }}>{t('Email')}</span>
-                  <Link to="#" style={{ color: '#ebeaea' }}>contact@mobiustechnologysolutions.com</Link>
+                  <Link to="#" style={{ color: '#ebeaea', fontSize: '14px' }}>contact@mobiustechnologysolutions.com</Link>
                 </li>
               </ul>
               <h4 style={{ color: '#fff' }}>{t('OurSocialHandles')}</h4>

@@ -5,6 +5,7 @@ import { Link as PageLink } from "react-router-dom";
 import { FaPhoneAlt, FaSun, FaMoon } from "react-icons/fa";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from 'react-responsive';
 
 const Header = ({ header }) => {
   const [isLangDropdownOpen, setLangDropdownOpen] = useState(false);
@@ -13,6 +14,7 @@ const Header = ({ header }) => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'EN');
   const langDropdownRef = useRef(null);
+  const isMobile = useMediaQuery({ maxWidth: 768 })
 
   useEffect(() => {
     document.body.className = theme === "light" ? "light-mode" : "dark-mode";
@@ -104,7 +106,7 @@ const Header = ({ header }) => {
                   </li>
                 )}
 
-                <li className="nav-item dropdown" ref={langDropdownRef} style={{ fontWeight: 500, alignItems: 'center' }}>
+                <li className="nav-item dropdown" ref={langDropdownRef} style={{ fontWeight: 500, alignItems: isMobile ? 'flex-start' : 'center' }}>
                   <span
                     className="nav-link main_heading dropdown-toggle"
                     role="button"
@@ -113,7 +115,7 @@ const Header = ({ header }) => {
                   >
                     {selectedLanguage} <GoChevronDown />
                   </span>
-                  <ul className={isLangDropdownOpen ? "dropdown-menu show" : "dropdown-menu"} style={{ marginTop: '280px' }}>
+                  <ul className={isLangDropdownOpen ? "dropdown-menu show" : "dropdown-menu"} style={{ marginTop: isMobile ? '0px' : '280px' }}>
                     {Object.entries(languageOptions).map(([key, name]) => (
                       <li key={key}>
                         <button onClick={() => changeLanguage(key)} className="dropdown-item main_heading">
@@ -134,7 +136,7 @@ const Header = ({ header }) => {
                   </button>
                 </li>
 
-                <li className="nav-item d-flex justify-content-center">
+                <li className="nav-item d-flex">
                   <a href="tel:+1(512)5184366" style={{ fontSize: '25px' }}>
                     <FaPhoneAlt />
                   </a>
