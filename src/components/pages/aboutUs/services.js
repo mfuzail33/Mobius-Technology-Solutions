@@ -13,6 +13,7 @@ import image10 from '../../../assets/images/moreServices/trade1.png';
 import image11 from '../../../assets/images/moreServices/raw1.png';
 import image12 from '../../../assets/images/moreServices/smart1.png';
 import image13 from '../../../assets/images/moreServices/energy1.png';
+import image14 from '../../../assets/images/moreServices/it2.png';
 
 const services = [
     { image: image1, title: 'HealthSafetyAndRescue', details: 'HealthSafetyAndRescueDetails', path: '/health' },
@@ -27,6 +28,7 @@ const services = [
     { image: image11, title: 'RawMaterials', details: 'RawMaterialsDetails', path: '/rawMaterials' },
     { image: image12, title: 'SmartLogistics', details: 'SmartLogisticsDetails', path: '/smartLogistics' },
     { image: image13, title: 'EnergyandPowerSolutions', details: 'EnergyandPowerSolutionsDetails', path: '/energyAndPowerSolutions' },
+    { image: image14, title: 'itSolutions', details: 'itSolutionsDetails', path: '/itSolutions' },
 ];
 
 const Services = ({ isBg }) => {

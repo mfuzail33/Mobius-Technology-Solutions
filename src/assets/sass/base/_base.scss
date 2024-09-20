@@ -412,6 +412,7 @@ body.light-mode {
   .slider_images {
     box-shadow: $color-white-light;
   }
+
 }
 
 //Light mode end
@@ -425,6 +426,10 @@ body.dark-mode {
   .main_heading {
     color: $color-light-bg
   }
+
+  .nav-link.main_heading:hover {
+    color: #dfdfdf;
+  }  
 
   .sub_heading {
     color: $color-white-light
@@ -794,7 +799,19 @@ body.dark-mode {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     /* Optional: Adds shadow for better visibility */
   }
+
+  .dropdown-menu-bg {
+    background: $site-bg-dark !important;
+    border: 1px solid #ccc;
+  }
+
+  .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #ccc;
+    color: #000
+  }
+
 }
+
 //Dark Mode End
 
 

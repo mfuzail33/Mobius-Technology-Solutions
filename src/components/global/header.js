@@ -78,7 +78,9 @@ const Header = ({ header }) => {
             {/* <a className="navbar-brand" href="/">
               <img src={siteLogo.logo} alt={siteLogo.alt} />
             </a> */}
-            <h2 className="main_heading">Mobius</h2>
+            <a href="/">
+              <h2 className="main_heading">Mobius</h2>
+            </a>
             <Navbar.Toggle aria-controls="navbarSupportedContent">
               <span></span>
               <span></span>
@@ -115,7 +117,7 @@ const Header = ({ header }) => {
                   >
                     {selectedLanguage} <GoChevronDown />
                   </span>
-                  <ul className={isLangDropdownOpen ? "dropdown-menu show" : "dropdown-menu"} style={{ marginTop: isMobile ? '0px' : '280px' }}>
+                  <ul className={isLangDropdownOpen ? "dropdown-menu show dropdown-menu-bg" : "dropdown-menu dropdown-menu-bg"} style={{ marginTop: isMobile ? '0px' : '280px' }}>
                     {Object.entries(languageOptions).map(([key, name]) => (
                       <li key={key}>
                         <button onClick={() => changeLanguage(key)} className="dropdown-item main_heading">

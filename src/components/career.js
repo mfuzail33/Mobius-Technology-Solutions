@@ -4,6 +4,7 @@ import Header from "./global/header";
 import Footer from "./global/footer";
 import { Helmet } from 'react-helmet';
 import AnimatedBackground from "./animatedBackground";
+import Cursor from "./cursor";
 
 const Career = ({ header, footer }) => {
     const { t } = useTranslation();
@@ -11,10 +12,9 @@ const Career = ({ header, footer }) => {
 
     return (
         <>
+            <Cursor />
             <Helmet>
-                <title>Contact Mobius Technology Solutions | Reach Out to Us Today</title>
-                <meta name="description" content="Get in touch with Mobius Technology Solutions for inquiries, support, and more. Fill out our contact form or reach us directly via email or phone. We’re here to help with all your publishing needs!" />
-                <meta name="keywords" content="contact us, Mobius Technology Solutions, contact, noble books" />
+                <title>Career - Mobius Technology Solutions</title>
             </Helmet>
             <Header header={header} />
             <section

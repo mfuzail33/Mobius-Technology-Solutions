@@ -1,12 +1,12 @@
 import React from "react";
-import img from "../../../assets/images/moreServices/surveillance2.png"
+import img from "../../../assets/images/moreServices/it.png"
 import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
 import { useMediaQuery } from 'react-responsive';
 import CustomSwiper from "../swiper";
 import Cursor from "../../cursor";
 
-const SurveillanceSolutions = ({ isBg }) => {
+const ItSolutions = ({ isBg }) => {
     const { t } = useTranslation();
     const isMobile = useMediaQuery({ maxWidth: 768 });
 
@@ -16,7 +16,7 @@ const SurveillanceSolutions = ({ isBg }) => {
             <AnimatedBackground />
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
-                    <h2 className="display-6 heading">{t('SurveillanceSolutions')}</h2>
+                    <h2 className="display-6 heading">{t('IT Solutions')}</h2>
                     <div className="section-divider divider-traingle_color" style={{ display: 'flex', margin: '50px auto 50px auto' }}></div>
                 </div>
             </section>
@@ -38,18 +38,18 @@ const SurveillanceSolutions = ({ isBg }) => {
                             <div className="hero__content position-relative">
                                 <div>
                                     <h3 className="display-6 heading">
-                                        {t('Comprehensive Security Systems:')}
+                                        {t('Comprehensive IT Services:')}
                                     </h3>
                                     <p className="mb-5 heading" style={{ fontSize: '18px' }}>
-                                        {t('Comprehensive Security Systems Desc')}
+                                        {t('Comprehensive IT Services Desc')}
                                     </p>
                                 </div>
                                 <div>
                                     <h3 className="display-7 heading">
-                                        {t('Key Systems:')}
+                                        {t('Key IT Services:')}
                                     </h3>
                                     <p className="mb-5 heading" style={{ fontSize: '18px' }}>
-                                        {t('Key Systems Desc')}
+                                        {t('Key IT Services Desc')}
                                     </p>
                                 </div>
                             </div>
@@ -68,21 +68,13 @@ const SurveillanceSolutions = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <h3 className="display-7 heading">
-                                {t('Advanced Security Technologies:')}
-                            </h3>
-                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
-                                {t('Advanced Security Technologies Desc')}
-                            </p>
-                        </div>
 
                     </div>
                 </div>
-                <CustomSwiper dataType="surveillance" />
+                <CustomSwiper dataType="it" />
             </section>
         </>
     );
 };
 
-export default SurveillanceSolutions;
+export default ItSolutions;

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
 import { useMediaQuery } from 'react-responsive';
 import CustomSwiper from "../swiper";
+import Cursor from "../../cursor";
 
 const Health = ({ isBg }) => {
     const { t } = useTranslation();
@@ -12,6 +13,7 @@ const Health = ({ isBg }) => {
     return (
         <>
             <AnimatedBackground />
+            <Cursor />
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
                     <h2 className="display-6 heading">{t('HealthSafetyAndRescue')}</h2>
@@ -33,22 +35,15 @@ const Health = ({ isBg }) => {
                     <div className="row">
                         <div className="col-lg-6 mb-4 mb-lg-0">
                             <div className="hero__content position-relative">
-                                <p className="mb-5 fs-5">
-                                    <ul>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                            <b>{t('Healthcare Services')}:</b> {t('HealthcareServicesDetails')}
-                                        </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                            <b>{t('Emergency Services')}:</b> {t('EmergencyServicesDetails')}
-                                        </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                            <b>{t('PublicCommercialSafety')}:</b> {t('PublicCommercialSafetyDetails')}
-                                        </li>
-                                    </ul>
+                                <h3 className="display-6 heading">
+                                    {t('Healthcare Equipment and Services:')}
+                                </h3>
+                                <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                    {t('Healthcare Equipment and Services Desc')}
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" style={{ paddingBottom: isMobile ? '50px' : '0px' }}>
                             <div className="hero__author text-center">
                                 <div className="hero__author--inner3">
                                     <div className="hero__author--inner3--wrapper">
@@ -61,14 +56,6 @@ const Health = ({ isBg }) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <h3 className="display-7 heading">
-                                {t('Healthcare Equipment and Services:')}
-                            </h3>
-                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
-                                {t('Healthcare Equipment and Services Desc')}
-                            </p>
                         </div>
                         <div>
                             <h3 className="display-7 heading">

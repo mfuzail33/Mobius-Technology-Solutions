@@ -92,7 +92,7 @@
           &:hover,
           &:focus {
             >.nav-link {
-              color: $color-primary;
+              color: #dfdfdf;
             }
           }
 
@@ -435,7 +435,7 @@ body.dark-mode {
 
       .navbar-nav li a:hover,
       .navbar-nav li a.active {
-        color: $color-primary;
+        color: #dfdfdf;
         background: none;
       }
 

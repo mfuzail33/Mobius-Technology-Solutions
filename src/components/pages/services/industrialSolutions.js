@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
 import { useMediaQuery } from 'react-responsive';
 import CustomSwiper from "../swiper";
+import Cursor from "../../cursor";
 
 const IndustrialSolutions = ({ isBg }) => {
     const { t } = useTranslation();
@@ -11,6 +12,7 @@ const IndustrialSolutions = ({ isBg }) => {
 
     return (
         <>
+            <Cursor />
             <AnimatedBackground />
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
@@ -35,30 +37,13 @@ const IndustrialSolutions = ({ isBg }) => {
                         <div className="col-lg-6 mb-4 mb-lg-0">
                             <div className="hero__content position-relative">
 
-                                <h3 className="display-7 m-30px-b heading">
-                                    {t('AutomotiveIndustrialSolutions')}
+                                <h3 className="display-6 m-30px-b heading">
+                                    {t('Automotive Industrial Solutions')}
                                 </h3>
                                 <p className="mb-5 fs-5 heading">
                                     <ul>
                                         <li style={{ fontSize: '18px', textAlign: 'start' }}>
-                                            <b>{t('Technologies')}:</b> {t('TechnologiesDetails')}
-                                        </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
-                                            <b>{t('SupplyChainManagement')}:</b> {t('SupplyChainManagementDetails')}
-                                        </li>
-                                    </ul>
-                                </p>
-
-                                <h3 className="display-7 m-30px-b heading">
-                                    {t('PetrochemicalIndustrialSolutions')}
-                                </h3>
-                                <p className="mb-5 fs-5 heading">
-                                    <ul>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
-                                            <b>{t('Instrumentation')}:</b> {t('InstrumentationDetails')}
-                                        </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }}>
-                                            <b>{t('ProductionOptimization')}:</b> {t('ProductionOptimizationDetails')}
+                                            <b>{t('Technologies')}:</b> {t('Technologies Desc')}
                                         </li>
                                     </ul>
                                 </p>
@@ -81,43 +66,63 @@ const IndustrialSolutions = ({ isBg }) => {
                         </div>
                         <div>
                             <h3 className="display-7 m-30px-b heading">
-                                {t('ManufacturingPlantSolutions')}
+                                {t('Petrochemical Industrial Solutions')}
+                            </h3>
+                            <p className="mb-5 fs-5 heading">
+                                <ul>
+                                    <li style={{ fontSize: '18px', textAlign: 'start' }}>
+                                        <b>{t('Instrumentation and Automation')}</b> {t('Instrumentation and Automation Desc')}
+                                    </li>
+                                    <li style={{ fontSize: '18px', textAlign: 'start' }}>
+                                        <b>{t('Shutdown and Safety Systems')}</b> {t('Shutdown and Safety Systems Desc')}
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div>
+                            <h3 className="display-7 m-30px-b heading">
+                                {t('Manufacturing Plant Solutions')}
                             </h3>
                             <p className="mb-5 fs-5">
                                 <ul>
                                     <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                        <b>{t('PlantOptimization')}:</b> {t('PlantOptimizationDetails')}
+                                        <b>{t('Optimization and Technology')}</b> {t('Optimization and Technology Desc')}
                                     </li>
                                     <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                        <b>{t('ERPSolutions')}:</b> {t('ERPSolutionsDetails')}
+                                        <b>{t('Automation Systems')}</b> {t('Automation Systems Desc')}
                                     </li>
                                 </ul>
                             </p>
 
                             <h3 className="display-7 m-30px-b heading">
-                                {t('VigilanceMonitoringforFactories')}
+                                {t('Green Factory Solutions')}
                             </h3>
                             <p className="mb-5 fs-5">
                                 <ul>
                                     <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                        <b>{t('SecurityandMonitoring')}:</b> {t('SecurityandMonitoringDetails')}
-                                    </li>
-                                    <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                        <b>{t('ProductionEfficiency')}:</b> {t('ProductionEfficiencyDetails')}
+                                        <b>{t('Energy Efficiency and Sustainability')}</b> {t('Energy Efficiency and Sustainability Desc')}
                                     </li>
                                 </ul>
                             </p>
 
                             <h3 className="display-7 m-30px-b heading">
-                                {t('AdditiveManufacturing')}
+                                {t('Vigilance Monitoring for Factories')}
                             </h3>
                             <p className="mb-5 fs-5">
                                 <ul>
                                     <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                        <b>{t('AdvancedTechniques')}:</b> {t('AdvancedTechniquesDetails')}
+                                        <b>{t('Monitoring Solutions')}</b> {t('Monitoring Solutions Desc')}
                                     </li>
+                                </ul>
+                            </p>
+
+                            <h3 className="display-7 m-30px-b heading">
+                                {t('Additive Manufacturing')}
+                            </h3>
+                            <p className="mb-5 fs-5">
+                                <ul>
                                     <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                        <b>{t('Applications')}:</b> {t('ApplicationsDetails')}
+                                        <b>{t('Advanced Manufacturing')}</b> {t('Advanced Manufacturing Desc')}
                                     </li>
                                 </ul>
                             </p>

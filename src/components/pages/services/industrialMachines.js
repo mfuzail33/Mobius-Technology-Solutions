@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
 import { useMediaQuery } from 'react-responsive';
 import CustomSwiper from "../swiper";
+import Cursor from "../../cursor";
 
 const IndustrialMachines = ({ isBg }) => {
     const { t } = useTranslation();
@@ -11,6 +12,7 @@ const IndustrialMachines = ({ isBg }) => {
 
     return (
         <>
+            <Cursor />
             <AnimatedBackground />
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
@@ -33,23 +35,17 @@ const IndustrialMachines = ({ isBg }) => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 mb-4 mb-lg-0">
-                            <div className="hero__content position-relative">
-                                <h3 className="display-5 m-30px-b heading">
-                                    {t('MachineryExpertise')}
+                            <div>
+                                <h3 className="display-6 heading">
+                                    {t('Machinery Expertise:')}
                                 </h3>
-                                <p className="mb-5 fs-5">
-                                    <ul>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                            <b>{t('TypesofMachines')}:</b> {t('TypesofMachinesDetails')}
-                                        </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                            <b>{t('ProcessEfficiency')}:</b> {t('ProcessEfficiencyDetails')}
-                                        </li>
-                                    </ul>
+                                <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                    {t('Machinery Expertise Desc')}
                                 </p>
                             </div>
+
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" style={{ paddingBottom: isMobile ? '50px' : '0px' }}>
                             <div className="hero__author text-center">
                                 <div className="hero__author--inner3">
                                     <div className="hero__author--inner3--wrapper">
@@ -63,14 +59,7 @@ const IndustrialMachines = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <h3 className="display-7 heading">
-                                {t('Machinery Expertise:')}
-                            </h3>
-                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
-                                {t('Machinery Expertise Desc')}
-                            </p>
-                        </div>
+
                         <div>
                             <h3 className="display-7 heading">
                                 {t('Key Machinery:')}

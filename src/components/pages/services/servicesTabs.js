@@ -17,6 +17,7 @@ import TradeSolutions from './tradeSolutions';
 import RawMaterials from './rawMaterials';
 import SmartLogistics from './smartLogistics';
 import EnergyAndPowerSolutions from './energyAndPowerSolutions';
+import ItSolutions from './itSolutions';
 
 // Helper function to truncate label if needed
 const truncateLabel = (label, maxLength = 25) => {
@@ -102,6 +103,7 @@ const ServicesTabs = ({ isBg }) => {
         { id: 10, label: 'Raw Materials', path: '/rawMaterials', content: <RawMaterials /> },
         { id: 11, label: 'Smart Logistics', path: '/smartLogistics', content: <SmartLogistics /> },
         { id: 12, label: 'Energy and Power Solutions', path: '/energyAndPowerSolutions', content: <EnergyAndPowerSolutions /> },
+        { id: 12, label: 'IT Solutions', path: '/itSolutions', content: <ItSolutions /> },
     ];
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);

@@ -19,6 +19,7 @@ import rawData from '../../data/raw.json';
 import smartData from '../../data/smart.json';
 import surveillanceData from '../../data/surveillance.json';
 import tradeData from '../../data/trade.json';
+import itData from '../../data/it.json';
 
 const CustomSwiper = ({ dataType }) => {
     const dataMap = {
@@ -33,7 +34,8 @@ const CustomSwiper = ({ dataType }) => {
         raw: rawData.raw,
         smart: smartData.smart,
         surveillance: surveillanceData.surveillance,
-        trade: tradeData.trade
+        trade: tradeData.trade,
+        it: itData.it
     };
 
     const currentData = dataMap[dataType] || [];

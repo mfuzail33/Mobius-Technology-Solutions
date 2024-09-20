@@ -15,18 +15,18 @@ const Footer = ({ menu, isBg }) => {
       {/* <CtaV3 /> */}
       <footer
         className={`footer overflow-hidden site_bg ${isBg === "yes" ? "bg-one-old" : ""}`}
-        style={{ zIndex: 1 }}
       >
         <div className="container">
           <div className="footer__top m-50px-t m-50px-b">
             <div className="row">
               <div className="col-lg-3 d-flex flex-column justify-content-center align-items-center mb-3 mb-lg-0">
-                <a href="/" className="align-self-start">
-                  <h1 className="m-0 heading">Mobius</h1>
+                {/* <a href="/" className="align-self-start"> */}
+                <a href="/" style={{ zIndex: 1 }}>
+                  <h1 className="m-0 heading" style={{ textAlign: 'center' }}>Mobius</h1>
                   {/* <img src={siteLogo.logo} alt={siteLogo.alt} /> */}
                 </a>
-                <p style={{ marginTop: '10px' }} className="heading">
-                  {t('Empowering today')} {t('Transformative Solutions')} {t('provider for a')} {t('Future-Forward world')}
+                <p style={{ marginTop: '10px', fontSize: '15px', textAlign: 'center' }} className="heading">
+                  {t('Empowering today')}<br />{t('Your')} {t('Transformative Solutions')} {t('For a Future-Forward world')}
                 </p>
               </div>
 

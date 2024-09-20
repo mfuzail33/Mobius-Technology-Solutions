@@ -2,6 +2,7 @@
 import React from "react";
 import image from '../../../assets/images/user/cover.jpg'
 import { useTranslation } from 'react-i18next';
+import AnimatedBackground from "../../animatedBackground";
 
 const AboutUs = ({ isBg }) => {
     const { t } = useTranslation();
@@ -12,7 +13,8 @@ const AboutUs = ({ isBg }) => {
             className={`section-padding authorv3 site_bg ${isBg === "yes" ? "bg-one" : ""}`}
             style={{ paddingTop: '150px' }}
         >
-            <div className="container">
+            <AnimatedBackground />
+            <div className="container" style={{ zIndex: '1', position: 'relative' }}>
                 <div className="row">
                     <div
                         className="col-lg-6"

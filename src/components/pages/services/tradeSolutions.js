@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import AnimatedBackground from "../../animatedBackground";
 import { useMediaQuery } from 'react-responsive';
 import CustomSwiper from "../swiper";
+import Cursor from "../../cursor";
 
 const TradeSolutions = ({ isBg }) => {
     const { t } = useTranslation();
@@ -11,6 +12,7 @@ const TradeSolutions = ({ isBg }) => {
 
     return (
         <section style={{ zIndex: 1 }}>
+            <Cursor />
             <AnimatedBackground />
             <section style={{ marginTop: '40px', position: 'relative' }}>
                 <div style={{ position: 'relative', textAlign: 'center' }}>
@@ -34,22 +36,25 @@ const TradeSolutions = ({ isBg }) => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 mb-4 mb-lg-0">
                             <div className="hero__content position-relative">
-                                <h3 className="display-5 m-30px-b heading">
-                                    {t('SupplyChainExpertise')}
-                                </h3>
-                                <p className="mb-5 fs-5">
-                                    <ul>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                            <b>{t('SourcingProcurementLogistics')}:</b> {t('SourcingProcurementLogisticsDetails')}
-                                        </li>
-                                        <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading">
-                                            <b>{t('EfficiencyOptimization')}:</b> {t('EfficiencyOptimizationDetails')}
-                                        </li>
-                                    </ul>
-                                </p>
+                                <div>
+                                    <h3 className="display-6 heading">
+                                        {t('Supply Chain Optimization:')}
+                                    </h3>
+                                    <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                        {t('Supply Chain Optimization Desc')}
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3 className="display-7 heading">
+                                        {t('Technological Integration:')}
+                                    </h3>
+                                    <p className="mb-5 heading" style={{ fontSize: '18px' }}>
+                                        {t('Technological Integration Desc')}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" style={{ paddingBottom: isMobile ? '50px' : '0px' }}>
                             <div className="hero__author text-center">
                                 <div className="hero__author--inner3">
                                     <div className="hero__author--inner3--wrapper">
@@ -63,23 +68,6 @@ const TradeSolutions = ({ isBg }) => {
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <h3 className="display-7 heading">
-                                {t('Supply Chain Optimization:')}
-                            </h3>
-                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
-                                {t('Supply Chain Optimization Desc')}
-                            </p>
-                        </div>
-                        <div>
-                            <h3 className="display-7 heading">
-                                {t('Technological Integration:')}
-                            </h3>
-                            <p className="mb-5 heading" style={{ fontSize: '18px' }}>
-                                {t('Technological Integration Desc')}
-                            </p>
-                        </div>
-
                     </div>
                 </div>
             </section>

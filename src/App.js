@@ -36,6 +36,7 @@ import IndustrialSafety from "./components/pages/services/industrialSafety";
 import IndustrialSolutions from "./components/pages/services/industrialSolutions";
 import Infrastructural from "./components/pages/services/infrastructural";
 import OilAndGasFields from "./components/pages/services/oilAndGasFields";
+import ItSolutions from "./components/pages/services/itSolutions";
 import RawMaterials from "./components/pages/services/rawMaterials";
 import SmartLogistics from "./components/pages/services/smartLogistics";
 import SurveillanceSolutions from "./components/pages/services/surveillanceSolutions";
@@ -108,6 +109,7 @@ function App() {
             <Route path="industrialSolutions" element={<IndustrialSolutions header={header} footer={footer} />} />
             <Route path="infrastructural" element={<Infrastructural header={header} footer={footer} />} />
             <Route path="oilAndGasFields" element={<OilAndGasFields header={header} footer={footer} />} />
+            <Route path="itSolutions" element={<ItSolutions header={header} footer={footer} />} />
             <Route path="rawMaterials" element={<RawMaterials header={header} footer={footer} />} />
             <Route path="smartLogistics" element={<SmartLogistics header={header} footer={footer} />} />
             <Route path="surveillanceSolutions" element={<SurveillanceSolutions header={header} footer={footer} />} />

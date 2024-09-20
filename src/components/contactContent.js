@@ -298,8 +298,8 @@ const ContactContent = ({ isBg }) => {
               <ul className="contact__address__content">
                 <li style={{ color: '#ebeaea' }}>
                   <span style={{ color: '#fff' }}>{t('Addresses')}</span>
-                  <b>{t('Office')}: </b>03-X, Ground Floor, Block 03, Business Bay, Sector F DHA Phase 1, Islamabad.<br />
-                  <b>{t('Warehouse & Workshop')}: </b>Property Number CB 4, IJP road, Ward 2, near Friends hospital, Rawalpindi Pakistan
+                  <b>{t('Office')}: </b>03-X, Ground Floor, Block 03, Business Bay, Sector F DHA Phase 1, Islamabad<br />
+                  <b>{t('Warehouse & Workshop')}: </b>Property Number CB 4, IJP road, Ward 2, Near Friends Hospital, Rawalpindi, Pakistan
                 </li>
                 {/* <li>
                   <span style={{ color: '#fff' }}>{t('Phone')}</span>

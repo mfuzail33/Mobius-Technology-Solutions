@@ -5,17 +5,16 @@ import Footer from "./global/footer";
 import ServicesTabs from "./pages/services/servicesTabs";
 import { Helmet } from 'react-helmet';
 import AllServices from "./allServices";
+import Cursor from "./cursor";
 
 const ServicePage = ({ header, footer }) => {
     const { menu } = footer;
 
     return (
         <>
+            <Cursor />
             <Helmet>
-                <title>Services</title>
-                <meta name="description" content=": We provides range of high-quality ebook writing, proofreading, and publishing services, article writing, author website design, ghostwriting and more services." />
-                <meta name="keywords" content="ebook writing, proofreading services, article writing service, author website service, website content writer, ebook cover design, ebook publishing, ghostwriting services, autobiography services" />
-            </Helmet>
+                <title>Services - Mobius Technology Solutions</title></Helmet>
             <Header header={header} />
             {/* <ServicesTabs isBg="" /> */}
             <AllServices />
