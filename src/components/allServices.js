@@ -44,8 +44,23 @@ const AllServices = ({ isBg }) => {
             <AnimatedBackground />
             <div className="container">
                 <div className="section-title-center text-center">
-                    <h2 className="display-6 heading">{t('ourServices')}</h2>
-                    <span style={{ color: "#f3f3f3" }}>{t('ourServicesDetails')}</span>
+                    <h2 className="display-6 heading">{t('Services and Products we offer')}</h2>
+                    <div
+                        style={{
+                            padding: '8px 3px 3px 3px',
+                            display: 'flex',
+                            margin: 'auto',
+                            backgroundColor: '#616cb2',
+                            borderRadius: '8px',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            height: '100%'
+                        }}
+                        className="col-lg-2"
+                    >
+                        <h4 className="heading" style={{ textAlign: 'center' }}>{t('But not limited to')}</h4>
+                    </div>
+                    <span style={{ color: "#f3f3f3", marginTop: '8px' }}>{t('ourServicesDetails')}</span>
                     <div className="section-divider divider-traingle_color"></div>
                 </div>
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">

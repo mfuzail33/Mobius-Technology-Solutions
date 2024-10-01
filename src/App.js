@@ -22,6 +22,8 @@ import headerData from "./data/header.json";
 import ContactPage from "./components/contactPage";
 import AboutPage from "./components/aboutPage";
 import PrivacyPolicy from "./components/pages/policies/privacyPolicy";
+import WorkplacePolicy from "./components/pages/policies/workplacePolicy";
+import VaccinePolicy from "./components/pages/policies/vaccinePolicy";
 import Terms from "./components/pages/policies/terms";
 import ServicePage from "./components/servicePage";
 import PortfolioPage from "./components/portfolioPage";
@@ -98,7 +100,9 @@ function App() {
           <Route path="portfolio" element={<PortfolioPage header={header} footer={footer} />} />
           <Route path="career" element={<Career header={header} footer={footer} />} />
           <Route path="privacy-policy" element={<PrivacyPolicy header={header} footer={footer} />} />
-          <Route path="terms" element={<Terms header={header} footer={footer} />} />
+          <Route path="terms-and-conditions" element={<Terms header={header} footer={footer} />} />
+          <Route path="workplace-policies" element={<WorkplacePolicy header={header} footer={footer} />} />
+          <Route path="vaccine-policy" element={<VaccinePolicy header={header} footer={footer} />} />
 
           <Route element={<ServiceLayout header={header} footer={footer} />}>
             <Route path="energyAndPowerSolutions" element={<EnergyAndPowerSolutions header={header} footer={footer} />} />

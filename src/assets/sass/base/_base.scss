@@ -413,6 +413,9 @@ body.light-mode {
     box-shadow: $color-white-light;
   }
 
+  td {
+    color: #fff;
+  }
 }
 
 //Light mode end
@@ -429,7 +432,7 @@ body.dark-mode {
 
   .nav-link.main_heading:hover {
     color: #dfdfdf;
-  }  
+  }
 
   .sub_heading {
     color: $color-white-light
@@ -809,7 +812,6 @@ body.dark-mode {
     background-color: #ccc;
     color: #000
   }
-
 }
 
 //Dark Mode End

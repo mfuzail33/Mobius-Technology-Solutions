@@ -30,13 +30,23 @@
         "isDropdown": false
       },
       {
-        "link": "/",
+        "link": "/privacy-policy",
         "title": "Privacy Policy",
         "isDropdown": false
       },
       {
-        "link": "/",
+        "link": "/terms-and-conditions",
         "title": "Terms & Conditions",
+        "isDropdown": false
+      },
+      {
+        "link": "/workplace-policies",
+        "title": "Workplace Policy",
+        "isDropdown": false
+      },
+      {
+        "link": "/vaccine-policy",
+        "title": "Vaccine Policy",
         "isDropdown": false
       }
     ],

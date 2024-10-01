@@ -6,6 +6,7 @@ import { FaPhoneAlt, FaSun, FaMoon } from "react-icons/fa";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
+import Logo from "../../assets/images/logo.png"
 
 const Header = ({ header }) => {
   const [isLangDropdownOpen, setLangDropdownOpen] = useState(false);
@@ -75,12 +76,14 @@ const Header = ({ header }) => {
       <div className="container">
         <div className="row">
           <Navbar bg="none" expand="lg">
-            {/* <a className="navbar-brand" href="/">
-              <img src={siteLogo.logo} alt={siteLogo.alt} />
-            </a> */}
-            <a href="/">
-              <h2 className="main_heading">Mobius</h2>
-            </a>
+            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '5px' }}>
+              <a href="/" style={{ zIndex: 1 }}>
+                <img src={Logo} alt={"Mobius"} style={{ width: '80px' }} />
+              </a>
+              <a href="/" style={{ zIndex: 1 }}>
+                <h1 className="main_heading" style={{ textAlign: 'center', marginTop: '10px' }}>Mobius</h1>
+              </a>
+            </div>
             <Navbar.Toggle aria-controls="navbarSupportedContent">
               <span></span>
               <span></span>

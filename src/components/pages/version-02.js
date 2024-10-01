@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import AnimatedBackground from "../animatedBackground";
-import { Link as PageLink } from "react-router-dom";
 import data from "../../data/hero.json"
 import AchievementV2 from "../achievementv2";
 import Author from "../author";
@@ -8,11 +7,12 @@ import Contact from "../contact";
 import Footer from "../global/footer";
 import Header from "../global/header";
 import Booksv1 from "../booksv1";
-import splash from "../../assets/images/splash.png"
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import '../../i18n'
 import AboutContent from ".././pages/aboutUs/aboutContent";
+import LogoGif from "../../assets/images/bgGif.gif"
+import LogoBg from "../../assets/images/bgLogo.png"
 
 const Version02 = ({ header, footer }) => {
   const { menu } = footer;
@@ -20,6 +20,16 @@ const Version02 = ({ header, footer }) => {
   const cursorRef = useRef(null);
   const trailRef = useRef(null);
   const { t } = useTranslation();
+  const [background, setBackground] = useState(LogoGif);
+
+  useEffect(() => {
+    const gifDuration = 10000;
+    const timeout = setTimeout(() => {
+      setBackground(LogoBg);
+    }, gifDuration);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   useEffect(() => {
     const cursor1 = cursorRef.current;
@@ -47,6 +57,13 @@ const Version02 = ({ header, footer }) => {
       <section
         id="hero"
         className={`hero hero__padding overflow-hidden position-relative site_bg`}
+        // style={{
+        //   backgroundImage: `url(${background})`,
+        //   backgroundSize: 'cover',
+        //   backgroundPosition: 'center',
+        //   backgroundRepeat: 'no-repeat',
+        //   marginTop: '70px'
+        // }}
       >
         <AnimatedBackground />
         <div className="circle x1"></div>
@@ -91,8 +108,8 @@ const Version02 = ({ header, footer }) => {
                   textAlign: 'center'
                 }}>
                   {t('Empowering today')}&nbsp;
-                  <b>{t('Transformative Solutions')}</b>&nbsp;
-                  {t('provider for a')}&nbsp;
+                  <b>{t('Transformative Solutions provider')}</b>&nbsp;
+                  {t('for a')}&nbsp;
                   <b>{t('Future-Forward world')}</b>
                 </p>
 
@@ -131,7 +148,7 @@ const Version02 = ({ header, footer }) => {
           </div>
         </div>
       </section>
-      {/* Landin cover end */}
+      {/* Landing cover end */}
 
       {/* <Brands isBg="" /> */}
       {/* <Chapter isBg="yes" /> */}

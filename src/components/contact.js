@@ -158,7 +158,7 @@ const Contact = ({ isBg }) => {
                     <input
                       name="firstName"
                       className="form-control mb-3"
-                      placeholder="First Name"
+                      placeholder="*First Name"
                       onChange={handleChange}
                       required
                     />
@@ -178,7 +178,7 @@ const Contact = ({ isBg }) => {
                     <input
                       name="lastName"
                       className="form-control mb-3"
-                      placeholder="Last Name"
+                      placeholder="*Last Name"
                       onChange={handleChange}
                       required
                     />
@@ -189,7 +189,6 @@ const Contact = ({ isBg }) => {
                       className="form-control mb-3"
                       placeholder="Professional Role (Job Position)"
                       onChange={handleChange}
-                      required
                     />
                   </div>
                 </div>
@@ -201,7 +200,6 @@ const Contact = ({ isBg }) => {
                       className="form-control mb-3"
                       placeholder="Country"
                       onChange={handleChange}
-                      required
                     />
                   </div>
                   <div className="col-md-6">
@@ -209,7 +207,7 @@ const Contact = ({ isBg }) => {
                       name="email"
                       className="form-control mb-3"
                       type="email"
-                      placeholder="Email"
+                      placeholder="*Email"
                       onChange={handleChange}
                       required
                     />
@@ -221,7 +219,7 @@ const Contact = ({ isBg }) => {
                     <input
                       name="company"
                       className="form-control mb-3"
-                      placeholder="Company/Organization Name"
+                      placeholder="*Company/Organization Name"
                       onChange={handleChange}
                       required
                     />
@@ -231,8 +229,9 @@ const Contact = ({ isBg }) => {
                       name="website"
                       className="form-control mb-3"
                       type="url"
-                      placeholder="Website URL of your Company"
+                      placeholder="*Website Link of your Company"
                       onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
@@ -244,15 +243,15 @@ const Contact = ({ isBg }) => {
                       className="form-control mb-3"
                       placeholder="Address of your Company"
                       onChange={handleChange}
-                      required
                     />
                   </div>
                   <div className="col-md-6">
                     <input
                       name="titleOfDocument"
                       className="form-control mb-3"
-                      placeholder="Title of Document"
+                      placeholder="*Title of Document"
                       onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
@@ -261,9 +260,10 @@ const Contact = ({ isBg }) => {
                   <textarea
                     name="descriptionOfDocument"
                     className="form-control mb-3"
-                    placeholder="Description(s) of Document"
+                    placeholder="*Description(s) of Document"
                     rows="3"
                     onChange={handleChange}
+                    required
                   ></textarea>
                 </div>
 
@@ -299,13 +299,13 @@ const Contact = ({ isBg }) => {
               <ul className="contact__address__content">
                 <li style={{ color: '#ebeaea' }}>
                   <span style={{ color: '#fff' }}>{t('Addresses')}</span>
-                  <b>{t('Office')}: </b>03-X, Ground Floor, Block 03, Business Bay, Sector F DHA Phase 1, Islamabad<br />
+                  <b>{t('Office')}: </b>X-03, Ground Floor, Block 3, Business Bay, Sector F DHA1-R Phase1, Islamabad, Pakistan<br />
                   <b>{t('Warehouse & Workshop')}: </b>Property Number CB 4, IJP road, Ward 2, Near Friends Hospital, Rawalpindi, Pakistan
                 </li>
-                {/* <li>
-                  <span style={{ color: '#fff' }}>{t('Phone')}</span>
-                  <a href="tel:+1(512)5184366" style={{ color: '#ebeaea', zIndex: 100 }}>+1 (512) 518 4366</a>
-                </li> */}
+                <li>
+                  <span style={{ color: '#fff' }}>{t('Fax Number')}</span>
+                  <a href="tel:+92515766333" style={{ color: '#ebeaea', zIndex: 100 }}>+92-51-5766333</a>
+                </li>
                 <li>
                   <span style={{ color: '#fff' }}>{t('Email')}</span>
                   <Link to="#" style={{ color: '#ebeaea', fontSize: '14px' }}>contact@mobiustechnologysolutions.com</Link>
@@ -336,7 +336,7 @@ const Contact = ({ isBg }) => {
                   </a>
                 </li>
                 <li>
-                  <a href="/" target="_blank" className="card_icon_bg">
+                  <a href="https://www.linkedin.com/company/mobius-technology-soulutions" target="_blank" className="card_icon_bg">
                     <img
                       className="img-fluid"
                       src="assets/icons/linkedin.svg"

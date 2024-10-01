@@ -2,105 +2,115 @@
 import React from "react";
 import Header from "../../global/header";
 import Footer from "../../global/footer";
+import AnimatedBackground from "../../animatedBackground";
+import Cursor from "../../cursor";
+import { useTranslation } from 'react-i18next';
 
 const PrivacyPolicy = ({ header, footer }) => {
+    const { t } = useTranslation();
     const { menu } = footer;
 
     return (
         <>
             <Header header={header} />
-            <section id="benefits" style={{ paddingTop: '120px' }} className={`section-padding authorv3 bg-one`}>
+            <section id="benefits" style={{ paddingTop: '150px', zIndex: 1, position: 'relative' }} className={`section-padding authorv3 site_bg`}>
+                <AnimatedBackground />
+                <Cursor />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="section-title-left text-center text-lg-start">
-                                <h2 className="text-center" style={{ color: '#fff' }}>Privacy Policy</h2>
-                                <p className="text-center mb-5 fs-6" style={{ color: '#fff' }}>At Mobius Technology Solutions, we value your privacy and are committed to protecting it. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+                                <h2 className="text-center" style={{ color: '#fff' }}>{t('Privacy Policy')}</h2>
+                                <p className="text-center mb-5 fs-6" style={{ color: '#fff' }}>{t('Privacy Policy Desc')}</p>
                             </div>
                             <div className="section-title-left text-lg-start">
-                                <h3 className="" style={{ color: '#fff' }}>1. Information We Collect</h3>
-                                <h4 style={{ color: '#fff' }}>Personal Information</h4>
-                                <p className="fs-6" style={{ color: '#fff' }}>We collect personal information that you voluntarily provide to us, which may include:</p>
+                                <h4 style={{ color: '#fff' }}>{t('We respect your privacy, and we promise:')}</h4>
                                 <ul>
-                                    <li style={{ color: '#fff' }}>Registering on our website</li>
-                                    <li style={{ color: '#fff' }}>Subscribing to our newsletter</li>
-                                    <li style={{ color: '#fff' }}>Placing an order</li>
-                                    <li style={{ color: '#fff' }}>Filling out a form</li>
-                                    <li style={{ color: '#fff' }}>Contacting us directly</li>
-                                </ul>
-                                <p className="mt-3 fs-6" style={{ color: '#fff' }}>The personal information we collect includes:</p>
-                                <ul>
-                                    <li style={{ color: '#fff' }}>Name</li>
-                                    <li style={{ color: '#fff' }}>Email address</li>
-                                    <li style={{ color: '#fff' }}>Mailing address</li>
-                                    <li style={{ color: '#fff' }}>Phone number</li>
-                                    <li style={{ color: '#fff' }}>Payment information</li>
-                                </ul>
-                                <h4 className="mt-3" style={{ color: '#fff' }}>Non-Personal Information</h4>
-                                <p className="fs-6" style={{ color: '#fff' }}>We may also collect non-personal information when you interact with our website. This includes:</p>
-                                <ul>
-                                    <li style={{ color: '#fff' }}>Browser type</li>
-                                    <li style={{ color: '#fff' }}>Pages visited</li>
-                                    <li style={{ color: '#fff' }}>Time and date of visits</li>
-                                    <li style={{ color: '#fff' }}>Diagnostic data</li>
+                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet1')}</li>
+                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet2')}</li>
+                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet3')}</li>
+                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet4')}</li>
                                 </ul>
 
-                                <h3 className="mt-5" style={{ color: '#fff' }}>2. How We Use Your Information</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>We use the information we collect for various purposes, including:</p>
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Information collection')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Information collection Desc')}</p>
                                 <ul>
-                                    <li style={{ color: '#fff' }}>Processing transactions</li>
-                                    <li style={{ color: '#fff' }}>Improving our website and services</li>
-                                    <li style={{ color: '#fff' }}>Sending periodic emails (with your consent)</li>
-                                    <li style={{ color: '#fff' }}>Responding to inquiries and providing customer support</li>
-                                    <li style={{ color: '#fff' }}>Conducting marketing and promotional activities</li>
-                                    <li style={{ color: '#fff' }}>Complying with legal obligations</li>
+                                    <li style={{ color: '#fff' }}>{t('Information collection Bullet')}</li>
                                 </ul>
 
-                                <h3 className="mt-5" style={{ color: '#fff' }}>3. Information Sharing and Disclosure</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>We do not sell, trade, or otherwise transfer your personal information to outside parties except as described below:</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Information collection Para')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Information collection Para2')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Information collection Para3')}</p>
+
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Use of information')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Use of information Desc')}</p>
+                                <ol style={{ listStyleType: 'lower-alpha', color: '#fff' }}>
+                                    <li style={{ color: '#fff' }}>{t('Use of information a')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information b')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information c')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information d')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information e')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information f')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information g')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information h')}</li>
+                                </ol>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Use of information Para')}</p>
+
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Disclosure')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Disclosure Desc')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Disclosure Desc2')}</p>
                                 <ul>
-                                    <li style={{ color: '#fff' }}><b>Service Providers</b> We may share your information with third-party service providers who perform services on our behalf, such as payment processing, data analysis, email delivery, hosting services, customer service, and marketing assistance.</li>
-                                    <li style={{ color: '#fff' }}><b>Legal Requirements</b> We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court or a government agency).</li>
-                                    <li style={{ color: '#fff' }}><b>Business Transfers</b> In the event of a merger, acquisition, or sale of all or a portion of our assets, your personal information may be transferred to the acquiring entity.</li>
+                                    <li style={{ color: '#fff' }}>{t('Disclosure Bullet 1')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Disclosure Bullet 2')}</li>
                                 </ul>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Disclosure Para')}</p>
 
-                                <h3 className="mt-5" style={{ color: '#fff' }}>4. Data Security</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>We implement appropriate and reasonable technical and organizational measures to protect your personal information from unauthorized access, use, alteration, or disclosure. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
 
-                                <h3 className="mt-5" style={{ color: '#fff' }}>5. Your Rights</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Cookies')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Cookies Para1')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Cookies Para2')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Cookies Para3')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Cookies Para4')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Cookies Para5')}</p>
+
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Security')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Security Desc')}</p>
+
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Hyperlinks')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Hyperlinks Desc')}</p>
+
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Changes')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Changes Desc')}</p>
+
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>{t('Your data privacy rights')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Your data privacy rights Desc')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Under the law, you have the right:')}</p>
                                 <ul>
-                                    <li style={{ color: '#fff' }}>The right to access the personal information we hold about you</li>
-                                    <li style={{ color: '#fff' }}>The right to request the correction of inaccurate personal information</li>
-                                    <li style={{ color: '#fff' }}>The right to request the deletion of your personal information</li>
-                                    <li style={{ color: '#fff' }}>The right to restrict or object to the processing of your personal information</li>
-                                    <li style={{ color: '#fff' }}>The right to data portability</li>
+                                    <li style={{ color: '#fff' }}>{t('Your data privacy rights Bullet1')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Your data privacy rights Bullet2')}</li>
                                 </ul>
-                                <p className="fs-6" style={{ color: '#fff' }}>To exercise any of these rights, please contact us using the contact information provided below.</p>
-
-                                <h3 className="mt-5" style={{ color: '#fff' }}>6. Cookies and Tracking Technologies</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>Our website may use cookies and similar tracking technologies to enhance your experience. Cookies are small data files stored on your device. You can set your browser to refuse cookies or alert you when cookies are being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.</p>
-
-                                <h3 className="mt-5" style={{ color: '#fff' }}>7. Third-Party Links</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>Our website may contain links to third-party websites. We do not control these websites and are not responsible for their privacy practices. We encourage you to review the privacy policies of any third-party websites you visit.</p>
-
-                                <h3 className="mt-5" style={{ color: '#fff' }}>8. Cookies and Tracking Technologies</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information.</p>
-
-                                <h3 className="mt-5" style={{ color: '#fff' }}>9. Contact Us</h3>
-                                <p className="fs-6" style={{ color: '#fff' }}>If you have any questions about this Privacy Policy, please contact us at:</p>
-                                <h4 className="mt-3" style={{ color: '#fff' }}>Mobius Technology Solutions</h4>
-                                <p className="fs-6" style={{ color: '#fff' }}><b>Email:</b> info@noblebookspublishing.com</p>
-                                <p className="fs-6" style={{ color: '#fff' }}><b>Phone:</b> +1(512)-518-4366</p>
-                                <p className="fs-6" style={{ color: '#fff' }}><b>Website:</b> www.noblebookspublishing.com</p>
-                                <p className="fs-6" style={{ color: '#fff' }}>Thank you for choosing Mobius Technology Solutions. We are dedicated to protecting your privacy and personal information.</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>
+                                    {t('To exercise these rights, please contact us at')}
+                                    <a href="mailto:contact@mobiustechnologysolutions.com" style={{ color: '#1a8ce0', fontWeight: 600 }}>
+                                        contact@mobiustechnologysolutions.com
+                                    </a>
+                                </p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Your data privacy rights Para')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Your data privacy rights Para2')}</p>
 
                             </div>
                         </div>
                     </div>
                 </div>
             </section >
-            <Footer isBg="yes" menu={menu} />
+            <Footer menu={menu} isBg="yes" />
         </>
     );
 };
