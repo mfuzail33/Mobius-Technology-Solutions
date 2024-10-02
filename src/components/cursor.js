@@ -1,8 +1,10 @@
 import React, { useRef, useEffect } from "react";
+import { useMediaQuery } from 'react-responsive';
 
 const Cursor = () => {
     const cursorRef = useRef(null);
     const trailRef = useRef(null);
+    const isMobile = useMediaQuery({ maxWidth: 768 })
 
     useEffect(() => {
         const cursor1 = cursorRef.current;
@@ -38,6 +40,7 @@ const Cursor = () => {
                     borderRadius: "50%",
                     background: "rgba(255, 255, 255, 0.5)", // Adjust the opacity and color as needed
                     pointerEvents: "none", // Ensure the trail doesn't interfere with mouse events
+                    display: isMobile ? "none" : "flex"
                 }}
             ></div>
         </>

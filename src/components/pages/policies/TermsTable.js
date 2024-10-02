@@ -47,7 +47,7 @@ const TermsTable = () => {
                     </tr>
                     <tr>
                         <td>{t('Website')}</td>
-                        <td><a href="mailto:contact@mobiustechnologysolutions.com" style={{ color: '#1a8ce0', fontWeight: 600 }}>contact@mobiustechnologysolutions.com</a>, {t('Website Desc')}</td>
+                        <td><span style={{ color: '#1a8ce0', fontWeight: 600 }}>www.mobiustechnologysolutions.com</span>, {t('Website Desc')}</td>
                     </tr>
                 </tbody>
             </table>

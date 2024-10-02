@@ -6,7 +6,7 @@ import { FaPhoneAlt, FaSun, FaMoon } from "react-icons/fa";
 import "../../i18n";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
-import Logo from "../../assets/images/logo.png"
+import Logo from "../../assets/images/logo.png";
 
 const Header = ({ header }) => {
   const [isLangDropdownOpen, setLangDropdownOpen] = useState(false);
@@ -14,8 +14,9 @@ const Header = ({ header }) => {
   const { t, i18n } = useTranslation();
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('language') || 'EN');
+  const [menuOpen, setMenuOpen] = useState(false); 
   const langDropdownRef = useRef(null);
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   useEffect(() => {
     document.body.className = theme === "light" ? "light-mode" : "dark-mode";
@@ -54,13 +55,14 @@ const Header = ({ header }) => {
     IT: "Italian",
     ES: "Spanish",
     AR: "Arabic",
-    RU: "Russian"
+    RU: "Russian",
   };
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language.toLowerCase());
     setSelectedLanguage(language);
     setLangDropdownOpen(false);
+    if (isMobile) setMenuOpen(false); 
   };
 
   const toggleLangDropdown = () => {
@@ -69,13 +71,14 @@ const Header = ({ header }) => {
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
+    if (isMobile) setMenuOpen(false); 
   };
 
   return (
     <header className={fix ? "header navbar_fixed" : "header"}>
       <div className="container">
         <div className="row">
-          <Navbar bg="none" expand="lg">
+          <Navbar bg="none" expand="lg" expanded={menuOpen} onToggle={() => setMenuOpen(!menuOpen)}>
             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '5px' }}>
               <a href="/" style={{ zIndex: 1 }}>
                 <img src={Logo} alt={"Mobius"} style={{ width: '80px' }} />
@@ -95,7 +98,7 @@ const Header = ({ header }) => {
 
             <Navbar.Collapse id="navbarSupportedContent">
               <ul className="navbar-nav menu ms-auto">
-                {header.menu?.map((data, i) =>
+                {header.menu?.map((data, i) => (
                   <li className="nav-item" key={i}>
                     <PageLink
                       activeClass="active"
@@ -105,11 +108,24 @@ const Header = ({ header }) => {
                       smooth={true}
                       duration={500}
                       offset={-60}
+                      onClick={() => setMenuOpen(false)} 
                     >
                       {t(data.title)}
                     </PageLink>
                   </li>
-                )}
+                ))}
+
+                {isMobile ? (
+                  <li className="nav-item">
+                    <button onClick={toggleTheme} className="btn theme-toggle">
+                      {theme === "light" ? (
+                        <FaSun className="icon-sun" />
+                      ) : (
+                        <FaMoon className="icon-moon" />
+                      )}
+                    </button>
+                  </li>
+                ) : null}
 
                 <li className="nav-item dropdown" ref={langDropdownRef} style={{ fontWeight: 500, alignItems: isMobile ? 'flex-start' : 'center' }}>
                   <span
@@ -131,23 +147,18 @@ const Header = ({ header }) => {
                   </ul>
                 </li>
 
-                <li className="nav-item">
-                  <button onClick={toggleTheme} className="btn theme-toggle">
-                    {theme === "light" ? (
-                      <FaSun className="icon-sun" />
-                    ) : (
-                      <FaMoon className="icon-moon" />
-                    )}
-                  </button>
-                </li>
-
-                {/* <li className="nav-item d-flex">
-                  <a href="tel:+1(512)5184366" style={{ fontSize: '25px' }}>
-                    <FaPhoneAlt />
-                  </a>
-                </li> */}
+                {!isMobile ? (
+                  <li className="nav-item">
+                    <button onClick={toggleTheme} className="btn theme-toggle">
+                      {theme === "light" ? (
+                        <FaSun className="icon-sun" />
+                      ) : (
+                        <FaMoon className="icon-moon" />
+                      )}
+                    </button>
+                  </li>
+                ) : null}
               </ul>
-
             </Navbar.Collapse>
           </Navbar>
         </div>

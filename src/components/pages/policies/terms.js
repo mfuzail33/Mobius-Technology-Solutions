@@ -42,7 +42,6 @@ const Terms = ({ header, footer }) => {
                                 <h2 className="mt-5" style={{ color: '#fff' }}>5. {t('Limitation of Liability and Warranty')}</h2>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Limitation of Liability and Warranty Desc')}</p>
                                 <p className="fs-6" style={{ color: '#fff' }}><b>{t('YOUR ACCESS TO AND USE OF OUR WEBSITE IS AT YOUR SOLE RISK AND IS PROVIDED')} "{t('AS IS')}," "{t('AS AVAILABLE')}." {t('Limitation of Liability and Warranty Desc2')}</b></p>
-                                <p className="fs-6" style={{ color: '#fff' }}><b>{t('Limitation of Liability and Warranty Desc2')}</b></p>
                                 <p className="fs-6" style={{ color: '#fff' }}><b>{t('Limitation of Liability and Warranty Desc3')}</b></p>
                                 <p className="fs-6" style={{ color: '#fff' }}><b>{t('Limitation of Liability and Warranty Desc4')}</b></p>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Neither Mobius Technology Solutions nor any of the Mobius Technology Solutions Affiliates shall guarantee or assume any responsibility that')}</p>

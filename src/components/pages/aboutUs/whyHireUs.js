@@ -17,7 +17,7 @@ const WhyHireUs = ({ isBg }) => {
                             <p className="mb-5 fs-5">
                                 <ul>
                                     <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading_bg_none">
-                                        <b>{t('Experience')}:</b> {t('With over')} <b>{t('4 Decades')}</b> {t('of combined experience, our leadership, team, and')} <b>{t('reliable')}</b> {t('and')} <b>{t('credible')}</b> {t('national and international contacts have delivered countless Products, Projects with')} <b>{t('unrivalled')}</b> {t('remainingText')}.
+                                        <b>{t('Experience')}:</b> {t('With over')} <b>{t('3 Decades')}</b> {t('of combined experience, our leadership, team, and')} <b>{t('reliable')}</b> {t('and')} <b>{t('credible')}</b> {t('national and international contacts have delivered countless Products, Projects with')} <b>{t('unrivalled')}</b> {t('remainingText')}
                                     </li>
                                     <li style={{ fontSize: '18px', textAlign: 'start' }} className="heading_bg_none">
                                         <b>{t('WhyHireUsBullet1')}:</b> {t('WhyHireUsDesc1')}

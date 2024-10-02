@@ -11,8 +11,8 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import '../../i18n'
 import AboutContent from ".././pages/aboutUs/aboutContent";
-import LogoGif from "../../assets/images/bgGif.gif"
 import LogoBg from "../../assets/images/bgLogo.png"
+import { useMediaQuery } from 'react-responsive';
 
 const Version02 = ({ header, footer }) => {
   const { menu } = footer;
@@ -20,7 +20,8 @@ const Version02 = ({ header, footer }) => {
   const cursorRef = useRef(null);
   const trailRef = useRef(null);
   const { t } = useTranslation();
-  const [background, setBackground] = useState(LogoGif);
+  const [background, setBackground] = useState(LogoBg);
+  const isMobile = useMediaQuery({ maxWidth: 768 })
 
   useEffect(() => {
     const gifDuration = 10000;
@@ -57,14 +58,34 @@ const Version02 = ({ header, footer }) => {
       <section
         id="hero"
         className={`hero hero__padding overflow-hidden position-relative site_bg`}
-        // style={{
-        //   backgroundImage: `url(${background})`,
-        //   backgroundSize: 'cover',
-        //   backgroundPosition: 'center',
-        //   backgroundRepeat: 'no-repeat',
-        //   marginTop: '70px'
-        // }}
+        style={{
+          // backgroundImage: `url(${LogoBg})`,
+          // backgroundSize: 'cover',
+          // backgroundPosition: 'center',
+          // backgroundRepeat: 'no-repeat',
+          // marginTop: '70px',
+          // animation: 'rotateLogo 10s linear infinite',
+        }}
       >
+        <div
+          style={{
+            position: 'absolute',
+            top: 50,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: `url(${LogoBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            zIndex: 0,
+            animation: 'rotateLogo 10s linear infinite',
+            width: isMobile ? 'none' : '450px',
+            height: '450px',
+            margin: 'auto',
+            opacity: 0.8,
+          }}
+        ></div>
         <AnimatedBackground />
         <div className="circle x1"></div>
         <div className="circle x2"></div>
@@ -86,6 +107,7 @@ const Version02 = ({ header, footer }) => {
             borderRadius: "50%",
             background: "rgba(255, 255, 255, 0.5)", // Adjust the opacity and color as needed
             pointerEvents: "none", // Ensure the trail doesn't interfere with mouse events
+            display: isMobile ? "none" : "flex"
           }}
         ></div>
         <div className="container d-flex justify-content-center" style={{ height: '450px' }}>
