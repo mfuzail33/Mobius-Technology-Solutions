@@ -1,7 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 import { postImg } from "./api";
 
@@ -22,7 +20,7 @@ const Contact = ({ isBg }) => {
     email: "",
     titleOfDocument: "",
     descriptionOfDocument: "",
-    doc: null,
+    docs: [],
   });
 
   const handleChange = (e) => {
@@ -49,7 +47,7 @@ const Contact = ({ isBg }) => {
       email: formData.email,
       titleOfDocument: formData.titleOfDocument,
       descriptionOfDocument: formData.descriptionOfDocument,
-      doc: formData.doc,
+      docs: formData.docs.join(', '),
     };
 
     const data = {
@@ -89,34 +87,36 @@ const Contact = ({ isBg }) => {
 
   const resetForm = () => {
     form.current.reset();
+    setFormData({ ...formData, docs: [] });
   };
 
   const handleFileChange = async (event) => {
-    const file = event.target.files[0];
-    if (!file) {
-      console.log('No file selected');
+    const files = Array.from(event.target.files); 
+    if (files.length === 0) {
+      console.log('No files selected');
       return;
     }
 
     setDisable(true);
-
-    const originalName = file.name;
-    const nameWithoutSpaces = originalName.replace(/\s/g, '');
-    const randomFourDigits = Math.floor(1000 + Math.random() * 9000);
-    const modifiedName = `${nameWithoutSpaces.split('.').slice(0, -1).join('.')}${randomFourDigits}.${originalName.split('.').pop()}`;
-
-    const modifiedFile = new File([file], modifiedName, { type: file.type });
+    setLoading(true);
 
     try {
-      const pdfUrl = await postImg(modifiedFile);
-      if (pdfUrl) {
-        setFormData(formData => ({
-          ...formData,
-          doc: pdfUrl
-        }));
-      } else {
-        console.log('File upload failed, no URL returned');
-      }
+      const urls = await Promise.all(files.map(async (file) => {
+        const originalName = file.name;
+        const nameWithoutSpaces = originalName.replace(/\s/g, '');
+        const randomFourDigits = Math.floor(1000 + Math.random() * 9000);
+        const modifiedName = `${nameWithoutSpaces.split('.').slice(0, -1).join('.')}${randomFourDigits}.${originalName.split('.').pop()}`;
+
+        const modifiedFile = new File([file], modifiedName, { type: file.type });
+
+        const pdfUrl = await postImg(modifiedFile);
+        return pdfUrl; 
+      }));
+
+      setFormData(formData => ({
+        ...formData,
+        docs: [...formData.docs, ...urls] 
+      }));
     } catch (error) {
       console.error('File upload failed:', error);
     } finally {
@@ -273,6 +273,7 @@ const Contact = ({ isBg }) => {
                     type="file"
                     className="form-control"
                     name="doc"
+                    multiple
                     onChange={handleFileChange}
                   />
                 </div>
