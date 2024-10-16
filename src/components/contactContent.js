@@ -256,7 +256,7 @@ const ContactContent = ({ isBg }) => {
                   <textarea
                     name="descriptionOfDocument"
                     className="form-control mb-3"
-                    placeholder="*Description(s) of Document"
+                    placeholder="*Description of Document"
                     rows="3"
                     onChange={handleChange}
                     required
