@@ -13,14 +13,16 @@ import image3 from '../assets/images/moreServices/industrialAutomation1.png';
 import image4 from '../assets/images/moreServices/industrialMachines1.png';
 import image5 from '../assets/images/moreServices/industrialSafety.png';
 import image6 from '../assets/images/moreServices/8.jpg';
+import image7 from '../assets/images/moreServices/oilAndGas1.png';
+import image8 from '../assets/images/moreServices/raw1.png';
 
 const services = [
-  { image: image1, title: 'HealthSafetyAndRescue', details: 'HealthSafetyAndRescueDetails' },
-  { image: image2, title: 'Infrastructural', details: 'InfrastructuralDetails' },
-  { image: image3, title: 'IndustrialAutomation', details: 'IndustrialAutomationDetails' },
-  { image: image4, title: 'IndustrialMachines', details: 'IndustrialMachinesDetails' },
-  { image: image5, title: 'IndustrialSafety', details: 'IndustrialSafetyDetails' },
-  { image: image6, title: 'ExploreMore', details: 'ExploreMoreDetails' },
+  { image: image1, title: 'HealthSafetyAndRescue', details: 'HealthSafetyAndRescueDetails' , path: '/health'},
+  { image: image4, title: 'IndustrialMachines', details: 'IndustrialMachinesDetails', path: '/industrialMachines'  },
+  { image: image3, title: 'IndustrialAutomation', details: 'IndustrialAutomationDetails', path: '/industrialAutomation'  },
+  { image: image7, title: 'OilandGasFields', details: 'OilandGasFieldsDetails', path: '/oilAndGasFields' },
+  { image: image8, title: 'RawMaterials', details: 'RawMaterialsDetails' , path: '/rawMaterials' },
+  { image: image6, title: 'ExploreMore', details: 'ExploreMoreDetails', path: '/services'  },
 ];
 
 const Achievementv2 = ({ isBg }) => {
@@ -50,7 +52,7 @@ const Achievementv2 = ({ isBg }) => {
               data-aos-duration="1000"
               data-aos-delay={index * 100 + 100}
             >
-              <PageLink to={'/services'}>
+              <PageLink to={service.path}>
                 <div className="card h-100 translateEffectServices card_style">
                   <img src={service.image} className="card-img-top" alt="Service" />
                   <div className="card-body">

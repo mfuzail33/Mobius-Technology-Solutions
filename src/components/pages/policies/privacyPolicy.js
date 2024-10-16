@@ -26,9 +26,9 @@ const PrivacyPolicy = ({ header, footer }) => {
                             <div className="section-title-left text-lg-start">
                                 <h4 style={{ color: '#fff' }}>{t('We respect your privacy, and we promise:')}</h4>
                                 <ul>
-                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet1')}</li>
-                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet2')}</li>
-                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet3')}</li>
+                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet1')}.</li>
+                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet2')}.</li>
+                                    <li style={{ color: '#fff' }}>{t('privacyPolicyBullet3')}.</li>
                                     <li style={{ color: '#fff' }}>{t('privacyPolicyBullet4')}</li>
                                 </ul>
 
@@ -48,13 +48,13 @@ const PrivacyPolicy = ({ header, footer }) => {
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Use of information Desc')}</p>
                                 <ol style={{ listStyleType: 'lower-alpha', color: '#fff' }}>
                                     <li style={{ color: '#fff' }}>{t('Use of information a')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Use of information b')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Use of information c')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Use of information d')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Use of information e')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Use of information f')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information b')}.</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information c')}.</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information d')}.</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information e')}.</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information f')}.</li>
                                     <li style={{ color: '#fff' }}>{t('Use of information g')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Use of information h')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Use of information h')}.</li>
                                 </ol>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Use of information Para')}</p>
 
@@ -64,7 +64,7 @@ const PrivacyPolicy = ({ header, footer }) => {
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Disclosure Desc2')}</p>
                                 <ul>
                                     <li style={{ color: '#fff' }}>{t('Disclosure Bullet 1')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Disclosure Bullet 2')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Disclosure Bullet 2')}.</li>
                                 </ul>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Disclosure Para')}</p>
 
@@ -93,7 +93,7 @@ const PrivacyPolicy = ({ header, footer }) => {
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Your data privacy rights Desc')}</p>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Under the law, you have the right:')}</p>
                                 <ul>
-                                    <li style={{ color: '#fff' }}>{t('Your data privacy rights Bullet1')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Your data privacy rights Bullet1')}.</li>
                                     <li style={{ color: '#fff' }}>{t('Your data privacy rights Bullet2')}</li>
                                 </ul>
                                 <p className="fs-6" style={{ color: '#fff' }}>

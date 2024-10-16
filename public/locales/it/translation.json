@@ -12,8 +12,8 @@
     "vision": "Visione",
     "mission": "Missione",
     "goals": "Obiettivi",
-    "visionStatement": "Pionierizzare soluzioni innovative che guidino la crescita sostenibile e potenzino le industrie per affrontare le sfide di domani",
-    "missionStatement": "In Mobius, ci impegniamo a fornire soluzioni complete e all'avanguardia che garantiscano la sicurezza, l'efficienza e il progresso dei nostri clienti in vari settori",
+    "visionStatement": "Pionierizzare soluzioni innovative che guidino la crescita sostenibile e potenzino le industrie per affrontare le sfide di domani.",
+    "missionStatement": "In Mobius, ci impegniamo a fornire soluzioni complete e all'avanguardia che garantiscano la sicurezza, l'efficienza e il progresso dei nostri clienti in vari settori.",
     "goalsStatement": "In Mobius, i nostri obiettivi sono ridefinire gli standard dell'industria attraverso l'innovazione, coltivare partenariati duraturi con i nostri clienti e affrontare proattivamente le sfide future per garantire un successo sostenibile.",
     "HealthSafetyAndRescue": "Salute, Sicurezza e Soccorso",
     "HealthSafetyAndRescueDetails": "Garantire il benessere di individui e comunità attraverso attrezzature sanitarie avanzate, servizi di emergenza e soluzioni per la sicurezza pubblica.",
@@ -25,11 +25,11 @@
     "IndustrialMachinesDetails": "Fornire macchinari industriali all'avanguardia per vari settori, inclusi quelli agricoli, di imballaggio e di raffinazione del petrolio.",
     "IndustrialSafety": "Sicurezza industriale",
     "IndustrialSafetyDetails": "Offrire programmi di sicurezza completi, formazione e certificazioni per garantire gli standard di sicurezza più elevati negli ambienti industriali.",
-    "IndustrialSolutionsDetails": "Soluzioni industriali per l'automotive, soluzioni industriali per la petrolchimica, soluzioni per impianti di produzione, monitoraggio della vigilanza per le fabbriche, produzione additiva",
+    "IndustrialSolutionsDetails": "Soluzioni industriali per l'automotive, soluzioni industriali per la petrolchimica, soluzioni per impianti di produzione, monitoraggio della vigilanza per le fabbriche, produzione additiva.",
     "OilandGasFields": "Campi petroliferi e gasiferi",
     "OilandGasFieldsDetails": "Migliorare le operazioni di petrolio e gas con strumentazione avanzata, monitoraggio e tecnologie di ottimizzazione del campo.",
     "SurveillanceSolutions": "Soluzioni di sorveglianza",
-    "SurveillanceSolutionsDetails": "Implementare sistemi di sicurezza completi, inclusi CCTV, controllo accessi e monitoraggio remoto, integrati con le più recenti tecnologie IoT",
+    "SurveillanceSolutionsDetails": "Implementare sistemi di sicurezza completi, inclusi CCTV, controllo accessi e monitoraggio remoto, integrati con le più recenti tecnologie IoT.",
     "TradeSolutions": "Soluzioni commerciali",
     "TradeSolutionsDetails": "Semplificare le operazioni commerciali con approvvigionamento efficiente, logistica, gestione del rischio e supporto tecnologico all'avanguardia.",
     "RawMaterials": "Materie prime",
@@ -464,5 +464,7 @@
     "Vaccine Policy": "Politica sui Vaccini",
     "Fax Number": "Numero di fax",
     "Services and Products we offer": "Servizi e prodotti che offriamo",
-    "But not limited to": "Ma non limitato a"
+    "But not limited to": "Ma non limitato a",
+    "disclaimer": "Le immagini e i video sul nostro sito web sono solo a scopo illustrativo e potrebbero non riflettere esattamente i prodotti o i servizi. Sebbene ci impegniamo per l'accuratezza, non dovrebbero essere utilizzati esclusivamente per prendere decisioni di acquisto. Ci riserviamo il diritto di modificare o rimuovere i contenuti visivi senza preavviso.",
+    "Visual Content Disclaimer": "Avviso sui contenuti visivi"
 }

@@ -11,19 +11,19 @@ const TermsTable = () => {
                 <tbody>
                     <tr>
                         <td>{t('Content')}</td>
-                        <td>{t('Content Desc')}</td>
+                        <td>{t('Content Desc')}.</td>
                     </tr>
                     <tr>
                         <td>{t('Information')}</td>
-                        <td>{t('Information Desc')}</td>
+                        <td>{t('Information Desc')}.</td>
                     </tr>
                     <tr>
                         <td>{t('Personal data')}</td>
-                        <td>{t('Personal data Desc')}</td>
+                        <td>{t('Personal data Desc')}.</td>
                     </tr>
                     <tr>
                         <td>{t('Services')}</td>
-                        <td>{t('Services Desc')}</td>
+                        <td>{t('Services Desc')}.</td>
                     </tr>
                     <tr>
                         <td>{t('Sourcing')}</td>
@@ -31,23 +31,23 @@ const TermsTable = () => {
                     </tr>
                     <tr>
                         <td>{t('Mobius Technology Solutions Affiliates, Our Affiliates')}</td>
-                        <td>{t('Mobius Technology Solutions Affiliates, Our Affiliates Desc')}</td>
+                        <td>{t('Mobius Technology Solutions Affiliates, Our Affiliates Desc')}.</td>
                     </tr>
                     <tr>
                         <td>{t('Terms of Use')}</td>
-                        <td>{t('Terms of Use Desc')}</td>
+                        <td>{t('Terms of Use Desc')}.</td>
                     </tr>
                     <tr>
                         <td>{t('Third Party Provider')}</td>
-                        <td>{t('Third Party Provider Desc')}</td>
+                        <td>{t('Third Party Provider Desc')}.</td>
                     </tr>
                     <tr>
                         <td>"{t('users')}", "{t('you')}" or "{t('your')}"</td>
-                        <td>{t('any person who accesses the Website')}</td>
+                        <td>{t('any person who accesses the Website')}.</td>
                     </tr>
                     <tr>
                         <td>{t('Website')}</td>
-                        <td><span style={{ color: '#1a8ce0', fontWeight: 600 }}>www.mobiustechnologysolutions.com</span>, {t('Website Desc')}</td>
+                        <td><span style={{ color: '#1a8ce0', fontWeight: 600 }}>www.mobiustechnologysolutions.com</span>, {t('Website Desc')}.</td>
                     </tr>
                 </tbody>
             </table>

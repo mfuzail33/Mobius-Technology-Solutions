@@ -60,7 +60,7 @@ const AllServices = ({ isBg }) => {
                     >
                         <h4 className="heading" style={{ textAlign: 'center' }}>{t('But not limited to')}</h4>
                     </div>
-                    <span style={{ color: "#f3f3f3", marginTop: '8px' }}>{t('ourServicesDetails')}</span>
+                    <span style={{ color: "#f3f3f3", marginTop: '8px' }}>{t('ourServicesDetails')}.</span>
                     <div className="section-divider divider-traingle_color"></div>
                 </div>
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4">

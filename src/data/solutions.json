@@ -16,6 +16,74 @@
             {
                 "id": 4,
                 "image": "./assets/images/solutions/4.jpg"
+            },
+            {
+                "id": 5,
+                "image": "./assets/images/solutions/5.jpg"
+            },
+            {
+                "id": 6,
+                "image": "./assets/images/solutions/6.jpg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/solutions/7.jpg"
+            },
+            {
+                "id": 8,
+                "image": "./assets/images/solutions/8.jpg"
+            },
+            {
+                "id": 9,
+                "image": "./assets/images/solutions/9.jpg"
+            },
+            {
+                "id": 10,
+                "image": "./assets/images/solutions/10.jpg"
+            },
+            {
+                "id": 11,
+                "image": "./assets/images/solutions/11.jpg"
+            },
+            {
+                "id": 12,
+                "image": "./assets/images/solutions/12.jpg"
+            },
+            {
+                "id": 13,
+                "image": "./assets/images/solutions/13.jpg"
+            },
+            {
+                "id": 14,
+                "image": "./assets/images/solutions/14.jpg"
+            },
+            {
+                "id": 15,
+                "image": "./assets/images/solutions/16.jpg"
+            },
+            {
+                "id": 17,
+                "image": "./assets/images/solutions/17.jpg"
+            },
+            {
+                "id": 18,
+                "image": "./assets/images/solutions/18.jpg"
+            },
+            {
+                "id": 19,
+                "image": "./assets/images/solutions/19.jpg"
+            },
+            {
+                "id": 20,
+                "image": "./assets/images/solutions/20.jpg"
+            },
+            {
+                "id": 21,
+                "image": "./assets/images/solutions/21.jpg"
+            },
+            {
+                "id": 22,
+                "image": "./assets/images/solutions/22.jpg"
             }
         ]
     }

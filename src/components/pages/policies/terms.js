@@ -76,8 +76,8 @@ const Terms = ({ header, footer }) => {
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Changes to Terms Desc')}</p>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Changes to Terms Desc2')}</p>
                                 <ul>
-                                    <li style={{ color: '#fff' }}>{t('Changes to Terms Bullet1')}</li>
-                                    <li style={{ color: '#fff' }}>{t('Changes to Terms Bullet2')}</li>
+                                    <li style={{ color: '#fff' }}>{t('Changes to Terms Bullet1')}.</li>
+                                    <li style={{ color: '#fff' }}>{t('Changes to Terms Bullet2')}.</li>
                                 </ul>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Changes to Terms Desc3')}</p>
 
@@ -116,6 +116,9 @@ const Terms = ({ header, footer }) => {
 
                                 <h2 className="mt-5" style={{ color: '#fff' }}>16. {t('Several Users')}</h2>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Several Users Desc')}</p>
+
+                                <h2 className="mt-5" style={{ color: '#fff' }}>17. {t('Visual Content Disclaimer')}</h2>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('disclaimer')}</p>
 
                                 <h2 className="mt-5" style={{ color: '#fff' }}>{t('terms-Contact Us')}</h2>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('terms-Contact Us Desc')}

@@ -8,8 +8,8 @@
     "vision": "Vision",
     "mission": "Mission",
     "goals": "Objectifs",
-    "visionStatement": "Pionnier des solutions innovantes qui favorisent la croissance durable et donnent aux industries les moyens de relever les défis de demain",
-    "missionStatement": "Chez Mobius, nous nous engageons à fournir des solutions complètes et de pointe qui garantissent la sécurité, l'efficacité et l'avancement de nos clients dans diverses industries",
+    "visionStatement": "Pionnier des solutions innovantes qui favorisent la croissance durable et donnent aux industries les moyens de relever les défis de demain.",
+    "missionStatement": "Chez Mobius, nous nous engageons à fournir des solutions complètes et de pointe qui garantissent la sécurité, l'efficacité et l'avancement de nos clients dans diverses industries.",
     "goalsStatement": "Chez Mobius, nos objectifs sont de redéfinir les normes industrielles par l'innovation, de favoriser des partenariats durables avec nos clients et de relever proactivement les défis futurs pour garantir un succès durable.",
     "HealthSafetyAndRescue": "Santé, Sécurité et Sauvetage",
     "HealthSafetyAndRescueDetails": "Assurer le bien-être des individus et des communautés grâce à des équipements de santé avancés, des services d'urgence et des solutions de sécurité publique.",
@@ -21,11 +21,11 @@
     "IndustrialMachinesDetails": "Fournir des machines industrielles de pointe pour divers secteurs, y compris l'équipement agricole, d'emballage et de raffinerie de pétrole.",
     "IndustrialSafety": "Sécurité Industrielle",
     "IndustrialSafetyDetails": "Offrir des programmes de sécurité complets, des formations et des certifications pour garantir les plus hauts standards de sécurité dans les environnements industriels.",
-    "IndustrialSolutionsDetails": "Solutions industrielles automobiles, solutions industrielles pétrochimiques, solutions pour usines de fabrication, surveillance de la vigilance pour les usines, fabrication additive",
+    "IndustrialSolutionsDetails": "Solutions industrielles automobiles, solutions industrielles pétrochimiques, solutions pour usines de fabrication, surveillance de la vigilance pour les usines, fabrication additive.",
     "OilandGasFields": "Champs Pétroliers et Gaziers",
     "OilandGasFieldsDetails": "Améliorer les opérations pétrolières et gazières avec des instruments de pointe, une surveillance et une optimisation du terrain.",
     "SurveillanceSolutions": "Solutions de Surveillance",
-    "SurveillanceSolutionsDetails": "Mise en œuvre de systèmes de sécurité complets, incluant la vidéosurveillance, le contrôle d'accès et la surveillance à distance, intégrés avec les dernières technologies IoT",
+    "SurveillanceSolutionsDetails": "Mise en œuvre de systèmes de sécurité complets, incluant la vidéosurveillance, le contrôle d'accès et la surveillance à distance, intégrés avec les dernières technologies IoT.",
     "TradeSolutions": "Solutions Commerciales",
     "TradeSolutionsDetails": "Rationaliser les opérations commerciales avec un approvisionnement efficace, des achats, une logistique et une gestion des risques, soutenus par une technologie de pointe.",
     "RawMaterials": "Matières Premières",
@@ -464,5 +464,7 @@
     "Vaccine Policy": "Politique de Vaccination",
     "Fax Number": "Numéro de fax",
     "Services and Products we offer": "Services et produits que nous offrons",
-    "But not limited to": "Mais pas limité à"
+    "But not limited to": "Mais pas limité à",
+    "Visual Content Disclaimer":"Avertissement sur le contenu visuel",
+    "disclaimer":"Les images et vidéos sur ce site sont à titre d'illustration et d'information uniquement. Bien que nous visons l'exactitude, elles peuvent ne pas toujours représenter des versions exactes ou actuelles des produits et services. Toute confiance accordée au contenu visuel est à vos propres risques. Mobius Technology Solutions se réserve le droit de mettre à jour, modifier ou supprimer le contenu visuel sans préavis."
 }

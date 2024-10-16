@@ -3,19 +3,39 @@
         "item": [
             {
                 "id": 1,
-                "image": "./assets/images/trade/1.png"
+                "image": "./assets/images/trade/1.jpg"
             },
             {
                 "id": 2,
-                "image": "./assets/images/trade/2.png"
+                "image": "./assets/images/trade/2.jpg"
             },
             {
                 "id": 3,
-                "image": "./assets/images/trade/3.png"
+                "image": "./assets/images/trade/3.jpg"
             },
             {
                 "id": 4,
-                "image": "./assets/images/trade/4.png"
+                "image": "./assets/images/trade/4.jpg"
+            },
+            {
+                "id": 5,
+                "image": "./assets/images/trade/5.jpg"
+            },
+            {
+                "id": 6,
+                "image": "./assets/images/trade/6.jpg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/trade/7.jpg"
+            },
+            {
+                "id": 8,
+                "image": "./assets/images/trade/8.jpg"
+            },
+            {
+                "id": 9,
+                "image": "./assets/images/trade/9.jpg"
             }
         ]
     }

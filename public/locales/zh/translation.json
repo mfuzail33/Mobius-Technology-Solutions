@@ -12,8 +12,8 @@
     "vision": "愿景",
     "mission": "使命",
     "goals": "目标",
-    "visionStatement": "开创创新解决方案，推动可持续增长，并赋能行业应对明天的挑战",
-    "missionStatement": "在Mobius，我们致力于提供全面、前沿的解决方案，确保我们客户在各个行业的安全、效率和进步",
+    "visionStatement": "开创创新解决方案，推动可持续增长，并赋能行业应对明天的挑战.",
+    "missionStatement": "在Mobius，我们致力于提供全面、前沿的解决方案，确保我们客户在各个行业的安全、效率和进步.",
     "goalsStatement": "在Mobius，我们的目标是通过创新重新定义行业标准，与客户建立持久的伙伴关系，并主动应对未来挑战以确保持续成功。",
     "HealthSafetyAndRescue": "健康、安全与救援",
     "HealthSafetyAndRescueDetails": "通过先进的医疗设备、紧急服务和公共安全解决方案，确保个人和社区的福祉。",
@@ -25,11 +25,11 @@
     "IndustrialMachinesDetails": "为各个行业提供最先进的工业机械，包括农业、包装和炼油设备。",
     "IndustrialSafety": "工业安全",
     "IndustrialSafetyDetails": "提供全面的安全项目、培训和认证，确保工业环境中最高的安全标准。",
-    "IndustrialSolutionsDetails": "汽车工业解决方案、石化工业解决方案、制造厂解决方案、工厂监控、增材制造",
+    "IndustrialSolutionsDetails": "汽车工业解决方案、石化工业解决方案、制造厂解决方案、工厂监控、增材制造.",
     "OilandGasFields": "油气领域",
     "OilandGasFieldsDetails": "通过先进的仪器、监测和现场优化技术，增强油气作业。",
     "SurveillanceSolutions": "监控解决方案",
-    "SurveillanceSolutionsDetails": "实施全面的安全系统，包括闭路电视、门禁和远程监控，与最新的物联网技术整合",
+    "SurveillanceSolutionsDetails": "实施全面的安全系统，包括闭路电视、门禁和远程监控，与最新的物联网技术整合.",
     "TradeSolutions": "贸易解决方案",
     "TradeSolutionsDetails": "通过高效的采购、物流和风险管理，支持尖端技术，简化贸易操作。",
     "RawMaterials": "原材料",
@@ -464,5 +464,7 @@
     "Vaccine Policy": "疫苗政策",
     "Fax Number": "传真号码",
     "Services and Products we offer": "我们提供的服务和产品",
-    "But not limited to": "但不限于"
+    "But not limited to": "但不限于",
+    "Visual Content Disclaimer": "视觉内容免责声明",
+    "disclaimer": "本网站上的图片和视频仅用于插图和信息目的。虽然我们力求准确，但它们可能并不总是代表产品和服务的确切或当前版本。对视觉内容的任何依赖均由您自担风险。Mobius Technology Solutions 保留在不事先通知的情况下更新、修改或删除视觉内容的权利。"
 }

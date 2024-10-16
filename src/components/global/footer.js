@@ -35,7 +35,7 @@ const Footer = ({ menu, isBg }) => {
                 </p>
               </div>
 
-              <div className="col-lg-6 d-flex justify-content-center align-items-center mb-3 mb-lg-0">
+              <div className="col-lg-6 d-flex flex-column justify-content-center align-items-center mb-3 mb-lg-0">
                 <ul className="footer__menu">
                   {menu?.map((data, i) => (
                     <li key={i}>
@@ -57,7 +57,11 @@ const Footer = ({ menu, isBg }) => {
                     </li>
                   ))}
                 </ul>
+                <p style={{ marginTop: '10px', fontSize: '12px', textAlign: 'center' }} className="heading">
+                  {t('disclaimer')}
+                </p>
               </div>
+
               <div className="col-lg-3 d-flex justify-content-center align-items-center mb-3 mb-lg-0 justify-content-lg-end">
                 <ul className="social-icon">
                   {socialLink.facebook === "" ? (

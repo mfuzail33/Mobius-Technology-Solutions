@@ -35,7 +35,7 @@ const AboutUs = ({ isBg }) => {
                         <div className="authorv3__content card_style">
                             <h3 className="display-5 mb-0 main_heading">{t('AboutUs')}</h3>
                             <p className="m-30px-b text-muted fs-5"></p>
-                            <p>{t('AboutUsDesc')}</p>
+                            <p>{t('AboutUsDesc')}.</p>
                         </div>
                     </div>
                 </div>

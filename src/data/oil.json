@@ -11,15 +11,55 @@
             },
             {
                 "id": 3,
-                "image": "./assets/images/oil/3.jpg"
+                "image": "./assets/images/oil/3.png"
             },
             {
                 "id": 4,
-                "image": "./assets/images/oil/4.jpg"
+                "image": "./assets/images/oil/4.png"
             },
             {
                 "id": 5,
-                "image": "./assets/images/oil/5.jpg"
+                "image": "./assets/images/oil/5.png"
+            },
+            {
+                "id": 6,
+                "image": "./assets/images/oil/6.jpg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/oil/7.jpg"
+            },
+            {
+                "id": 8,
+                "image": "./assets/images/oil/8.jpg"
+            },
+            {
+                "id": 9,
+                "image": "./assets/images/oil/9.jpg"
+            },
+            {
+                "id": 10,
+                "image": "./assets/images/oil/10.jpg"
+            },
+            {
+                "id": 11,
+                "image": "./assets/images/oil/11.jpg"
+            },
+            {
+                "id": 12,
+                "image": "./assets/images/oil/12.jpg"
+            },
+            {
+                "id":13 ,
+                "image": "./assets/images/oil/13.jpg"
+            },
+            {
+                "id": 14,
+                "image": "./assets/images/oil/14.jpg"
+            },
+            {
+                "id": 15,
+                "image": "./assets/images/oil/15.jpg"
             }
         ]
     }

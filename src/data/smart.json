@@ -7,15 +7,27 @@
             },
             {
                 "id": 2,
-                "image": "./assets/images/smart/2.jpg"
+                "image": "./assets/images/smart/2.png"
             },
             {
                 "id": 3,
-                "image": "./assets/images/smart/3.jpg"
+                "image": "./assets/images/smart/3.png"
             },
             {
                 "id": 4,
                 "image": "./assets/images/smart/4.jpg"
+            },
+            {
+                "id": 5,
+                "image": "./assets/images/smart/5.jpg"
+            },
+            {
+                "id": 6,
+                "image": "./assets/images/smart/6.jpeg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/smart/7.jpg"
             }
         ]
     }

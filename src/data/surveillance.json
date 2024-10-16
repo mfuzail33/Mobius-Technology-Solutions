@@ -3,7 +3,7 @@
         "item": [
             {
                 "id": 1,
-                "image": "./assets/images/surveillance/1.png"
+                "image": "./assets/images/surveillance/1.jpg"
             },
             {
                 "id": 2,
@@ -23,7 +23,23 @@
             },
             {
                 "id": 6,
-                "image": "./assets/images/surveillance/6.png"
+                "image": "./assets/images/surveillance/6.jpg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/surveillance/7.jpg"
+            },
+            {
+                "id": 8,
+                "image": "./assets/images/surveillance/8.jpg"
+            },
+            {
+                "id": 9,
+                "image": "./assets/images/surveillance/9.jpg"
+            },
+            {
+                "id": 10,
+                "image": "./assets/images/surveillance/10.jpg"
             }
         ]
     }

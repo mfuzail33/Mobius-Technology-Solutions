@@ -20,6 +20,38 @@
             {
                 "id": 5,
                 "image": "./assets/images/machines/5.jpg"
+            },
+            {
+                "id": 6,
+                "image": "./assets/images/machines/6.jpg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/machines/7.jpg"
+            },
+            {
+                "id": 8,
+                "image": "./assets/images/machines/8.jpg"
+            },
+            {
+                "id": 9,
+                "image": "./assets/images/machines/9.jpg"
+            },
+            {
+                "id": 10,
+                "image": "./assets/images/machines/10.jpg"
+            },
+            {
+                "id": 11,
+                "image": "./assets/images/machines/11.jpg"
+            },
+            {
+                "id": 12,
+                "image": "./assets/images/machines/12.jpg"
+            },
+            {
+                "id": 13,
+                "image": "./assets/images/machines/13.jpg"
             }
         ]
     }

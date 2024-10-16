@@ -24,6 +24,22 @@
             {
                 "id": 6,
                 "image": "./assets/images/infrastructural/6.jpg"
+            },
+            {
+                "id": 7,
+                "image": "./assets/images/infrastructural/7.jpg"
+            },
+            {
+                "id": 8,
+                "image": "./assets/images/infrastructural/8.jpg"
+            },
+            {
+                "id": 9,
+                "image": "./assets/images/infrastructural/9.jpg"
+            },
+            {
+                "id": 10,
+                "image": "./assets/images/infrastructural/10.jpg"
             }
         ]
     }
