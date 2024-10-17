@@ -55,6 +55,10 @@ body.light-mode {
     background: $site-bg-light;
   }
 
+  .site_bg_home {
+    background: #000;
+  }
+
   .site_bg_none {
     background: $color-light-bg;
   }
@@ -423,8 +427,19 @@ body.light-mode {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 }
 
@@ -461,6 +476,10 @@ body.dark-mode {
   .site_bg {
     // background: $site-bg-dark;
     background-color: #000;
+  }
+
+  .site_bg_home {
+    background: #000;
   }
 
   .site_bg_none {

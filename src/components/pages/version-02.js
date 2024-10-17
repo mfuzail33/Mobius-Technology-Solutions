@@ -13,6 +13,8 @@ import '../../i18n'
 import AboutContent from ".././pages/aboutUs/aboutContent";
 import LogoBg from "../../assets/images/bgLogo.png"
 import { useMediaQuery } from 'react-responsive';
+import MobileMobius from "./mobileMobius";
+import DesktopMobius from "./DesktopMobius";
 
 const Version02 = ({ header, footer }) => {
   const { menu } = footer;
@@ -22,15 +24,6 @@ const Version02 = ({ header, footer }) => {
   const { t } = useTranslation();
   const [background, setBackground] = useState(LogoBg);
   const isMobile = useMediaQuery({ maxWidth: 768 })
-
-  useEffect(() => {
-    const gifDuration = 10000;
-    const timeout = setTimeout(() => {
-      setBackground(LogoBg);
-    }, gifDuration);
-
-    return () => clearTimeout(timeout);
-  }, []);
 
   useEffect(() => {
     const cursor1 = cursorRef.current;
@@ -57,35 +50,13 @@ const Version02 = ({ header, footer }) => {
       {/* Herov2 start */}
       <section
         id="hero"
-        className={`hero hero__padding overflow-hidden position-relative site_bg`}
-        style={{
-          // backgroundImage: `url(${LogoBg})`,
-          // backgroundSize: 'cover',
-          // backgroundPosition: 'center',
-          // backgroundRepeat: 'no-repeat',
-          // marginTop: '70px',
-          // animation: 'rotateLogo 10s linear infinite',
-        }}
+        className={`hero hero__padding overflow-hidden position-relative site_bg_home`}
       >
-        <div
-          style={{
-            position: 'absolute',
-            top: 50,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: `url(${LogoBg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            zIndex: 0,
-            animation: 'rotateLogo 10s linear infinite',
-            width: isMobile ? 'none' : '450px',
-            height: '450px',
-            margin: 'auto',
-            opacity: 0.8,
-          }}
-        ></div>
+        {isMobile ? (
+          <MobileMobius />
+        ) : (
+          <DesktopMobius />
+        )}
         <AnimatedBackground />
         <div className="circle x1"></div>
         <div className="circle x2"></div>
