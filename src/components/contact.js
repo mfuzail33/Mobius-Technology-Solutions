@@ -91,7 +91,7 @@ const Contact = ({ isBg }) => {
   };
 
   const handleFileChange = async (event) => {
-    const files = Array.from(event.target.files); 
+    const files = Array.from(event.target.files);
     if (files.length === 0) {
       console.log('No files selected');
       return;
@@ -110,12 +110,12 @@ const Contact = ({ isBg }) => {
         const modifiedFile = new File([file], modifiedName, { type: file.type });
 
         const pdfUrl = await postImg(modifiedFile);
-        return pdfUrl; 
+        return pdfUrl;
       }));
 
       setFormData(formData => ({
         ...formData,
-        docs: [...formData.docs, ...urls] 
+        docs: [...formData.docs, ...urls]
       }));
     } catch (error) {
       console.error('File upload failed:', error);
@@ -312,7 +312,19 @@ const Contact = ({ isBg }) => {
                   <Link to="#" style={{ color: '#ebeaea', fontSize: '14px' }}>contact@mobiustechnologysolutions.com</Link>
                 </li>
               </ul>
-              <h4 style={{ color: '#fff' }}>{t('OurSocialHandles')}</h4>
+              <div style={{ color: '#ebeaea' }}>
+                <h5 style={{ color: '#fff' }}>{t('Working Days')}</h5>
+                <div style={{ display: 'grid', gridTemplateColumns: 'auto auto', gap: '10px 20px' }}>
+                  <span style={{ fontSize: '0.8em' }}>Monday</span>     <span style={{ fontSize: '0.8em' }}>9:00 hours - 17:00 hours</span>
+                  <span style={{ fontSize: '0.8em' }}>Tuesday</span>    <span style={{ fontSize: '0.8em' }}>9:00 hours - 17:00 hours</span>
+                  <span style={{ fontSize: '0.8em' }}>Wednesday</span>  <span style={{ fontSize: '0.8em' }}>9:00 hours - 17:00 hours</span>
+                  <span style={{ fontSize: '0.8em' }}>Thursday</span>   <span style={{ fontSize: '0.8em' }}>9:00 hours - 17:00 hours</span>
+                  <span style={{ fontSize: '0.8em' }}>Friday</span>     <span style={{ fontSize: '0.8em' }}>9:00 hours - 16:00 hours</span>
+                  <span style={{ fontSize: '0.8em' }}>Saturday</span>   <span style={{ fontSize: '0.8em' }}>Closed</span>
+                  <span style={{ fontSize: '0.8em' }}>Sunday</span>     <span style={{ fontSize: '0.8em' }}>Closed</span>
+                </div>
+              </div>
+              <h5 style={{ color: '#fff', marginTop: '30px' }}>{t('OurSocialHandles')}</h5>
               <ul className="social-icon mt-3 ">
                 <li>
                   <a href={'/'} className="card_icon_bg">
@@ -346,7 +358,8 @@ const Contact = ({ isBg }) => {
                       height="25"
                     />
                   </a>
-                </li>
+                </li
+                >
               </ul>
             </div>
           </div>

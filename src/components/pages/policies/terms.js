@@ -79,7 +79,7 @@ const Terms = ({ header, footer }) => {
                                     <li style={{ color: '#fff' }}>{t('Changes to Terms Bullet1')}.</li>
                                     <li style={{ color: '#fff' }}>{t('Changes to Terms Bullet2')}.</li>
                                 </ul>
-                                <p className="fs-6" style={{ color: '#fff' }}>{t('Changes to Terms Desc3')}</p>
+                                <p className="fs-6" style={{ color: '#fff' }}>{t('Changes to Terms Desc3')}.</p>
 
                                 <h2 className="mt-5" style={{ color: '#fff' }}>11. {t('Users Conduct')}</h2>
                                 <p className="fs-6" style={{ color: '#fff' }}>{t('Users Conduct Desc')}</p>
